@@ -112,7 +112,7 @@
     ))
   (pad 5 smd rect (at 0 0 45) (size 0.58 0.58) (layers F.Cu F.Paste F.Mask)
     (solder_mask_margin -0.05) (solder_paste_margin -0.065) (solder_paste_margin_ratio -0.00000001))
-  (model ${KIPRJMOD}/tomu-fpga.pretty/Texas_S-PVSON-N8.step
+  (model ${KIPRJMOD}/qomu-board.pretty/Texas_S-PVSON-N8.step
     (at (xyz 0 0 0))
     (scale (xyz 0.3 0.3 0.3))
     (rotate (xyz 0 0 0))

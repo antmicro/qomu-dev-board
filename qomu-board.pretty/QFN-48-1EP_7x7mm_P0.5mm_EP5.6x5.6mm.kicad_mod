@@ -93,7 +93,7 @@
   (pad "" smd roundrect (at -2.1 -0.7) (size 1.13 1.13) (layers F.Paste) (roundrect_rratio 0.221239))
   (pad "" smd roundrect (at -2.1 -2.1) (size 1.13 1.13) (layers F.Paste) (roundrect_rratio 0.221239))
   (pad 49 smd roundrect (at 0 0) (size 5.6 5.6) (layers F.Cu F.Mask) (roundrect_rratio 0.044643))
-  (model ${KIPRJMOD}/tomu-fpga.pretty/QFN-48-1EP_7x7mm_Pitch0.5mm.wrl
+  (model ${KIPRJMOD}/qomu-board.pretty/QFN-48-1EP_7x7mm_Pitch0.5mm.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

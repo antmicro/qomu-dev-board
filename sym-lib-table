@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name tomu-fpga-rescue)(type Legacy)(uri ${KIPRJMOD}/tomu-fpga-rescue.lib)(options "")(descr ""))
+  (lib (name qomu-board-rescue)(type Legacy)(uri ${KIPRJMOD}/qomu-board-rescue.lib)(options "")(descr ""))
+  (lib (name qomu-board)(type Legacy)(uri ${KIPRJMOD}/qomu-board.lib)(options "")(descr ""))
 )

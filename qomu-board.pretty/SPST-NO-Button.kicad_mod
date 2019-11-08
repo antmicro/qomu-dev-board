@@ -1,4 +1,4 @@
-<<<<<<< HEAD:archive/evt/pcb/tomu-fpga.pretty/SPST-NO-Button.kicad_mod
+<<<<<<< HEAD:archive/evt/pcb/qomu-board.pretty/SPST-NO-Button.kicad_mod
 (module SPST-NO-Button (layer F.Cu) (tedit 5BF2D514)
   (attr smd)
   (fp_text reference SW1 (at -0.2 -0.1 -180) (layer F.SilkS)
@@ -6,7 +6,7 @@
 (module SPST-NO-Button (layer F.Cu) (tedit 5C015653)
   (attr smd)
   (fp_text reference SW? (at 3.4 3.9) (layer F.SilkS)
->>>>>>> dvt:archive/dvt/pcb/tomu-fpga.pretty/SPST-NO-Button.kicad_mod
+>>>>>>> dvt:archive/dvt/pcb/qomu-board.pretty/SPST-NO-Button.kicad_mod
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value Reset (at 5.7 0 -270) (layer F.SilkS)
@@ -28,7 +28,7 @@
     (solder_mask_margin 0.07))
   (pad 1 smd rect (at -3.2 -1.9) (size 1.6 1) (layers F.Cu F.Paste F.Mask)
     (solder_mask_margin 0.07))
-  (model ${KIPRJMOD}/tomu-fpga.pretty/SW_SPST_PTS645.wrl
+  (model ${KIPRJMOD}/qomu-board.pretty/SW_SPST_PTS645.wrl
     (at (xyz 0 0 0))
     (scale (xyz 0.8 0.8 0.2))
     (rotate (xyz 0 0 0))

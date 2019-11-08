@@ -1,15 +1,15 @@
 EESchema Schematic File Version 4
-LIBS:tomu-fpga-cache
+LIBS:qomu-board-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Fomu"
-Date "2019-04-09"
-Rev "PVT1"
-Comp "Foosn PTE Ltd."
-Comment1 "Fomu - An FPGA in your USB port"
+Title "Qomu Board"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -72,7 +72,7 @@ U 1 1 5BD6F643
 P 2500 3350
 F 0 "C10" H 2250 3350 50  0000 L CNN
 F 1 "0201, 1uF, 10V, X5R, 20%" H 2250 3250 50  0000 L CNN
-F 2 "tomu-fpga:C_0201_0603Metric" H 2500 3350 50  0001 C CNN
+F 2 "qomu-board:C_0201_0603Metric" H 2500 3350 50  0001 C CNN
 F 3 "" H 2500 3350 50  0001 C CNN
 F 4 "ANY" H 0   -300 50  0001 C CNN "MPN"
 F 5 "ANY" H 0   -300 50  0001 C CNN "MYPN"
@@ -100,7 +100,7 @@ U 1 1 5BD6FE8F
 P 2500 2250
 F 0 "C9" H 2600 2300 50  0000 L CNN
 F 1 "0201, 1uF, 10V, X5R, 20%" H 2600 2200 50  0000 L CNN
-F 2 "tomu-fpga:C_0201_0603Metric" H 2500 2250 50  0001 C CNN
+F 2 "qomu-board:C_0201_0603Metric" H 2500 2250 50  0001 C CNN
 F 3 "" H 2500 2250 50  0001 C CNN
 F 4 "ANY" H 0   -300 50  0001 C CNN "MPN"
 F 5 "ANY" H 0   -300 50  0001 C CNN "MYPN"
@@ -139,7 +139,7 @@ U 1 1 5BD700C8
 P 2500 1150
 F 0 "C8" H 2600 1200 50  0000 L CNN
 F 1 "0201, 1uF, 10V, X5R, 20%" H 2600 1100 50  0000 L CNN
-F 2 "tomu-fpga:C_0201_0603Metric" H 2500 1150 50  0001 C CNN
+F 2 "qomu-board:C_0201_0603Metric" H 2500 1150 50  0001 C CNN
 F 3 "" H 2500 1150 50  0001 C CNN
 F 4 "ANY" H 0   -300 50  0001 C CNN "MPN"
 F 5 "ANY" H 0   -300 50  0001 C CNN "MYPN"
@@ -214,7 +214,7 @@ U 1 1 5BD7909F
 P 900 3400
 F 0 "C3" H 950 3300 50  0000 L CNN
 F 1 "0201, 1uF, 10V, X5R, 20%" H 950 3200 50  0000 L CNN
-F 2 "tomu-fpga:C_0201_0603Metric" H 900 3400 50  0001 C CNN
+F 2 "qomu-board:C_0201_0603Metric" H 900 3400 50  0001 C CNN
 F 3 "" H 900 3400 50  0001 C CNN
 F 4 "ANY" H 900 3400 50  0001 C CNN "MPN"
 F 5 "ANY" H 900 3400 50  0001 C CNN "Manufacturer"
@@ -245,7 +245,7 @@ U 1 1 5BD80E21
 P 900 1200
 F 0 "C1" H 950 1100 50  0000 L CNN
 F 1 "0201, 1uF, 10V, X5R, 20%" H 950 1000 50  0000 L CNN
-F 2 "tomu-fpga:C_0201_0603Metric" H 900 1200 50  0001 C CNN
+F 2 "qomu-board:C_0201_0603Metric" H 900 1200 50  0001 C CNN
 F 3 "" H 900 1200 50  0001 C CNN
 F 4 "ANY" H 900 1200 50  0001 C CNN "MPN"
 F 5 "ANY" H 900 1200 50  0001 C CNN "Manufacturer"
@@ -307,7 +307,7 @@ U 1 1 5BD861AF
 P 900 2300
 F 0 "C2" H 950 2200 50  0000 L CNN
 F 1 "0201, 1uF, 10V, X5R, 20%" H 950 2100 50  0000 L CNN
-F 2 "tomu-fpga:C_0201_0603Metric" H 900 2300 50  0001 C CNN
+F 2 "qomu-board:C_0201_0603Metric" H 900 2300 50  0001 C CNN
 F 3 "" H 900 2300 50  0001 C CNN
 F 4 "ANY" H 900 2300 50  0001 C CNN "MPN"
 F 5 "ANY" H 900 2300 50  0001 C CNN "Manufacturer"
@@ -326,12 +326,12 @@ Wire Wire Line
 	900  2100 1150 2100
 Connection ~ 1150 2100
 $Comp
-L tomu-fpga-rescue:USB-B-tomu-fpga-tomu-fpga U9
+L qomu-board:USB-B U9
 U 1 1 5BD8B24F
 P 8300 1600
 F 0 "U9" H 8550 1600 50  0000 C CNN
 F 1 "USB-B" H 8150 1600 50  0000 C CNN
-F 2 "tomu-fpga:USB-PCB" H 8300 1600 50  0001 C CNN
+F 2 "qomu-board:USB-PCB" H 8300 1600 50  0001 C CNN
 F 3 "" H 8300 1600 50  0001 C CNN
 F 4 "DNP" H 8300 1600 50  0001 C CNN "MPN"
 F 5 "DNP" H 8300 1600 50  0001 C CNN "Manufacturer"
@@ -366,12 +366,12 @@ F 3 "" H 8850 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L tomu-fpga-rescue:RGB-LED-tomu-fpga-tomu-fpga U10
+L qomu-board:RGB-LED U10
 U 1 1 5BD90F18
 P 8550 2850
 F 0 "U10" H 8350 2800 50  0000 C CNN
 F 1 "RGB-LED" H 8450 2700 50  0000 C CNN
-F 2 "tomu-fpga:LED-RGB-5DS-UHD1110-FKA" H 8550 2850 50  0001 C CNN
+F 2 "qomu-board:LED-RGB-5DS-UHD1110-FKA" H 8550 2850 50  0001 C CNN
 F 3 "https://www.cree.com/led-components/media/documents/ds-UHD1110-FKA.pdf" H 8550 2850 50  0001 C CNN
 F 4 "UHD1110-FKA" H 8550 2850 50  0001 C CNN "MPN"
 F 5 "Cree" H 8550 2850 50  0001 C CNN "Manufacturer"
@@ -398,7 +398,7 @@ U 1 1 5BDB00B1
 P 9400 1900
 F 0 "R12" V 9400 1900 50  0000 C CNN
 F 1 "0201, 22ohm, 1/16W, 1%" V 9500 1900 50  0000 C CNN
-F 2 "tomu-fpga:R_0201_0603Metric" H 9400 1900 50  0001 C CNN
+F 2 "qomu-board:R_0201_0603Metric" H 9400 1900 50  0001 C CNN
 F 3 "" H 9400 1900 50  0001 C CNN
 F 4 "ANY" H 650 100 50  0001 C CNN "MPN"
 F 5 "ANY" H 650 100 50  0001 C CNN "MYPN"
@@ -415,7 +415,7 @@ U 1 1 5BDB01D9
 P 9400 1800
 F 0 "R11" V 9400 1800 50  0000 C CNN
 F 1 "0201, 22ohm, 1/16W, 1%" V 9300 1800 50  0000 C CNN
-F 2 "tomu-fpga:R_0201_0603Metric" H 9400 1800 50  0001 C CNN
+F 2 "qomu-board:R_0201_0603Metric" H 9400 1800 50  0001 C CNN
 F 3 "" H 9400 1800 50  0001 C CNN
 F 4 "ANY" H 650 100 50  0001 C CNN "MPN"
 F 5 "ANY" H 650 100 50  0001 C CNN "MYPN"
@@ -436,7 +436,7 @@ U 1 1 5BDC6632
 P 9150 2400
 F 0 "R9" V 9150 2400 50  0000 C CNN
 F 1 "0201, 1.5k, 1/16W, 1%" V 9250 2250 50  0000 C CNN
-F 2 "tomu-fpga:R_0201_0603Metric" H 9150 2400 50  0001 C CNN
+F 2 "qomu-board:R_0201_0603Metric" H 9150 2400 50  0001 C CNN
 F 3 "" H 9150 2400 50  0001 C CNN
 F 4 "ANY" H 650 200 50  0001 C CNN "MPN"
 F 5 "ANY" H 650 200 50  0001 C CNN "MYPN"
@@ -481,7 +481,7 @@ U 1 1 5BE02A6F
 P 950 6800
 F 0 "C4" H 1000 6900 50  0000 L CNN
 F 1 "0201, 100nF, 10V, X5R, 20%" V 800 6200 50  0000 L CNN
-F 2 "tomu-fpga:C_0201_0603Metric" H 950 6800 50  0001 C CNN
+F 2 "qomu-board:C_0201_0603Metric" H 950 6800 50  0001 C CNN
 F 3 "" H 950 6800 50  0001 C CNN
 F 4 "ANY" H -550 0   50  0001 C CNN "MPN"
 F 5 "ANY" H -550 0   50  0001 C CNN "MYPN"
@@ -511,12 +511,12 @@ F 3 "" H 6450 950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L tomu-fpga-rescue:PADS-tomu-fpga-tomu-fpga SW2
+L qomu-board:PADS SW2
 U 1 1 5BE44C19
 P 5300 1200
 F 0 "SW2" V 5550 1500 50  0000 C CNN
 F 1 "Captouch Pads" V 5450 1300 50  0000 C CNN
-F 2 "tomu-fpga:captouch-edge" H 5350 1200 50  0001 C CNN
+F 2 "qomu-board:captouch-edge" H 5350 1200 50  0001 C CNN
 F 3 "" H 5350 1200 50  0001 C CNN
 F 4 "DNP" H 5300 1200 50  0001 C CNN "MPN"
 F 5 "DNP" H 5300 1200 50  0001 C CNN "Manufacturer"
@@ -602,7 +602,7 @@ U 1 1 5C0F3302
 P 2550 5150
 F 0 "R1" V 2550 5150 50  0000 C CNN
 F 1 "0201, 10k, 1/16W" H 2150 5150 50  0000 C CNN
-F 2 "tomu-fpga:R_0201_0603Metric" H 2550 5150 50  0001 C CNN
+F 2 "qomu-board:R_0201_0603Metric" H 2550 5150 50  0001 C CNN
 F 3 "" H 2550 5150 50  0001 C CNN
 F 4 "ANY" H 2550 5150 50  0001 C CNN "MPN"
 F 5 "ANY" H 2550 5150 50  0001 C CNN "Manufacturer"
@@ -687,7 +687,7 @@ U 1 1 5C493DB2
 P 3600 7250
 F 0 "R5" V 3600 7250 50  0000 C CNN
 F 1 "0201, 10k, 1/16W" V 3500 7350 50  0000 C CNN
-F 2 "tomu-fpga:R_0201_0603Metric" H 3600 7250 50  0001 C CNN
+F 2 "qomu-board:R_0201_0603Metric" H 3600 7250 50  0001 C CNN
 F 3 "" H 3600 7250 50  0001 C CNN
 F 4 "ANY" H -1400 400 50  0001 C CNN "MPN"
 F 5 "ANY" H -1400 400 50  0001 C CNN "MYPN"
@@ -704,7 +704,7 @@ U 1 1 5C52D560
 P 9500 5700
 F 0 "C21" H 9250 5700 50  0000 L CNN
 F 1 "0201, 100nF, 10V, X5R, 20%" H 8800 5600 50  0000 L CNN
-F 2 "tomu-fpga:C_0201_0603Metric" H 9500 5700 50  0001 C CNN
+F 2 "qomu-board:C_0201_0603Metric" H 9500 5700 50  0001 C CNN
 F 3 "" H 9500 5700 50  0001 C CNN
 F 4 "ANY" H 350 250 50  0001 C CNN "MPN"
 F 5 "ANY" H 350 250 50  0001 C CNN "MYPN"
@@ -743,7 +743,7 @@ U 1 1 5C7EE93E
 P 10200 1300
 F 0 "C24" H 9950 1300 50  0000 L CNN
 F 1 "0201, 1uF, 10V, X5R, 20%" H 9350 1400 50  0000 L CNN
-F 2 "tomu-fpga:C_0201_0603Metric" H 10200 1300 50  0001 C CNN
+F 2 "qomu-board:C_0201_0603Metric" H 10200 1300 50  0001 C CNN
 F 3 "" H 10200 1300 50  0001 C CNN
 F 4 "ANY" H 950 450 50  0001 C CNN "MPN"
 F 5 "ANY" H 950 450 50  0001 C CNN "MYPN"
@@ -760,7 +760,7 @@ U 1 1 5C7EE94A
 P 10650 1300
 F 0 "C28" H 10750 1300 50  0000 L CNN
 F 1 "0201, 100nF, 10V, X5R, 20%" H 9950 1200 50  0000 L CNN
-F 2 "tomu-fpga:C_0201_0603Metric" H 10650 1300 50  0001 C CNN
+F 2 "qomu-board:C_0201_0603Metric" H 10650 1300 50  0001 C CNN
 F 3 "" H 10650 1300 50  0001 C CNN
 F 4 "ANY" H 700 450 50  0001 C CNN "MPN"
 F 5 "ANY" H 700 450 50  0001 C CNN "MYPN"
@@ -800,7 +800,7 @@ U 1 1 5C8902AA
 P 1200 4800
 F 0 "C5" H 1300 4800 50  0000 L CNN
 F 1 "0201, 1uF, 10V, X5R, 20%" H 1000 4900 50  0000 L CNN
-F 2 "tomu-fpga:C_0201_0603Metric" H 1200 4800 50  0001 C CNN
+F 2 "qomu-board:C_0201_0603Metric" H 1200 4800 50  0001 C CNN
 F 3 "" H 1200 4800 50  0001 C CNN
 F 4 "ANY" H -3500 350 50  0001 C CNN "MPN"
 F 5 "ANY" H -3500 350 50  0001 C CNN "MYPN"
@@ -817,7 +817,7 @@ U 1 1 5C8902B6
 P 1900 5000
 F 0 "C7" H 1700 5000 50  0000 L CNN
 F 1 "0201, 100nF, 10V, X5R, 20%" H 1200 4900 50  0000 L CNN
-F 2 "tomu-fpga:C_0201_0603Metric" H 1900 5000 50  0001 C CNN
+F 2 "qomu-board:C_0201_0603Metric" H 1900 5000 50  0001 C CNN
 F 3 "" H 1900 5000 50  0001 C CNN
 F 4 "ANY" H -3500 550 50  0001 C CNN "MPN"
 F 5 "ANY" H -3500 550 50  0001 C CNN "MYPN"
@@ -845,7 +845,7 @@ U 1 1 5BDC7C63
 P 10050 4750
 F 0 "C22" V 10150 4800 50  0000 L CNN
 F 1 "0402, 10uF, 6.3V, X5R, 20%" V 9950 4200 50  0000 L CNN
-F 2 "tomu-fpga:C_0402_1005Metric" H 10050 4750 50  0001 C CNN
+F 2 "qomu-board:C_0402_1005Metric" H 10050 4750 50  0001 C CNN
 F 3 "" H 10050 4750 50  0001 C CNN
 F 4 "ANY" H 7550 2200 50  0001 C CNN "MPN"
 F 5 "ANY" H 7550 2200 50  0001 C CNN "MYPN"
@@ -862,7 +862,7 @@ U 1 1 5BDC7CFF
 P 10050 4300
 F 0 "C23" V 10100 4400 50  0000 L CNN
 F 1 "0201, 100nF, 10V, X5R, 20%" V 9950 3800 50  0000 L CNN
-F 2 "tomu-fpga:C_0201_0603Metric" H 10050 4300 50  0001 C CNN
+F 2 "qomu-board:C_0201_0603Metric" H 10050 4300 50  0001 C CNN
 F 3 "" H 10050 4300 50  0001 C CNN
 F 4 "ANY" H 10050 4300 50  0001 C CNN "MPN"
 F 5 "ANY" H 10050 4300 50  0001 C CNN "Manufacturer"
@@ -890,7 +890,7 @@ U 1 1 5BECED7C
 P 10300 5800
 F 0 "C25" H 10400 5800 50  0000 L CNN
 F 1 "0201, 1uF, 10V, X5R, 20%" H 9650 5700 50  0000 L CNN
-F 2 "tomu-fpga:C_0201_0603Metric" H 10300 5800 50  0001 C CNN
+F 2 "qomu-board:C_0201_0603Metric" H 10300 5800 50  0001 C CNN
 F 3 "" H 10300 5800 50  0001 C CNN
 F 4 "ANY" H 2500 700 50  0001 C CNN "MPN"
 F 5 "ANY" H 2500 700 50  0001 C CNN "MYPN"
@@ -915,12 +915,12 @@ Connection ~ 9500 6100
 Wire Wire Line
 	9500 6100 9500 6150
 $Comp
-L tomu-fpga-rescue:Oscillator-tomu-fpga-tomu-fpga U7
+L qomu-board:Oscillator U7
 U 1 1 5C0E8D0F
 P 1400 5600
 F 0 "U7" H 1150 5550 50  0000 C CNN
 F 1 "Crystal Oscillator" H 1550 5550 50  0000 C CNN
-F 2 "tomu-fpga:XTAL-2520" H 1400 5600 50  0001 C CNN
+F 2 "qomu-board:XTAL-2520" H 1400 5600 50  0001 C CNN
 F 3 "https://www.ecsxtal.com/store/pdf/ECS-2520MV.pdf" H 1400 5600 50  0001 C CNN
 F 4 "XC2756CT-ND" H 1400 5600 50  0001 C CNN "MPN"
 F 5 "ECS" H 1400 5600 50  0001 C CNN "Manufacturer"
@@ -963,7 +963,7 @@ U 1 1 5C1F1DFB
 P 950 5750
 F 0 "C11" H 1000 5800 50  0000 L CNN
 F 1 "0201, 100nF, 10V, X5R, 20%" H 800 5550 50  0000 L CNN
-F 2 "tomu-fpga:C_0201_0603Metric" H 950 5750 50  0001 C CNN
+F 2 "qomu-board:C_0201_0603Metric" H 950 5750 50  0001 C CNN
 F 3 "" H 950 5750 50  0001 C CNN
 F 4 "ANY" H -4100 3650 50  0001 C CNN "MPN"
 F 5 "ANY" H -4100 3650 50  0001 C CNN "MYPN"
@@ -994,12 +994,12 @@ SPI_IO3
 Text Label 2300 6250 0    50   ~ 0
 CDONE
 $Comp
-L tomu-fpga-rescue:ICE40UP5K-UWG30-tomu-fpga-tomu-fpga U5
+L qomu-board:ICE40UP5K-UWG30 U5
 U 3 1 5C122A3A
 P 6450 1750
 F 0 "U5" H 6050 1200 50  0000 L CNN
 F 1 "ICE40UP5K-UWG30" H 6050 1100 50  0000 L CNN
-F 2 "tomu-fpga:iCE40UP5K-UWG30" H 6450 400 50  0001 C CNN
+F 2 "qomu-board:iCE40UP5K-UWG30" H 6450 400 50  0001 C CNN
 F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 6050 2750 50  0001 C CNN
 F 4 "ICE40UP5K-UWG30ITR" H 400 -900 50  0001 C CNN "MPN"
 F 5 " 	ICE40UP5K-UWG30ITR-ND " H 400 -900 50  0001 C CNN "DPN"
@@ -1009,12 +1009,12 @@ F 7 "ICE40-ULTRAPLUS, 5280 LUTS, 1.2V" H 200 -300 50  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L tomu-fpga-rescue:ICE40UP5K-UWG30-tomu-fpga-tomu-fpga U5
+L qomu-board:ICE40UP5K-UWG30 U5
 U 4 1 5C122B60
 P 10200 4800
 F 0 "U5" H 9850 4250 50  0000 C CNN
 F 1 "ICE40UP5K-UWG30" H 10150 4150 50  0000 C CNN
-F 2 "tomu-fpga:iCE40UP5K-UWG30" H 10200 3450 50  0001 C CNN
+F 2 "qomu-board:iCE40UP5K-UWG30" H 10200 3450 50  0001 C CNN
 F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 9800 5800 50  0001 C CNN
 F 4 "ICE40UP5K-UWG30ITR" H 550 -300 50  0001 C CNN "MPN"
 F 5 " 	ICE40UP5K-UWG30ITR-ND " H 550 -300 50  0001 C CNN "DPN"
@@ -1024,12 +1024,12 @@ F 7 "ICE40-ULTRAPLUS, 5280 LUTS, 1.2V" H 200 -400 50  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L tomu-fpga-rescue:SPI-Flash-tomu-fpga-tomu-fpga U4
+L qomu-board:SPI-Flash U4
 U 1 1 5C1645BF
 P 1650 7000
 F 0 "U4" H 1675 7815 50  0000 C CNN
 F 1 "SPI Flash" H 1675 7724 50  0000 C CNN
-F 2 "tomu-fpga:SON50P300X200X60-9N" H 1450 7000 50  0001 C CNN
+F 2 "qomu-board:SON50P300X200X60-9N" H 1450 7000 50  0001 C CNN
 F 3 "http://www.winbond.com/resource-files/w25q128jv_dtr%20revc%2003272018%20plus.pdf" H 1450 7000 50  0001 C CNN
 F 4 "1970-1011-6-ND" H -450 -1450 50  0001 C CNN "DPN"
 F 5 "GD25Q16CEIGR" H -450 -1450 50  0001 C CNN "MPN"
@@ -1130,12 +1130,12 @@ Wire Wire Line
 Wire Wire Line
 	4950 2150 5850 2150
 $Comp
-L tomu-fpga-rescue:ICE40UP5K-UWG30-tomu-fpga-tomu-fpga U5
+L qomu-board:ICE40UP5K-UWG30 U5
 U 1 1 5C1225F9
 P 10400 2400
 F 0 "U5" H 10100 1250 50  0000 L CNN
 F 1 "ICE40UP5K-UWG30" H 10100 1150 50  0000 L CNN
-F 2 "tomu-fpga:iCE40UP5K-UWG30" H 10400 1050 50  0001 C CNN
+F 2 "qomu-board:iCE40UP5K-UWG30" H 10400 1050 50  0001 C CNN
 F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 10000 3400 50  0001 C CNN
 F 4 "ICE40UP5K-UWG30ITR" H 650 100 50  0001 C CNN "MPN"
 F 5 " 	ICE40UP5K-UWG30ITR-ND " H 650 100 50  0001 C CNN "DPN"
@@ -1149,12 +1149,12 @@ Wire Wire Line
 Text Notes 1150 7400 0    50   ~ 0
 To program SPI flash, put FPGA in RESET\nTo program FPGA, keep SPI_IO3 LOW
 $Comp
-L tomu-fpga-rescue:LDO-X2SON-tomu-fpga-tomu-fpga U1
+L qomu-board:LDO-X2SON U1
 U 1 1 5BF1A34B
 P 1650 1300
 F 0 "U1" H 1650 1850 50  0000 C CNN
 F 1 "LDO-X2SON-1.2V" H 1650 1750 50  0000 C CNN
-F 2 "tomu-fpga:Texas_X2SON-4_1x1mm_P0.65mm" H 1650 1300 50  0001 C CNN
+F 2 "qomu-board:Texas_X2SON-4_1x1mm_P0.65mm" H 1650 1300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lp5907.pdf" H 1650 1300 50  0001 C CNN
 F 4 "MIC5504-1.2YMT" H 0   0   50  0001 C CNN "AMPN"
 F 5 "Microchip" H 0   0   50  0001 C CNN "AManufacturer"
@@ -1174,12 +1174,12 @@ Wire Wire Line
 Wire Wire Line
 	2050 1150 2050 1250
 $Comp
-L tomu-fpga-rescue:LDO-X2SON-tomu-fpga-tomu-fpga U2
+L qomu-board:LDO-X2SON U2
 U 1 1 5BF61C95
 P 1650 2400
 F 0 "U2" H 1650 2925 50  0000 C CNN
 F 1 "LDO-X2SON-3.3V" H 1650 2834 50  0000 C CNN
-F 2 "tomu-fpga:Texas_X2SON-4_1x1mm_P0.65mm" H 1650 2400 50  0001 C CNN
+F 2 "qomu-board:Texas_X2SON-4_1x1mm_P0.65mm" H 1650 2400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lp5907.pdf" H 1650 2400 50  0001 C CNN
 F 4 "MIC5504-3.3YMT" H 0   1100 50  0001 C CNN "AMPN"
 F 5 "Microchip" H 0   1100 50  0001 C CNN "AManufacturer"
@@ -1200,12 +1200,12 @@ Wire Wire Line
 Wire Wire Line
 	1300 1800 1300 2350
 $Comp
-L tomu-fpga-rescue:LDO-X2SON-tomu-fpga-tomu-fpga U3
+L qomu-board:LDO-X2SON U3
 U 1 1 5BFAB7F1
 P 1650 3500
 F 0 "U3" H 1650 4025 50  0000 C CNN
 F 1 "LDO-X2SON-2.5V" H 1650 3934 50  0000 C CNN
-F 2 "tomu-fpga:Texas_X2SON-4_1x1mm_P0.65mm" H 1650 3500 50  0001 C CNN
+F 2 "qomu-board:Texas_X2SON-4_1x1mm_P0.65mm" H 1650 3500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lp5907.pdf" H 1650 3500 50  0001 C CNN
 F 4 "MIC5504-2.5YMT" H 0   2200 50  0001 C CNN "AMPN"
 F 5 "Microchip" H 0   2200 50  0001 C CNN "AManufacturer"
@@ -1222,12 +1222,12 @@ Connection ~ 2050 3450
 Wire Wire Line
 	2050 3450 2050 3600
 $Comp
-L tomu-fpga-rescue:Testpoint-tomu-fpga-tomu-fpga TP2
+L qomu-board:Testpoint TP2
 U 1 1 5C03018F
 P 5250 4500
 F 0 "TP2" H 5400 4550 50  0000 C CNN
 F 1 "Testpoint" H 5700 4550 50  0000 C CNN
-F 2 "tomu-fpga:testpoint" H 5250 4500 50  0001 C CNN
+F 2 "qomu-board:testpoint" H 5250 4500 50  0001 C CNN
 F 3 "" H 5250 4500 50  0001 C CNN
 F 4 "X" H 0   0   50  0001 C CNN "DNP"
 	1    5250 4500
@@ -1240,12 +1240,12 @@ SPI_MOSI
 Text Label 5450 4700 0    50   ~ 0
 SPI_MISO
 $Comp
-L tomu-fpga-rescue:Testpoint-tomu-fpga-tomu-fpga TP3
+L qomu-board:Testpoint TP3
 U 1 1 5C042DE8
 P 5250 4650
 F 0 "TP3" H 5400 4700 50  0000 C CNN
 F 1 "Testpoint" H 5700 4700 50  0000 C CNN
-F 2 "tomu-fpga:testpoint" H 5250 4650 50  0001 C CNN
+F 2 "qomu-board:testpoint" H 5250 4650 50  0001 C CNN
 F 3 "" H 5250 4650 50  0001 C CNN
 F 4 "X" H 0   0   50  0001 C CNN "DNP"
 	1    5250 4650
@@ -1254,12 +1254,12 @@ $EndComp
 Wire Wire Line
 	5400 4700 5850 4700
 $Comp
-L tomu-fpga-rescue:Testpoint-tomu-fpga-tomu-fpga TP4
+L qomu-board:Testpoint TP4
 U 1 1 5C068EF3
 P 5250 4800
 F 0 "TP4" H 5400 4850 50  0000 C CNN
 F 1 "Testpoint" H 5700 4850 50  0000 C CNN
-F 2 "tomu-fpga:testpoint" H 5250 4800 50  0001 C CNN
+F 2 "qomu-board:testpoint" H 5250 4800 50  0001 C CNN
 F 3 "" H 5250 4800 50  0001 C CNN
 F 4 "X" H 0   0   50  0001 C CNN "DNP"
 	1    5250 4800
@@ -1268,12 +1268,12 @@ $EndComp
 Wire Wire Line
 	5400 4850 5850 4850
 $Comp
-L tomu-fpga-rescue:Testpoint-tomu-fpga-tomu-fpga TP5
+L qomu-board:Testpoint TP5
 U 1 1 5C068EFC
 P 5250 4950
 F 0 "TP5" H 5400 5000 50  0000 C CNN
 F 1 "Testpoint" H 5700 5000 50  0000 C CNN
-F 2 "tomu-fpga:testpoint" H 5250 4950 50  0001 C CNN
+F 2 "qomu-board:testpoint" H 5250 4950 50  0001 C CNN
 F 3 "" H 5250 4950 50  0001 C CNN
 F 4 "X" H 0   0   50  0001 C CNN "DNP"
 	1    5250 4950
@@ -1290,24 +1290,24 @@ SPI_IO2
 Text Label 5450 5300 0    50   ~ 0
 SPI_IO3
 $Comp
-L tomu-fpga-rescue:Testpoint-tomu-fpga-tomu-fpga TP6
+L qomu-board:Testpoint TP6
 U 1 1 5C07C50C
 P 5250 5100
 F 0 "TP6" H 5400 5150 50  0000 C CNN
 F 1 "Testpoint" H 5700 5150 50  0000 C CNN
-F 2 "tomu-fpga:testpoint" H 5250 5100 50  0001 C CNN
+F 2 "qomu-board:testpoint" H 5250 5100 50  0001 C CNN
 F 3 "" H 5250 5100 50  0001 C CNN
 F 4 "X" H 0   0   50  0001 C CNN "DNP"
 	1    5250 5100
 	-1   0    0    1   
 $EndComp
 $Comp
-L tomu-fpga-rescue:Testpoint-tomu-fpga-tomu-fpga TP7
+L qomu-board:Testpoint TP7
 U 1 1 5C07C63D
 P 5250 5250
 F 0 "TP7" H 5400 5300 50  0000 C CNN
 F 1 "Testpoint" H 5700 5300 50  0000 C CNN
-F 2 "tomu-fpga:testpoint" H 5250 5250 50  0001 C CNN
+F 2 "qomu-board:testpoint" H 5250 5250 50  0001 C CNN
 F 3 "" H 5250 5250 50  0001 C CNN
 F 4 "X" H 0   0   50  0001 C CNN "DNP"
 	1    5250 5250
@@ -1320,12 +1320,12 @@ Wire Wire Line
 Text Label 5450 5450 0    50   ~ 0
 CRESET
 $Comp
-L tomu-fpga-rescue:Testpoint-tomu-fpga-tomu-fpga TP8
+L qomu-board:Testpoint TP8
 U 1 1 5C0A39C6
 P 5250 5400
 F 0 "TP8" H 5400 5450 50  0000 C CNN
 F 1 "Testpoint" H 5700 5450 50  0000 C CNN
-F 2 "tomu-fpga:testpoint" H 5250 5400 50  0001 C CNN
+F 2 "qomu-board:testpoint" H 5250 5400 50  0001 C CNN
 F 3 "" H 5250 5400 50  0001 C CNN
 F 4 "X" H 0   0   50  0001 C CNN "DNP"
 	1    5250 5400
@@ -1336,12 +1336,12 @@ Wire Wire Line
 Text Label 5450 5600 0    50   ~ 0
 CDONE
 $Comp
-L tomu-fpga-rescue:Testpoint-tomu-fpga-tomu-fpga TP9
+L qomu-board:Testpoint TP9
 U 1 1 5C0B4DBE
 P 5250 5550
 F 0 "TP9" H 5400 5600 50  0000 C CNN
 F 1 "Testpoint" H 5700 5600 50  0000 C CNN
-F 2 "tomu-fpga:testpoint" H 5250 5550 50  0001 C CNN
+F 2 "qomu-board:testpoint" H 5250 5550 50  0001 C CNN
 F 3 "" H 5250 5550 50  0001 C CNN
 F 4 "X" H 0   0   50  0001 C CNN "DNP"
 	1    5250 5550
@@ -1350,24 +1350,24 @@ $EndComp
 Wire Wire Line
 	5400 5600 5850 5600
 $Comp
-L tomu-fpga-rescue:Testpoint-tomu-fpga-tomu-fpga TP1
+L qomu-board:Testpoint TP1
 U 1 1 5C0C6529
 P 5250 4350
 F 0 "TP1" H 5400 4400 50  0000 C CNN
 F 1 "Testpoint" H 5700 4400 50  0000 C CNN
-F 2 "tomu-fpga:testpoint" H 5250 4350 50  0001 C CNN
+F 2 "qomu-board:testpoint" H 5250 4350 50  0001 C CNN
 F 3 "" H 5250 4350 50  0001 C CNN
 F 4 "X" H 0   0   50  0001 C CNN "DNP"
 	1    5250 4350
 	-1   0    0    1   
 $EndComp
 $Comp
-L tomu-fpga-rescue:Testpoint-tomu-fpga-tomu-fpga TP12
+L qomu-board:Testpoint TP12
 U 1 1 5C0C65AF
 P 5250 6000
 F 0 "TP12" H 5400 6050 50  0000 C CNN
 F 1 "Testpoint" H 5700 6050 50  0000 C CNN
-F 2 "tomu-fpga:testpoint" H 5250 6000 50  0001 C CNN
+F 2 "qomu-board:testpoint" H 5250 6000 50  0001 C CNN
 F 3 "" H 5250 6000 50  0001 C CNN
 F 4 "X" H 0   0   50  0001 C CNN "DNP"
 	1    5250 6000
@@ -1382,24 +1382,24 @@ USB_P
 Text Label 5450 5750 0    50   ~ 0
 USB_N
 $Comp
-L tomu-fpga-rescue:Testpoint-tomu-fpga-tomu-fpga TP10
+L qomu-board:Testpoint TP10
 U 1 1 5C0EA6CF
 P 5250 5700
 F 0 "TP10" H 5400 5750 50  0000 C CNN
 F 1 "Testpoint" H 5700 5750 50  0000 C CNN
-F 2 "tomu-fpga:testpoint" H 5250 5700 50  0001 C CNN
+F 2 "qomu-board:testpoint" H 5250 5700 50  0001 C CNN
 F 3 "" H 5250 5700 50  0001 C CNN
 F 4 "X" H 0   0   50  0001 C CNN "DNP"
 	1    5250 5700
 	-1   0    0    1   
 $EndComp
 $Comp
-L tomu-fpga-rescue:Testpoint-tomu-fpga-tomu-fpga TP11
+L qomu-board:Testpoint TP11
 U 1 1 5C0EA757
 P 5250 5850
 F 0 "TP11" H 5400 5900 50  0000 C CNN
 F 1 "Testpoint" H 5700 5900 50  0000 C CNN
-F 2 "tomu-fpga:testpoint" H 5250 5850 50  0001 C CNN
+F 2 "qomu-board:testpoint" H 5250 5850 50  0001 C CNN
 F 3 "" H 5250 5850 50  0001 C CNN
 F 4 "X" H 0   0   50  0001 C CNN "DNP"
 	1    5250 5850
@@ -1447,12 +1447,12 @@ Wire Wire Line
 Wire Wire Line
 	3850 7250 3850 6900
 $Comp
-L tomu-fpga-rescue:ICE40UP5K-UWG30-tomu-fpga-tomu-fpga U5
+L qomu-board:ICE40UP5K-UWG30 U5
 U 2 1 5C122971
 P 3250 6500
 F 0 "U5" H 2900 5950 50  0000 C CNN
 F 1 "ICE40UP5K-UWG30" H 3150 5850 50  0000 C CNN
-F 2 "tomu-fpga:iCE40UP5K-UWG30" H 3250 5150 50  0001 C CNN
+F 2 "qomu-board:iCE40UP5K-UWG30" H 3250 5150 50  0001 C CNN
 F 3 "http://www.latticesemi.com/Products/FPGAandCPLD/iCE40Ultra" H 2850 7500 50  0001 C CNN
 F 4 "ICE40UP5K-UWG30ITR" H 3250 6500 50  0001 C CNN "MPN"
 F 5 "Lattice" H 3250 6500 50  0001 C CNN "Manufacturer"
@@ -1510,12 +1510,12 @@ Wire Notes Line
 Text Notes 6400 4100 0    50   ~ 0
 Test Pads
 $Comp
-L tomu-fpga-rescue:Touchpad-Note-tomu-fpga-tomu-fpga XX1
+L qomu-board:Touchpad-Note XX1
 U 1 1 5C0024CC
 P 5900 3500
 F 0 "XX1" H 5978 3696 50  0000 L CNN
 F 1 "Touchpad Mask Removal" H 5978 3605 50  0000 L CNN
-F 2 "tomu-fpga:soldermask-removal" H 5900 3500 50  0001 C CNN
+F 2 "qomu-board:soldermask-removal" H 5900 3500 50  0001 C CNN
 F 3 "" H 5900 3500 50  0001 C CNN
 F 4 "DNP" H 5900 3500 50  0001 C CNN "MPN"
 F 5 "DNP" H 5900 3500 50  0001 C CNN "MYPN"
@@ -1528,15 +1528,15 @@ F 10 "X" H 0   0   50  0001 C CNN "DNP"
 	1    0    0    -1  
 $EndComp
 $Comp
-L tomu-fpga-rescue:Case-tomu-fpga-tomu-fpga XX2
+L qomu-board:Case XX2
 U 1 1 5C011D36
 P 5900 3750
 F 0 "XX2" H 6028 3896 50  0000 L CNN
 F 1 "Case" H 6028 3805 50  0000 L CNN
-F 2 "tomu-fpga:nothing" H 5900 3750 50  0001 C CNN
+F 2 "qomu-board:nothing" H 5900 3750 50  0001 C CNN
 F 3 "" H 5900 3750 50  0001 C CNN
 F 4 "Case for Tomu, customized for FPGA" H 900 400 50  0001 C CNN "Description"
-F 5 "Tomu-FPGA-Case" H 900 400 50  0001 C CNN "MPN"
+F 5 "qomu-board-Case" H 900 400 50  0001 C CNN "MPN"
 F 6 "Jiada" H 900 400 50  0001 C CNN "Manufacturer"
 F 7 "X" H 5900 3750 50  0001 C CNN "Spice_Primitive"
 F 8 "Case" H 5900 3750 50  0001 C CNN "Spice_Model"
@@ -1556,12 +1556,12 @@ Wire Notes Line
 Text Notes 4150 3750 0    50   ~ 0
 Manufacturing Notes
 $Comp
-L tomu-fpga-rescue:Case-tomu-fpga-tomu-fpga XX3
+L qomu-board:Case XX3
 U 1 1 5C0476E4
 P 5250 3450
 F 0 "XX3" H 5378 3596 50  0000 L CNN
 F 1 "ESD Bag" H 5378 3505 50  0000 L CNN
-F 2 "tomu-fpga:nothing" H 5250 3450 50  0001 C CNN
+F 2 "qomu-board:nothing" H 5250 3450 50  0001 C CNN
 F 3 "" H 5250 3450 50  0001 C CNN
 F 4 "ESD bag containing case and PCBA" H 250 100 50  0001 C CNN "Description"
 F 5 "Tomu-ESD-Bag" H 250 100 50  0001 C CNN "MPN"
@@ -1619,7 +1619,7 @@ U 1 1 5C0AD27F
 P 4650 2450
 F 0 "D1" V 4550 2450 50  0000 L CNN
 F 1 "D5V0L1B2LP3-7" V 4750 2150 50  0000 L CNN
-F 2 "tomu-fpga:X1-DFN1006-2" V 4650 2450 50  0001 C CNN
+F 2 "qomu-board:X1-DFN1006-2" V 4650 2450 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 4650 2450 50  0001 C CNN
 F 4 "Diodes Incorporated" V 4650 2450 50  0001 C CNN "Manufacturer"
 F 5 "D5V0L1B2LP3-7" V 4650 2450 50  0001 C CNN "MPN"
@@ -1649,7 +1649,7 @@ U 1 1 5C0F0E57
 P 5050 2350
 F 0 "D2" V 4950 2350 50  0000 L CNN
 F 1 "D5V0L1B2LP3-7" V 5150 2050 50  0000 L CNN
-F 2 "tomu-fpga:X1-DFN1006-2" V 5050 2350 50  0001 C CNN
+F 2 "qomu-board:X1-DFN1006-2" V 5050 2350 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 5050 2350 50  0001 C CNN
 F 4 "Diodes Incorporated" V 5050 2350 50  0001 C CNN "Manufacturer"
 F 5 "D5V0L1B2LP3-7" V 5050 2350 50  0001 C CNN "MPN"
@@ -1678,7 +1678,7 @@ U 1 1 5C1671C0
 P 5250 2300
 F 0 "D3" V 5204 2368 50  0000 L CNN
 F 1 "D5V0L1B2LP3-7" V 5300 2200 50  0000 L CNN
-F 2 "tomu-fpga:X1-DFN1006-2" V 5250 2300 50  0001 C CNN
+F 2 "qomu-board:X1-DFN1006-2" V 5250 2300 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 5250 2300 50  0001 C CNN
 F 4 "Diodes Incorporated" V 5250 2300 50  0001 C CNN "Manufacturer"
 F 5 "D5V0L1B2LP3-7" V 5250 2300 50  0001 C CNN "MPN"
@@ -1699,7 +1699,7 @@ U 1 1 5C182AF1
 P 5750 2400
 F 0 "D4" V 5850 2400 50  0000 L CNN
 F 1 "D5V0L1B2LP3-7" V 5950 2400 50  0000 L CNN
-F 2 "tomu-fpga:X1-DFN1006-2" V 5750 2400 50  0001 C CNN
+F 2 "qomu-board:X1-DFN1006-2" V 5750 2400 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 5750 2400 50  0001 C CNN
 F 4 "Diodes Incorporated" V 5750 2400 50  0001 C CNN "Manufacturer"
 F 5 "D5V0L1B2LP3-7" V 5750 2400 50  0001 C CNN "MPN"
@@ -1719,7 +1719,7 @@ U 1 1 5C1C9C2F
 P 9150 1500
 F 0 "D6" V 9050 1550 50  0000 L CNN
 F 1 "D5V0L1B2LP3-7" V 9150 1550 50  0000 L CNN
-F 2 "tomu-fpga:X1-DFN1006-2" V 9150 1500 50  0001 C CNN
+F 2 "qomu-board:X1-DFN1006-2" V 9150 1500 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 9150 1500 50  0001 C CNN
 F 4 "Diodes Incorporated" V 9150 1500 50  0001 C CNN "Manufacturer"
 F 5 "D5V0L1B2LP3-7" V 9150 1500 50  0001 C CNN "MPN"
@@ -1737,7 +1737,7 @@ U 1 1 5C1D8578
 P 9250 1500
 F 0 "D7" V 9350 1500 50  0000 L CNN
 F 1 "D5V0L1B2LP3-7" V 9350 850 50  0000 L CNN
-F 2 "tomu-fpga:X1-DFN1006-2" V 9250 1500 50  0001 C CNN
+F 2 "qomu-board:X1-DFN1006-2" V 9250 1500 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 9250 1500 50  0001 C CNN
 F 4 "Diodes Incorporated" V 9250 1500 50  0001 C CNN "Manufacturer"
 F 5 "D5V0L1B2LP3-7" V 9250 1500 50  0001 C CNN "MPN"
@@ -1777,7 +1777,7 @@ U 1 1 5C2141E6
 P 9000 1300
 F 0 "D5" H 9050 1400 50  0000 L CNN
 F 1 "VCUT05E1-SD0" H 8400 1400 50  0000 L CNN
-F 2 "tomu-fpga:TVS-11V" V 9000 1300 50  0001 C CNN
+F 2 "qomu-board:TVS-11V" V 9000 1300 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85900/vcut05e1-sd0.pdf" V 9000 1300 50  0001 C CNN
 F 4 "Vishay Semiconductor Diodes Division" V 9000 1300 50  0001 C CNN "Manufacturer"
 F 5 "VCUT05E1-SD0-G4-08" V 9000 1300 50  0001 C CNN "MPN"
@@ -1820,7 +1820,7 @@ U 1 1 5BFB144B
 P 8800 4750
 F 0 "R10" V 8800 4750 50  0000 C CNN
 F 1 "0201, 100ohm, 1/16W, 1%" V 8900 4700 50  0000 C CNN
-F 2 "tomu-fpga:R_0201_0603Metric" H 8800 4750 50  0001 C CNN
+F 2 "qomu-board:R_0201_0603Metric" H 8800 4750 50  0001 C CNN
 F 3 "" H 8800 4750 50  0001 C CNN
 F 4 "ANY" H 300 2550 50  0001 C CNN "MPN"
 F 5 "ANY" H 300 2550 50  0001 C CNN "MYPN"
@@ -1866,7 +1866,7 @@ U 1 1 5C5E5A07
 P 8850 5400
 F 0 "C20" H 8950 5400 50  0000 L CNN
 F 1 "0201, 100nF, 10V, X5R, 20%" H 8150 5300 50  0000 L CNN
-F 2 "tomu-fpga:C_0201_0603Metric" H 8850 5400 50  0001 C CNN
+F 2 "qomu-board:C_0201_0603Metric" H 8850 5400 50  0001 C CNN
 F 3 "" H 8850 5400 50  0001 C CNN
 F 4 "ANY" H 200 100 50  0001 C CNN "MPN"
 F 5 "ANY" H 200 100 50  0001 C CNN "MYPN"
@@ -1905,7 +1905,7 @@ U 1 1 5C64A110
 P 7950 5300
 F 0 "C17" H 8050 5300 50  0000 L CNN
 F 1 "0201, 1uF, 10V, X5R, 20%" H 7350 5200 50  0000 L CNN
-F 2 "tomu-fpga:C_0201_0603Metric" H 7950 5300 50  0001 C CNN
+F 2 "qomu-board:C_0201_0603Metric" H 7950 5300 50  0001 C CNN
 F 3 "" H 7950 5300 50  0001 C CNN
 F 4 "ANY" H 150 200 50  0001 C CNN "MPN"
 F 5 "ANY" H 150 200 50  0001 C CNN "MYPN"
