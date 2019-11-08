@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:qomu-board-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -53,109 +54,15 @@ F 3 "" H 2300 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2350 3200 2350 3100
-$Comp
-L power:+2V5 #PWR017
-U 1 1 5BD6F58B
-P 2350 3100
-F 0 "#PWR017" H 2350 2950 50  0001 C CNN
-F 1 "+2V5" H 2365 3273 50  0000 C CNN
-F 2 "" H 2350 3100 50  0001 C CNN
-F 3 "" H 2350 3100 50  0001 C CNN
-	1    2350 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C10
-U 1 1 5BD6F643
-P 2500 3350
-F 0 "C10" H 2250 3350 50  0000 L CNN
-F 1 "0201, 1uF, 10V, X5R, 20%" H 2250 3250 50  0000 L CNN
-F 2 "qomu-board:C_0201_0603Metric" H 2500 3350 50  0001 C CNN
-F 3 "" H 2500 3350 50  0001 C CNN
-F 4 "ANY" H 0   -300 50  0001 C CNN "MPN"
-F 5 "ANY" H 0   -300 50  0001 C CNN "MYPN"
-F 6 "ANY" H 0   -300 50  0001 C CNN "Manufacturer"
-F 7 "1u" H 0   0   50  0001 C CNN "Spice_Model"
-F 8 "Y" H 0   0   50  0001 C CNN "Spice_Netlist_Enabled"
-F 9 "C" H 0   0   50  0001 C CNN "Spice_Primitive"
-	1    2500 3350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2350 3200 2500 3200
-Wire Wire Line
 	2500 3200 2500 3250
-Connection ~ 2350 3200
 Wire Wire Line
 	2500 3450 2500 3600
 Wire Wire Line
 	2500 3600 2300 3600
 Wire Wire Line
 	2050 3350 2050 3450
-$Comp
-L Device:C_Small C9
-U 1 1 5BD6FE8F
-P 2500 2250
-F 0 "C9" H 2600 2300 50  0000 L CNN
-F 1 "0201, 1uF, 10V, X5R, 20%" H 2600 2200 50  0000 L CNN
-F 2 "qomu-board:C_0201_0603Metric" H 2500 2250 50  0001 C CNN
-F 3 "" H 2500 2250 50  0001 C CNN
-F 4 "ANY" H 0   -300 50  0001 C CNN "MPN"
-F 5 "ANY" H 0   -300 50  0001 C CNN "MYPN"
-F 6 "ANY" H 0   -300 50  0001 C CNN "Manufacturer"
-F 7 "1u" H 0   0   50  0001 C CNN "Spice_Model"
-F 8 "Y" H 0   0   50  0001 C CNN "Spice_Netlist_Enabled"
-F 9 "C" H 0   0   50  0001 C CNN "Spice_Primitive"
-	1    2500 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR016
-U 1 1 5BD6FEE3
-P 2250 2000
-F 0 "#PWR016" H 2250 1850 50  0001 C CNN
-F 1 "+3V3" H 2265 2173 50  0000 C CNN
-F 2 "" H 2250 2000 50  0001 C CNN
-F 3 "" H 2250 2000 50  0001 C CNN
-	1    2250 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+1V2 #PWR015
-U 1 1 5BD6FF3E
-P 2250 900
-F 0 "#PWR015" H 2250 750 50  0001 C CNN
-F 1 "+1V2" H 2265 1073 50  0000 C CNN
-F 2 "" H 2250 900 50  0001 C CNN
-F 3 "" H 2250 900 50  0001 C CNN
-	1    2250 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C8
-U 1 1 5BD700C8
-P 2500 1150
-F 0 "C8" H 2600 1200 50  0000 L CNN
-F 1 "0201, 1uF, 10V, X5R, 20%" H 2600 1100 50  0000 L CNN
-F 2 "qomu-board:C_0201_0603Metric" H 2500 1150 50  0001 C CNN
-F 3 "" H 2500 1150 50  0001 C CNN
-F 4 "ANY" H 0   -300 50  0001 C CNN "MPN"
-F 5 "ANY" H 0   -300 50  0001 C CNN "MYPN"
-F 6 "ANY" H 0   -300 50  0001 C CNN "Manufacturer"
-F 7 "1u" H 0   0   50  0001 C CNN "Spice_Model"
-F 8 "Y" H 0   0   50  0001 C CNN "Spice_Netlist_Enabled"
-F 9 "C" H 0   0   50  0001 C CNN "Spice_Primitive"
-	1    2500 1150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2500 1000 2500 1050
-Wire Wire Line
-	2250 900  2250 1000
-Connection ~ 2250 1000
-Wire Wire Line
-	2250 1000 2500 1000
 Wire Wire Line
 	2500 1400 2500 1250
 Wire Wire Line
@@ -165,11 +72,6 @@ Wire Wire Line
 Wire Wire Line
 	2500 2100 2500 2150
 Wire Wire Line
-	2250 2000 2250 2100
-Connection ~ 2250 2100
-Wire Wire Line
-	2250 2100 2500 2100
-Wire Wire Line
 	1300 3450 1350 3450
 Wire Wire Line
 	1350 1000 1300 1000
@@ -178,53 +80,7 @@ Wire Wire Line
 Wire Wire Line
 	1300 1250 1350 1250
 Wire Wire Line
-	1100 3200 1100 3100
-Wire Wire Line
-	1150 2100 1150 2000
-$Comp
-L power:+5V #PWR08
-U 1 1 5BD76AB3
-P 1150 2000
-F 0 "#PWR08" H 1150 1850 50  0001 C CNN
-F 1 "+5V" H 1165 2173 50  0000 C CNN
-F 2 "" H 1150 2000 50  0001 C CNN
-F 3 "" H 1150 2000 50  0001 C CNN
-	1    1150 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR07
-U 1 1 5BD76AEF
-P 1100 3100
-F 0 "#PWR07" H 1100 2950 50  0001 C CNN
-F 1 "+5V" H 1115 3273 50  0000 C CNN
-F 2 "" H 1100 3100 50  0001 C CNN
-F 3 "" H 1100 3100 50  0001 C CNN
-	1    1100 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	900  3200 900  3300
-Wire Wire Line
-	900  3200 1100 3200
-$Comp
-L Device:C_Small C3
-U 1 1 5BD7909F
-P 900 3400
-F 0 "C3" H 950 3300 50  0000 L CNN
-F 1 "0201, 1uF, 10V, X5R, 20%" H 950 3200 50  0000 L CNN
-F 2 "qomu-board:C_0201_0603Metric" H 900 3400 50  0001 C CNN
-F 3 "" H 900 3400 50  0001 C CNN
-F 4 "ANY" H 900 3400 50  0001 C CNN "MPN"
-F 5 "ANY" H 900 3400 50  0001 C CNN "Manufacturer"
-F 6 "ANY" H 0   -300 50  0001 C CNN "MYPN"
-F 7 "1u" H 0   0   50  0001 C CNN "Spice_Model"
-F 8 "Y" H 0   0   50  0001 C CNN "Spice_Netlist_Enabled"
-F 9 "C" H 0   0   50  0001 C CNN "Spice_Primitive"
-	1    900  3400
-	1    0    0    -1  
-$EndComp
-Connection ~ 1100 3200
 $Comp
 L power:GND #PWR03
 U 1 1 5BD7D5E7
@@ -243,39 +99,15 @@ L Device:C_Small C1
 U 1 1 5BD80E21
 P 900 1200
 F 0 "C1" H 950 1100 50  0000 L CNN
-F 1 "0201, 1uF, 10V, X5R, 20%" H 950 1000 50  0000 L CNN
+F 1 "1u/10V" H 950 1000 50  0000 L CNN
 F 2 "qomu-board:C_0201_0603Metric" H 900 1200 50  0001 C CNN
 F 3 "" H 900 1200 50  0001 C CNN
-F 4 "ANY" H 900 1200 50  0001 C CNN "MPN"
-F 5 "ANY" H 900 1200 50  0001 C CNN "Manufacturer"
-F 6 "ANY" H 0   -300 50  0001 C CNN "MYPN"
-F 7 "C" H 900 1200 50  0001 C CNN "Spice_Primitive"
-F 8 "1u" H 900 1200 50  0001 C CNN "Spice_Model"
-F 9 "Y" H 900 1200 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    900  1200
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR06
-U 1 1 5BD80E55
-P 1100 900
-F 0 "#PWR06" H 1100 750 50  0001 C CNN
-F 1 "+5V" H 1115 1073 50  0000 C CNN
-F 2 "" H 1100 900 50  0001 C CNN
-F 3 "" H 1100 900 50  0001 C CNN
-	1    1100 900 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1100 900  1100 1000
-Wire Wire Line
-	1100 1000 1300 1000
 Connection ~ 1300 1000
 Wire Wire Line
-	1100 1000 900  1000
-Wire Wire Line
 	900  1000 900  1100
-Connection ~ 1100 1000
 $Comp
 L power:GND #PWR01
 U 1 1 5BD84FE4
@@ -300,30 +132,10 @@ F 3 "" H 900 2550 50  0001 C CNN
 	1    900  2550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C_Small C2
-U 1 1 5BD861AF
-P 900 2300
-F 0 "C2" H 950 2200 50  0000 L CNN
-F 1 "0201, 1uF, 10V, X5R, 20%" H 950 2100 50  0000 L CNN
-F 2 "qomu-board:C_0201_0603Metric" H 900 2300 50  0001 C CNN
-F 3 "" H 900 2300 50  0001 C CNN
-F 4 "ANY" H 900 2300 50  0001 C CNN "MPN"
-F 5 "ANY" H 900 2300 50  0001 C CNN "Manufacturer"
-F 6 "ANY" H 0   -300 50  0001 C CNN "MYPN"
-F 7 "1u" H 0   0   50  0001 C CNN "Spice_Model"
-F 8 "Y" H 0   0   50  0001 C CNN "Spice_Netlist_Enabled"
-F 9 "C" H 0   0   50  0001 C CNN "Spice_Primitive"
-	1    900  2300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	900  2550 900  2400
 Wire Wire Line
 	900  2200 900  2100
-Wire Wire Line
-	900  2100 1150 2100
-Connection ~ 1150 2100
 $Comp
 L qomu-board:USB-B U9
 U 1 1 5BD8B24F
@@ -354,17 +166,6 @@ F 3 "" H 8850 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR034
-U 1 1 5BD8C948
-P 8850 1100
-F 0 "#PWR034" H 8850 950 50  0001 C CNN
-F 1 "+5V" H 8700 1150 50  0000 C CNN
-F 2 "" H 8850 1100 50  0001 C CNN
-F 3 "" H 8850 1100 50  0001 C CNN
-	1    8850 1100
-	1    0    0    -1  
-$EndComp
-$Comp
 L qomu-board:RGB-LED U10
 U 1 1 5BD90F18
 P 8600 3450
@@ -381,48 +182,15 @@ F 8 "Citizen" H 8600 3450 50  0001 C CNN "AManufacturer"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR033
-U 1 1 5BD9277B
-P 8150 3000
-F 0 "#PWR033" H 8150 2850 50  0001 C CNN
-F 1 "+3V3" H 8165 3173 50  0000 C CNN
-F 2 "" H 8150 3000 50  0001 C CNN
-F 3 "" H 8150 3000 50  0001 C CNN
-	1    8150 3000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R12
 U 1 1 5BDB00B1
 P 9400 1900
 F 0 "R12" V 9400 1900 50  0000 C CNN
-F 1 "0201, 22ohm, 1/16W, 1%" V 9500 1900 50  0000 C CNN
+F 1 "22R" V 9500 1900 50  0000 C CNN
 F 2 "qomu-board:R_0201_0603Metric" H 9400 1900 50  0001 C CNN
 F 3 "" H 9400 1900 50  0001 C CNN
 F 4 "ANY" H 650 100 50  0001 C CNN "MPN"
-F 5 "ANY" H 650 100 50  0001 C CNN "MYPN"
-F 6 "ANY" H 650 100 50  0001 C CNN "Manufacturer"
-F 7 "R" H 9400 1900 50  0001 C CNN "Spice_Primitive"
-F 8 "22" H 9400 1900 50  0001 C CNN "Spice_Model"
-F 9 "Y" H 9400 1900 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    9400 1900
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R11
-U 1 1 5BDB01D9
-P 9400 1800
-F 0 "R11" V 9400 1800 50  0000 C CNN
-F 1 "0201, 22ohm, 1/16W, 1%" V 9300 1800 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 9400 1800 50  0001 C CNN
-F 3 "" H 9400 1800 50  0001 C CNN
-F 4 "ANY" H 650 100 50  0001 C CNN "MPN"
-F 5 "ANY" H 650 100 50  0001 C CNN "MYPN"
-F 6 "ANY" H 650 100 50  0001 C CNN "Manufacturer"
-F 7 "R" H 9400 1800 50  0001 C CNN "Spice_Primitive"
-F 8 "22" H 9400 1800 50  0001 C CNN "Spice_Model"
-F 9 "Y" H 9400 1800 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    9400 1800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -431,16 +199,11 @@ $Comp
 L Device:R_Small R9
 U 1 1 5BDC6632
 P 9150 2400
-F 0 "R9" V 9150 2400 50  0000 C CNN
-F 1 "0201, 1.5k, 1/16W, 1%" V 9250 2250 50  0000 C CNN
+F 0 "R9" V 9050 2400 50  0000 C CNN
+F 1 "1k5" V 9250 2400 50  0000 C CNN
 F 2 "qomu-board:R_0201_0603Metric" H 9150 2400 50  0001 C CNN
 F 3 "" H 9150 2400 50  0001 C CNN
 F 4 "ANY" H 650 200 50  0001 C CNN "MPN"
-F 5 "ANY" H 650 200 50  0001 C CNN "MYPN"
-F 6 "ANY" H 650 200 50  0001 C CNN "Manufacturer"
-F 7 "R" H 9150 2400 50  0001 C CNN "Spice_Primitive"
-F 8 "1.5k" H 9150 2400 50  0001 C CNN "Spice_Model"
-F 9 "Y" H 9150 2400 50  0001 C CNN "Spice_Netlist_Enabled"
 	1    9150 2400
 	0    1    1    0   
 $EndComp
@@ -495,10 +258,6 @@ Wire Notes Line
 Text Notes 4150 2950 0    50   ~ 0
 Captouch Input
 Wire Wire Line
-	1150 2100 1350 2100
-Wire Wire Line
-	1100 3200 1350 3200
-Wire Wire Line
 	1300 3450 1300 2900
 Text Notes 2500 1950 0    50   ~ 0
 Power sequencing:\n1) 1.2V (VCC/VCCPLL)\n2) 3.3V (SPI_VCCIO1)\n3) 2.5V (VPP_2V5)\nSubsequent rails activate\nafter previous rail goes >0.5V
@@ -530,15 +289,9 @@ Wire Wire Line
 Wire Wire Line
 	2050 3600 2300 3600
 Wire Wire Line
-	1950 3200 2350 3200
-Wire Wire Line
 	2050 2500 2300 2500
 Wire Wire Line
-	2000 2100 2250 2100
-Wire Wire Line
 	2050 1400 2300 1400
-Wire Wire Line
-	2000 1000 2250 1000
 Wire Wire Line
 	5850 1850 5750 1850
 Wire Wire Line
@@ -912,8 +665,6 @@ Wire Wire Line
 	9400 3400 9000 3400
 Wire Wire Line
 	9000 3300 9650 3300
-Wire Wire Line
-	10750 850  10300 850 
 Wire Notes Line
 	11100 600  11100 3750
 Wire Wire Line
@@ -924,4 +675,225 @@ Wire Wire Line
 	9850 2500 9650 2500
 Text Label 9250 2400 0    50   ~ 0
 PU_CTRL_USBP
+Wire Wire Line
+	1550 4550 1400 4550
+Text Label 1150 4550 2    50   ~ 0
+EOS_VDD
+Wire Wire Line
+	1550 4700 1400 4700
+Wire Wire Line
+	1400 4700 1400 4550
+Connection ~ 1400 4550
+Wire Wire Line
+	1400 4550 1150 4550
+Wire Wire Line
+	1550 4950 1400 4950
+Wire Wire Line
+	1400 4950 1400 4850
+Connection ~ 1400 4700
+Wire Wire Line
+	1550 4850 1400 4850
+Connection ~ 1400 4850
+Wire Wire Line
+	1400 4850 1400 4700
+Wire Wire Line
+	1550 5400 1150 5400
+Text Label 1050 5400 2    50   ~ 0
+RST_N
+$Comp
+L Device:R_Small R1
+U 1 1 5DC70040
+P 1150 5150
+F 0 "R1" V 1250 5150 50  0000 C CNN
+F 1 "10k" V 1050 5150 50  0000 C CNN
+F 2 "qomu-board:R_0201_0603Metric" H 1150 5150 50  0001 C CNN
+F 3 "" H 1150 5150 50  0001 C CNN
+F 4 "ANY" H -7600 3450 50  0001 C CNN "MPN"
+	1    1150 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1150 5050 1150 4550
+Connection ~ 1150 4550
+Wire Wire Line
+	1150 4550 800  4550
+Wire Wire Line
+	1150 5250 1150 5400
+Connection ~ 1150 5400
+Wire Wire Line
+	1150 5400 800  5400
+$Comp
+L Device:R_Small R11
+U 1 1 5DC79766
+P 9400 1800
+F 0 "R11" V 9400 1800 50  0000 C CNN
+F 1 "22R" V 9300 1800 50  0000 C CNN
+F 2 "qomu-board:R_0201_0603Metric" H 9400 1800 50  0001 C CNN
+F 3 "" H 9400 1800 50  0001 C CNN
+F 4 "ANY" H 650 0   50  0001 C CNN "MPN"
+	1    9400 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5DC79CE9
+P 1250 6000
+F 0 "R2" V 1300 6200 50  0000 C CNN
+F 1 "0R" V 1300 5850 50  0000 C CNN
+F 2 "qomu-board:R_0201_0603Metric" H 1250 6000 50  0001 C CNN
+F 3 "" H 1250 6000 50  0001 C CNN
+F 4 "ANY" H -7500 4300 50  0001 C CNN "MPN"
+	1    1250 6000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1550 6000 1350 6000
+Wire Wire Line
+	1150 6000 950  6000
+Wire Wire Line
+	950  6000 950  6100
+$Comp
+L power:GND #PWR0101
+U 1 1 5DC830C3
+P 950 6600
+F 0 "#PWR0101" H 950 6350 50  0001 C CNN
+F 1 "GND" H 955 6427 50  0000 C CNN
+F 2 "" H 950 6600 50  0001 C CNN
+F 3 "" H 950 6600 50  0001 C CNN
+	1    950  6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 1100 9400 1100
+Text Label 8950 1100 0    50   ~ 0
+USB_VBUS
+Wire Wire Line
+	8150 3000 8650 3000
+Text Label 8150 3000 0    50   ~ 0
+3V3_SYS
+Wire Wire Line
+	900  3200 1350 3200
+Wire Wire Line
+	900  2100 1350 2100
+Wire Wire Line
+	900  1000 1300 1000
+Text Label 900  1000 0    50   ~ 0
+USB_VBUS
+Text Label 900  2100 0    50   ~ 0
+USB_VBUS
+Text Label 900  3200 0    50   ~ 0
+USB_VBUS
+Wire Wire Line
+	1950 3200 2500 3200
+Wire Wire Line
+	2000 2100 2500 2100
+Wire Wire Line
+	2000 1000 2500 1000
+Text Label 2150 1000 0    50   ~ 0
+1V2_SYS
+Text Label 2150 2100 0    50   ~ 0
+3V3_SYS
+Text Label 2150 3200 0    50   ~ 0
+2v5_SYS
+Wire Wire Line
+	1550 6100 950  6100
+Connection ~ 950  6100
+Wire Wire Line
+	950  6100 950  6200
+Wire Wire Line
+	1550 6200 950  6200
+Connection ~ 950  6200
+Wire Wire Line
+	950  6200 950  6300
+Wire Wire Line
+	1550 6300 950  6300
+Connection ~ 950  6300
+Wire Wire Line
+	950  6300 950  6400
+Wire Wire Line
+	1550 6400 950  6400
+Connection ~ 950  6400
+Wire Wire Line
+	950  6400 950  6600
+$Comp
+L Device:C_Small C2
+U 1 1 5DCA4936
+P 900 2300
+F 0 "C2" H 950 2200 50  0000 L CNN
+F 1 "1u/10V" H 950 2100 50  0000 L CNN
+F 2 "qomu-board:C_0201_0603Metric" H 900 2300 50  0001 C CNN
+F 3 "" H 900 2300 50  0001 C CNN
+	1    900  2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5DCA49A8
+P 900 3400
+F 0 "C3" H 950 3300 50  0000 L CNN
+F 1 "1u/10V" H 950 3200 50  0000 L CNN
+F 2 "qomu-board:C_0201_0603Metric" H 900 3400 50  0001 C CNN
+F 3 "" H 900 3400 50  0001 C CNN
+	1    900  3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 5DCA4B3C
+P 2500 1150
+F 0 "C8" H 2550 1050 50  0000 L CNN
+F 1 "1u/10V" H 2550 950 50  0000 L CNN
+F 2 "qomu-board:C_0201_0603Metric" H 2500 1150 50  0001 C CNN
+F 3 "" H 2500 1150 50  0001 C CNN
+	1    2500 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 5DCA4BAC
+P 2500 2250
+F 0 "C9" H 2550 2150 50  0000 L CNN
+F 1 "1u/10V" H 2550 2050 50  0000 L CNN
+F 2 "qomu-board:C_0201_0603Metric" H 2500 2250 50  0001 C CNN
+F 3 "" H 2500 2250 50  0001 C CNN
+	1    2500 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 5DCA4C18
+P 2500 3350
+F 0 "C10" H 2550 3250 50  0000 L CNN
+F 1 "1u/10V" H 2550 3150 50  0000 L CNN
+F 2 "qomu-board:C_0201_0603Metric" H 2500 3350 50  0001 C CNN
+F 3 "" H 2500 3350 50  0001 C CNN
+	1    2500 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:MX25U6435FBBI-10G U4
+U 1 1 5DCB0265
+P 5950 5500
+F 0 "U4" H 6391 5353 60  0000 L CNN
+F 1 "MX25U6435FBBI-10G" H 6391 5247 60  0000 L CNN
+F 2 "" H 6150 5700 60  0001 L CNN
+F 3 "https://www.macronix.com/Lists/Datasheet/Attachments/7411/MX25U6435F,%201.8V,%2064Mb,%20v1.5.pdf" H 6150 5800 60  0001 L CNN
+F 4 "MX25U6435FBBI-10G" H 6150 6000 60  0001 L CNN "MPN"
+F 5 "Macronix" H 6150 6600 60  0001 L CNN "Manufacturer"
+	1    5950 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:EOS-S3 IC1
+U 1 1 5DCB0652
+P 1650 4400
+F 0 "IC1" H 2575 4565 50  0000 C CNN
+F 1 "EOS-S3" H 2575 4474 50  0000 C CNN
+F 2 "qomu-board:42-WLCSP" H 3300 1300 50  0001 C CNN
+F 3 "https://www.quicklogic.com/wp-content/uploads/2020/06/QL-EOS-S3-Ultra-Low-Power-multicore-MCU-Datasheet.pdf" H 3400 1400 50  0001 C CNN
+	1    1650 4400
+	1    0    0    -1  
+$EndComp
+Text Notes 5300 5150 0    50   ~ 10
+TODO: add WLCSP footprint
 $EndSCHEMATC
