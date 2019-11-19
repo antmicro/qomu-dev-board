@@ -95,7 +95,7 @@ $EndComp
 Wire Wire Line
 	900  3650 900  3500
 $Comp
-L Device:C_Small C1
+L qomu-board-rescue:C_Small-Device C1
 U 1 1 5BD80E21
 P 900 1200
 F 0 "C1" H 950 1100 50  0000 L CNN
@@ -182,7 +182,7 @@ F 8 "Citizen" H 8600 3450 50  0001 C CNN "AManufacturer"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R12
+L qomu-board-rescue:R_Small-Device R12
 U 1 1 5BDB00B1
 P 9400 1900
 F 0 "R12" V 9400 1900 50  0000 C CNN
@@ -196,7 +196,7 @@ $EndComp
 Wire Wire Line
 	8850 1700 8700 1700
 $Comp
-L Device:R_Small R9
+L qomu-board-rescue:R_Small-Device R9
 U 1 1 5BDC6632
 P 9150 2400
 F 0 "R9" V 9050 2400 50  0000 C CNN
@@ -477,7 +477,7 @@ USB_P
 Text Label 8800 1800 0    50   ~ 0
 USB_N
 $Comp
-L Device:D_Small D1
+L qomu-board-rescue:D_Small-Device D1
 U 1 1 5C0AD27F
 P 4650 2450
 F 0 "D1" V 4550 2450 50  0000 L CNN
@@ -507,7 +507,7 @@ Connection ~ 5300 2600
 Wire Wire Line
 	5300 2600 5750 2600
 $Comp
-L Device:D_Small D2
+L qomu-board-rescue:D_Small-Device D2
 U 1 1 5C0F0E57
 P 5050 2350
 F 0 "D2" V 4950 2350 50  0000 L CNN
@@ -536,7 +536,7 @@ Connection ~ 5050 2600
 Wire Wire Line
 	5050 2600 5250 2600
 $Comp
-L Device:D_Small D3
+L qomu-board-rescue:D_Small-Device D3
 U 1 1 5C1671C0
 P 5250 2300
 F 0 "D3" V 5204 2368 50  0000 L CNN
@@ -557,7 +557,7 @@ Wire Wire Line
 	5250 2200 5250 2050
 Connection ~ 5250 2050
 $Comp
-L Device:D_Small D4
+L qomu-board-rescue:D_Small-Device D4
 U 1 1 5C182AF1
 P 5750 2400
 F 0 "D4" V 5850 2400 50  0000 L CNN
@@ -577,7 +577,7 @@ Wire Wire Line
 Wire Wire Line
 	5750 2500 5750 2600
 $Comp
-L Device:D_Small D6
+L qomu-board-rescue:D_Small-Device D6
 U 1 1 5C1C9C2F
 P 9150 1500
 F 0 "D6" V 9050 1550 50  0000 L CNN
@@ -595,7 +595,7 @@ Connection ~ 9150 1900
 Wire Wire Line
 	9150 1900 9300 1900
 $Comp
-L Device:D_Small D7
+L qomu-board-rescue:D_Small-Device D7
 U 1 1 5C1D8578
 P 9250 1500
 F 0 "D7" V 9350 1500 50  0000 L CNN
@@ -635,7 +635,7 @@ F 3 "" H 9400 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Small D5
+L qomu-board-rescue:D_Small-Device D5
 U 1 1 5C2141E6
 P 9000 1300
 F 0 "D5" H 9050 1400 50  0000 L CNN
@@ -701,7 +701,7 @@ Wire Wire Line
 Text Label 1050 5400 2    50   ~ 0
 RST_N
 $Comp
-L Device:R_Small R1
+L qomu-board-rescue:R_Small-Device R1
 U 1 1 5DC70040
 P 1150 5150
 F 0 "R1" V 1250 5150 50  0000 C CNN
@@ -723,7 +723,7 @@ Connection ~ 1150 5400
 Wire Wire Line
 	1150 5400 800  5400
 $Comp
-L Device:R_Small R11
+L qomu-board-rescue:R_Small-Device R11
 U 1 1 5DC79766
 P 9400 1800
 F 0 "R11" V 9400 1800 50  0000 C CNN
@@ -735,7 +735,7 @@ F 4 "ANY" H 650 0   50  0001 C CNN "MPN"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R2
+L qomu-board-rescue:R_Small-Device R2
 U 1 1 5DC79CE9
 P 1250 6000
 F 0 "R2" V 1300 6200 50  0000 C CNN
@@ -816,7 +816,7 @@ Connection ~ 950  6400
 Wire Wire Line
 	950  6400 950  6600
 $Comp
-L Device:C_Small C2
+L qomu-board-rescue:C_Small-Device C2
 U 1 1 5DCA4936
 P 900 2300
 F 0 "C2" H 950 2200 50  0000 L CNN
@@ -827,7 +827,7 @@ F 3 "" H 900 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C3
+L qomu-board-rescue:C_Small-Device C3
 U 1 1 5DCA49A8
 P 900 3400
 F 0 "C3" H 950 3300 50  0000 L CNN
@@ -838,7 +838,7 @@ F 3 "" H 900 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C8
+L qomu-board-rescue:C_Small-Device C8
 U 1 1 5DCA4B3C
 P 2500 1150
 F 0 "C8" H 2550 1050 50  0000 L CNN
@@ -849,7 +849,7 @@ F 3 "" H 2500 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C9
+L qomu-board-rescue:C_Small-Device C9
 U 1 1 5DCA4BAC
 P 2500 2250
 F 0 "C9" H 2550 2150 50  0000 L CNN
@@ -860,7 +860,7 @@ F 3 "" H 2500 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C10
+L qomu-board-rescue:C_Small-Device C10
 U 1 1 5DCA4C18
 P 2500 3350
 F 0 "C10" H 2550 3250 50  0000 L CNN
@@ -868,19 +868,6 @@ F 1 "1u/10V" H 2550 3150 50  0000 L CNN
 F 2 "qomu-board:C_0201_0603Metric" H 2500 3350 50  0001 C CNN
 F 3 "" H 2500 3350 50  0001 C CNN
 	1    2500 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L qomu-board:MX25U6435FBBI-10G U4
-U 1 1 5DCB0265
-P 5950 5500
-F 0 "U4" H 6391 5353 60  0000 L CNN
-F 1 "MX25U6435FBBI-10G" H 6391 5247 60  0000 L CNN
-F 2 "" H 6150 5700 60  0001 L CNN
-F 3 "https://www.macronix.com/Lists/Datasheet/Attachments/7411/MX25U6435F,%201.8V,%2064Mb,%20v1.5.pdf" H 6150 5800 60  0001 L CNN
-F 4 "MX25U6435FBBI-10G" H 6150 6000 60  0001 L CNN "MPN"
-F 5 "Macronix" H 6150 6600 60  0001 L CNN "Manufacturer"
-	1    5950 5500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -894,6 +881,26 @@ F 3 "https://www.quicklogic.com/wp-content/uploads/2020/06/QL-EOS-S3-Ultra-Low-P
 	1    1650 4400
 	1    0    0    -1  
 $EndComp
-Text Notes 5300 5150 0    50   ~ 10
-TODO: add WLCSP footprint
+$Comp
+L antmicroMemory:GD25Q16CEIGR U4
+U 1 1 5DD7AC86
+P 5150 4850
+F 0 "U4" H 5525 5015 50  0000 C CNN
+F 1 "GD25Q16CEIGR" H 5525 4924 50  0000 C CNN
+F 2 "antmicro-footprints:GD25Q16CEIGR" H 5100 4800 50  0001 C CNN
+F 3 "http://www.gigadevice.com/datasheet/gd25q16c/" H 5200 4900 50  0001 C CNN
+	1    5150 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L antmicroMotionSensorsIMUsInertialMeasurementUnits:MC3635 U5
+U 1 1 5DD7AEA2
+P 8000 4650
+F 0 "U5" H 8325 4715 50  0000 C CNN
+F 1 "MC3635" H 8325 4624 50  0000 C CNN
+F 2 "antmicro-footprints:MC3635" H 8000 4500 50  0001 C CNN
+F 3 "https://mcubemems.com/wp-content/uploads/2019/06/MC3635-Datasheet-APS-048-0044v1.6.pdf" H 8450 3550 50  0001 C CNN
+	1    8000 4650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
