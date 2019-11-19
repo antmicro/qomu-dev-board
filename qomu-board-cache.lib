@@ -1,29 +1,65 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Device_C_Small
+# antmicroMemory_GD25Q16CEIGR
 #
-DEF Device_C_Small C 0 10 N N 1 F N
-F0 "C" 10 70 50 H V L CNN
-F1 "Device_C_Small" 10 -80 50 H V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- C_*
-$ENDFPLIST
+DEF antmicroMemory_GD25Q16CEIGR U 0 40 Y Y 1 F N
+F0 "U" 50 50 50 H V C CNN
+F1 "antmicroMemory_GD25Q16CEIGR" 200 150 50 H V C CNN
+F2 "antmicro-footprints:GD25Q16CEIGR" -50 -50 50 H I C CNN
+F3 "http://www.gigadevice.com/datasheet/gd25q16c/" 50 50 50 H I C CNN
 DRAW
-P 2 0 1 13 -60 -20 60 -20 N
-P 2 0 1 12 -60 20 60 20 N
-X ~ 1 0 100 80 D 50 50 1 1 P
-X ~ 2 0 -100 80 U 50 50 1 1 P
+S 0 0 750 -800 1 1 0 f
+X CS# 1 -100 -600 100 R 50 50 1 1 I
+X SO(IO1) 2 850 -250 100 L 50 50 1 1 I
+X WP#(IO2) 3 -100 -400 100 R 50 50 1 1 I
+X VSS 4 850 -700 100 L 50 50 1 1 I
+X SI(IO0) 5 -100 -250 100 R 50 50 1 1 I
+X SCLK 6 -100 -700 100 R 50 50 1 1 I
+X HOLD#(IO3) 7 -100 -500 100 R 50 50 1 1 I
+X VCC 8 -100 -100 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Device_D_Small
+# antmicroMotionSensorsIMUsInertialMeasurementUnits_MC3635
 #
-DEF Device_D_Small D 0 10 N N 1 F N
+DEF antmicroMotionSensorsIMUsInertialMeasurementUnits_MC3635 U 0 40 Y Y 1 F N
+F0 "U" 100 -50 50 H V C CNN
+F1 "antmicroMotionSensorsIMUsInertialMeasurementUnits_MC3635" 200 50 50 H V C CNN
+F2 "antmicro-footprints:MC3635" 0 -150 50 H I C CNN
+F3 "https://mcubemems.com/wp-content/uploads/2019/06/MC3635-Datasheet-APS-048-0044v1.6.pdf" 450 -1100 50 H I C CNN
+DRAW
+S 0 -100 650 -1050 0 1 0 f
+X DOUT_A1 1 -100 -550 100 R 50 50 1 1 I
+X SCK_SCL 10 -100 -950 100 R 50 50 1 1 I
+X DIN_SDA 2 -100 -650 100 R 50 50 1 1 I
+X VPP 4 750 -950 100 L 50 50 1 1 I
+X INTN 5 -100 -750 100 R 50 50 1 1 I
+X VDDIO 6 -100 -300 100 R 50 50 1 1 I
+X VDD 7 -100 -200 100 R 50 50 1 1 I
+X GND 8 750 -850 100 L 50 50 1 1 I
+X CSN 9 -100 -850 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# qomu-board-rescue_D_Small-Device
+#
+DEF qomu-board-rescue_D_Small-Device D 0 10 N N 1 F N
 F0 "D" -50 80 50 H V L CNN
-F1 "Device_D_Small" -150 -80 50 H V L CNN
+F1 "qomu-board-rescue_D_Small-Device" -150 -80 50 H V L CNN
 F2 "" 0 0 50 V I C CNN
 F3 "" 0 0 50 V I C CNN
 $FPLIST
@@ -41,11 +77,11 @@ X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_R_Small
+# qomu-board-rescue_R_Small-Device
 #
-DEF Device_R_Small R 0 10 N N 1 F N
+DEF qomu-board-rescue_R_Small-Device R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "Device_R_Small" 30 -40 50 H V L CNN
+F1 "qomu-board-rescue_R_Small-Device" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -55,19 +91,6 @@ DRAW
 S -30 70 30 -70 0 1 8 N
 X ~ 1 0 100 30 D 50 50 1 1 P
 X ~ 2 0 -100 30 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# power_GND
-#
-DEF power_GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
@@ -160,28 +183,6 @@ X GND 2 300 50 100 L 50 50 1 1 W
 X EN 3 -300 50 100 R 50 50 1 1 I
 X IN 4 -300 300 100 R 50 50 1 1 W
 X Thermal 5 300 150 100 L 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# qomu-board_MX25U6435FBBI-10G
-#
-DEF qomu-board_MX25U6435FBBI-10G U 0 40 Y Y 1 F N
-F0 "U" -100 150 60 H V C CNN
-F1 "qomu-board_MX25U6435FBBI-10G" 200 -600 60 H V L CNN
-F2 "" 200 200 60 H I L CNN
-F3 "https://www.macronix.com/Lists/Datasheet/Attachments/7411/MX25U6435F,%201.8V,%2064Mb,%20v1.5.pdf" 200 300 60 H I L CNN
-F4 "MX25U6435FBBI-10G" 200 500 60 H I L CNN "MPN"
-F5 "Macronix" 200 1100 60 H I L CNN "Manufacturer"
-DRAW
-S -200 100 300 -500 0 1 0 f
-X VDD B2 150 200 100 D 50 50 1 1 W
-X ~CS B3 -300 0 100 R 50 50 1 1 I
-X ~HOLD C2 -300 -400 100 R 50 50 1 1 I
-X MISO C3 400 -200 100 L 50 50 1 1 O
-X SCK D2 -300 -300 100 R 50 50 1 1 I
-X ~WP D3 -300 -100 100 R 50 50 1 1 I
-X MOSI E2 -300 -200 100 R 50 50 1 1 I
-X VSS E3 150 -600 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
