@@ -1,47 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# antmicroMemory_GD25Q16CEIGR
-#
-DEF antmicroMemory_GD25Q16CEIGR U 0 40 Y Y 1 F N
-F0 "U" 50 50 50 H V C CNN
-F1 "antmicroMemory_GD25Q16CEIGR" 200 150 50 H V C CNN
-F2 "antmicro-footprints:GD25Q16CEIGR" -50 -50 50 H I C CNN
-F3 "http://www.gigadevice.com/datasheet/gd25q16c/" 50 50 50 H I C CNN
-DRAW
-S 0 0 750 -800 1 1 0 f
-X CS# 1 -100 -600 100 R 50 50 1 1 I
-X SO(IO1) 2 850 -250 100 L 50 50 1 1 I
-X WP#(IO2) 3 -100 -400 100 R 50 50 1 1 I
-X VSS 4 850 -700 100 L 50 50 1 1 I
-X SI(IO0) 5 -100 -250 100 R 50 50 1 1 I
-X SCLK 6 -100 -700 100 R 50 50 1 1 I
-X HOLD#(IO3) 7 -100 -500 100 R 50 50 1 1 I
-X VCC 8 -100 -100 100 R 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# antmicroMotionSensorsIMUsInertialMeasurementUnits_MC3635
-#
-DEF antmicroMotionSensorsIMUsInertialMeasurementUnits_MC3635 U 0 40 Y Y 1 F N
-F0 "U" 100 -50 50 H V C CNN
-F1 "antmicroMotionSensorsIMUsInertialMeasurementUnits_MC3635" 200 50 50 H V C CNN
-F2 "antmicro-footprints:MC3635" 0 -150 50 H I C CNN
-F3 "https://mcubemems.com/wp-content/uploads/2019/06/MC3635-Datasheet-APS-048-0044v1.6.pdf" 450 -1100 50 H I C CNN
-DRAW
-S 0 -100 650 -1050 0 1 0 f
-X DOUT_A1 1 -100 -550 100 R 50 50 1 1 I
-X SCK_SCL 10 -100 -950 100 R 50 50 1 1 I
-X DIN_SDA 2 -100 -650 100 R 50 50 1 1 I
-X VPP 4 750 -950 100 L 50 50 1 1 I
-X INTN 5 -100 -750 100 R 50 50 1 1 I
-X VDDIO 6 -100 -300 100 R 50 50 1 1 I
-X VDD 7 -100 -200 100 R 50 50 1 1 I
-X GND 8 750 -850 100 L 50 50 1 1 I
-X CSN 9 -100 -850 100 R 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
 # power_GND
 #
 DEF power_GND #PWR 0 0 Y Y 1 F P
@@ -55,40 +14,23 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# qomu-board-rescue_D_Small-Device
+# qomu-board_C_Small-Device
 #
-DEF qomu-board-rescue_D_Small-Device D 0 10 N N 1 F N
-F0 "D" -50 80 50 H V L CNN
-F1 "qomu-board-rescue_D_Small-Device" -150 -80 50 H V L CNN
-F2 "" 0 0 50 V I C CNN
-F3 "" 0 0 50 V I C CNN
-$FPLIST
- TO-???*
- *_Diode_*
- *SingleDiode*
- D_*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 -30 -40 -30 40 N
-P 2 0 1 0 -30 0 30 0 N
-P 4 0 1 0 30 -40 -30 0 30 40 30 -40 N
-X K 1 -100 0 70 R 50 50 1 1 P
-X A 2 100 0 70 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# qomu-board-rescue_R_Small-Device
-#
-DEF qomu-board-rescue_R_Small-Device R 0 10 N N 1 F N
-F0 "R" 30 20 50 H V L CNN
-F1 "qomu-board-rescue_R_Small-Device" 30 -40 50 H V L CNN
+DEF qomu-board_C_Small-Device C 0 10 N N 1 F N
+F0 "C" 20 70 50 H V L CNN
+F1 "qomu-board_C_Small-Device" 20 -80 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- R_*
+ C_*
 $ENDFPLIST
 DRAW
-S -30 70 30 -70 0 1 8 N
+P 2 0 1 12 -70 20 0 20 N
+P 2 1 1 12 -70 -20 0 -20 N
+P 2 1 1 0 0 -70 0 -20 N
+P 2 1 1 12 0 -20 70 -20 N
+P 2 1 1 12 0 20 70 20 N
+P 2 1 1 0 0 70 0 20 N
 X ~ 1 0 100 30 D 50 50 1 1 P
 X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
@@ -108,6 +50,28 @@ P 2 0 1 0 -50 150 -100 100 N
 P 2 0 1 0 0 100 -50 150 N
 P 2 0 1 0 0 100 50 150 N
 P 2 0 1 0 50 150 100 100 N
+ENDDRAW
+ENDDEF
+#
+# qomu-board_D_Small-Device
+#
+DEF qomu-board_D_Small-Device D 0 10 N N 1 F N
+F0 "D" -50 80 50 H V L CNN
+F1 "qomu-board_D_Small-Device" -150 -80 50 H V L CNN
+F2 "" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 -30 -40 -30 40 N
+P 2 0 1 0 -30 0 30 0 N
+P 4 0 1 0 30 -40 -30 0 30 40 30 -40 N
+X K 1 -100 0 70 R 50 50 1 1 P
+X A 2 100 0 70 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -169,6 +133,26 @@ X FBIO_45/SW_DP_CLK F7 1950 -2850 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# qomu-board_GD25Q16CEIGR
+#
+DEF qomu-board_GD25Q16CEIGR U 0 40 Y Y 1 F N
+F0 "U" 50 50 50 H V C CNN
+F1 "qomu-board_GD25Q16CEIGR" 200 150 50 H V C CNN
+F2 "qomu-board:GD25Q16CEIGR" -50 -50 50 H I C CNN
+F3 "http://www.gigadevice.com/datasheet/gd25q16c/" 50 50 50 H I C CNN
+DRAW
+S 0 0 750 -800 1 1 0 f
+X CS# 1 -100 -600 100 R 50 50 1 1 I
+X SO(IO1) 2 850 -250 100 L 50 50 1 1 I
+X WP#(IO2) 3 -100 -400 100 R 50 50 1 1 I
+X VSS 4 850 -700 100 L 50 50 1 1 I
+X SI(IO0) 5 -100 -250 100 R 50 50 1 1 I
+X SCLK 6 -100 -700 100 R 50 50 1 1 I
+X HOLD#(IO3) 7 -100 -500 100 R 50 50 1 1 I
+X VCC 8 -100 -100 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # qomu-board_LDO-X2SON
 #
 DEF qomu-board_LDO-X2SON U 0 40 Y Y 1 F N
@@ -183,6 +167,27 @@ X GND 2 300 50 100 L 50 50 1 1 W
 X EN 3 -300 50 100 R 50 50 1 1 I
 X IN 4 -300 300 100 R 50 50 1 1 W
 X Thermal 5 300 150 100 L 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# qomu-board_MC3635
+#
+DEF qomu-board_MC3635 U 0 40 Y Y 1 F N
+F0 "U" 100 -50 50 H V C CNN
+F1 "qomu-board_MC3635" 200 50 50 H V C CNN
+F2 "qomu-board:MC3635" 0 -150 50 H I C CNN
+F3 "https://mcubemems.com/wp-content/uploads/2019/06/MC3635-Datasheet-APS-048-0044v1.6.pdf" 450 -1100 50 H I C CNN
+DRAW
+S 0 -100 650 -1050 0 1 0 f
+X DOUT_A1 1 -100 -550 100 R 50 50 1 1 I
+X SCK_SCL 10 -100 -950 100 R 50 50 1 1 I
+X DIN_SDA 2 -100 -650 100 R 50 50 1 1 I
+X VPP 4 750 -950 100 L 50 50 1 1 I
+X INTN 5 -100 -750 100 R 50 50 1 1 I
+X VDDIO 6 -100 -300 100 R 50 50 1 1 I
+X VDD 7 -100 -200 100 R 50 50 1 1 I
+X GND 8 750 -850 100 L 50 50 1 1 I
+X CSN 9 -100 -850 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
@@ -215,6 +220,23 @@ X Blue 1 400 250 100 L 50 50 1 1 I
 X Green 2 400 150 100 L 50 50 1 1 I
 X Red 3 400 50 100 L 50 50 1 1 I
 X VCC 4 -350 250 100 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# qomu-board_R_Small-Device
+#
+DEF qomu-board_R_Small-Device R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "qomu-board_R_Small-Device" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
