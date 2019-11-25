@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:qomu-board-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -656,8 +656,6 @@ Text Label 9700 2100 0    50   ~ 0
 PU_CTRL_USBP
 Wire Wire Line
 	1500 4650 1350 4650
-Text Label 1100 4650 2    50   ~ 0
-EOS_VDD
 Wire Wire Line
 	1500 4800 1350 4800
 Wire Wire Line
@@ -923,32 +921,21 @@ Wire Wire Line
 Wire Wire Line
 	9450 5200 8800 5200
 Wire Wire Line
-	9450 5500 9000 5500
-Wire Wire Line
 	9350 4750 9350 4400
 Wire Wire Line
 	9350 4400 9650 4400
 Connection ~ 9350 4750
-Wire Wire Line
-	9450 5400 9350 5400
-Wire Wire Line
-	9350 5400 9350 5700
 $Comp
 L power:GND #PWR05
 U 1 1 5DDB8FF0
-P 9350 5700
-F 0 "#PWR05" H 9350 5450 50  0001 C CNN
-F 1 "GND" H 9355 5527 50  0000 C CNN
-F 2 "" H 9350 5700 50  0001 C CNN
-F 3 "" H 9350 5700 50  0001 C CNN
-	1    9350 5700
+P 9150 5700
+F 0 "#PWR05" H 9150 5450 50  0001 C CNN
+F 1 "GND" H 9155 5527 50  0000 C CNN
+F 2 "" H 9150 5700 50  0001 C CNN
+F 3 "" H 9150 5700 50  0001 C CNN
+	1    9150 5700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9450 5100 9350 5100
-Wire Wire Line
-	9350 5100 9350 5400
-Connection ~ 9350 5400
 Wire Wire Line
 	3550 5350 3950 5350
 Wire Wire Line
@@ -961,10 +948,6 @@ Text Label 8400 5200 0    50   ~ 0
 I2C_SDA
 Text Label 8400 5500 0    50   ~ 0
 I2C_SCL
-Text Label 8700 4750 2    50   ~ 0
-EOS_VDD
-Text Label 9350 4400 0    50   ~ 0
-3V3_SYS
 Wire Wire Line
 	8800 5200 8800 5150
 $Comp
@@ -972,7 +955,7 @@ L qomu-board:R_Small-Device R3
 U 1 1 5DDF05EA
 P 8800 5050
 F 0 "R3" V 8900 5050 50  0000 C CNN
-F 1 "4k7" V 8700 5050 50  0000 C CNN
+F 1 "4k7" V 8900 4900 50  0000 C CNN
 F 2 "qomu-board:R_0201_0603Metric" H 8800 5050 50  0001 C CNN
 F 3 "" H 8800 5050 50  0001 C CNN
 F 4 "ANY" H 50  3350 50  0001 C CNN "MPN"
@@ -982,47 +965,25 @@ $EndComp
 $Comp
 L qomu-board:R_Small-Device R4
 U 1 1 5DDF069C
-P 9000 4900
-F 0 "R4" V 9100 4900 50  0000 C CNN
-F 1 "4k7" V 8900 4900 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 9000 4900 50  0001 C CNN
-F 3 "" H 9000 4900 50  0001 C CNN
-F 4 "ANY" H 250 3200 50  0001 C CNN "MPN"
-	1    9000 4900
+P 9000 5050
+F 0 "R4" V 8900 5100 50  0000 C CNN
+F 1 "4k7" V 8900 4950 50  0000 C CNN
+F 2 "qomu-board:R_0201_0603Metric" H 9000 5050 50  0001 C CNN
+F 3 "" H 9000 5050 50  0001 C CNN
+F 4 "ANY" H 250 3350 50  0001 C CNN "MPN"
+	1    9000 5050
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	9000 5000 9000 5500
 Wire Wire Line
 	8800 4950 8800 4750
 Wire Wire Line
 	8800 4750 9000 4750
-Wire Wire Line
-	9000 4750 9000 4800
-$Comp
-L qomu-board:C_Small-Device C4
-U 1 1 5DE4FACB
-P 9350 4950
-F 0 "C4" H 9400 4850 50  0000 L CNN
-F 1 "100n" H 9400 4750 50  0000 L CNN
-F 2 "qomu-board:C_0201_0603Metric" H 9350 4950 50  0001 C CNN
-F 3 "" H 9350 4950 50  0001 C CNN
-	1    9350 4950
-	-1   0    0    1   
-$EndComp
-Connection ~ 9350 4850
-Wire Wire Line
-	9350 5050 9350 5100
-Connection ~ 9350 5100
 Wire Wire Line
 	8800 4750 8400 4750
 Connection ~ 8800 4750
 Wire Wire Line
 	8800 5200 8400 5200
 Connection ~ 8800 5200
-Wire Wire Line
-	9000 5500 8400 5500
-Connection ~ 9000 5500
 Text Label 5450 5000 0    50   ~ 0
 SPI_MOSI
 Text Label 7000 5000 0    50   ~ 0
@@ -1943,14 +1904,7 @@ R_USB_N
 Text Label 3650 6450 0    50   ~ 0
 R_USB_P
 Wire Wire Line
-	4200 6050 4200 6450
-Wire Wire Line
 	3550 6050 4200 6050
-Wire Wire Line
-	3550 6450 4200 6450
-Connection ~ 4200 6450
-Wire Wire Line
-	4200 6450 4300 6450
 Wire Wire Line
 	3550 6350 4300 6350
 Text Label 3650 6050 0    50   ~ 0
@@ -2002,4 +1956,63 @@ F 3 "https://mcubemems.com/wp-content/uploads/2019/06/MC3635-Datasheet-APS-048-0
 	1    9550 4550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3550 6450 4300 6450
+Text Notes 6300 1300 0    50   ~ 0
+Leftover from original FOMU. \nMay be dropped if not needed.
+Text Label 9350 4400 0    50   ~ 0
+3V3_SYS
+Text Label 8400 4750 0    50   ~ 0
+3V3_SYS
+Text Label 800  4650 0    50   ~ 0
+3V3_SYS
+Text Notes 3100 2800 0    50   ~ 0
+Power sequencing and all LDOs\nare leftovers from original FOMU.\n
+Text Notes 3100 3100 0    50   ~ 0
+May be dropped if not needed.
+$Comp
+L qomu-board:C_Small-Device C4
+U 1 1 5DE4FACB
+P 9150 4500
+F 0 "C4" H 9200 4400 50  0000 L CNN
+F 1 "100n" H 9200 4300 50  0000 L CNN
+F 2 "qomu-board:C_0201_0603Metric" H 9150 4500 50  0001 C CNN
+F 3 "" H 9150 4500 50  0001 C CNN
+	1    9150 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9450 5100 9150 5100
+Wire Wire Line
+	9150 5100 9150 5700
+Wire Wire Line
+	9450 5400 9350 5400
+Wire Wire Line
+	9350 5400 9350 4850
+Connection ~ 9350 4850
+Wire Wire Line
+	9350 4400 9150 4400
+Connection ~ 9350 4400
+$Comp
+L power:GND #PWR?
+U 1 1 5DEB67F5
+P 9150 4600
+F 0 "#PWR?" H 9150 4350 50  0001 C CNN
+F 1 "GND" H 9155 4427 50  0000 C CNN
+F 2 "" H 9150 4600 50  0001 C CNN
+F 3 "" H 9150 4600 50  0001 C CNN
+	1    9150 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 5500 9000 5500
+Wire Wire Line
+	9000 4750 9000 4950
+Wire Wire Line
+	9000 5150 9000 5500
+Connection ~ 9000 5500
+Wire Wire Line
+	9000 5500 9450 5500
+Text Notes 3100 2950 0    50   ~ 0
+It is compatible with ICE40
 $EndSCHEMATC
