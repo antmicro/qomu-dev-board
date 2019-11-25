@@ -8,7 +8,7 @@ Sheet 1 1
 Title "Qomu Board"
 Date ""
 Rev ""
-Comp ""
+Comp "Antmicro Ltd. (www.antmicro.com)"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -236,7 +236,7 @@ Wire Notes Line
 Wire Notes Line
 	600  4050 600  600 
 Text Notes 650  4000 0    50   ~ 0
-PCB Power Regulation
+Power supplies
 Wire Notes Line
 	11100 3800 7750 3800
 Wire Notes Line
@@ -1944,7 +1944,7 @@ Flash memory
 Text Notes 7800 6300 0    50   ~ 0
 IMU
 Text Notes 650  7650 0    50   ~ 0
-EOS S3 FPGA
+EOS S3
 $Comp
 L qomu-board:MC3635 U5
 U 1 1 5E2FC133
@@ -1966,10 +1966,8 @@ Text Label 8400 4750 0    50   ~ 0
 3V3_SYS
 Text Label 800  4650 0    50   ~ 0
 3V3_SYS
-Text Notes 3100 2800 0    50   ~ 0
-Power sequencing and all LDOs\nare leftovers from original FOMU.\n
-Text Notes 3100 3100 0    50   ~ 0
-May be dropped if not needed.
+Text Notes 3050 2950 0    50   ~ 0
+Power sequencing and all LDOs\ninherited from FOMU design.\nNeed to be updated\n
 $Comp
 L qomu-board:C_Small-Device C4
 U 1 1 5DE4FACB
@@ -2013,6 +2011,4 @@ Wire Wire Line
 Connection ~ 9000 5500
 Wire Wire Line
 	9000 5500 9450 5500
-Text Notes 3100 2950 0    50   ~ 0
-It is compatible with ICE40
 $EndSCHEMATC
