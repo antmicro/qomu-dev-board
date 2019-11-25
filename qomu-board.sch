@@ -1942,7 +1942,7 @@ Wire Wire Line
 Text Notes 4650 6300 0    50   ~ 0
 Flash memory
 Text Notes 7800 6300 0    50   ~ 0
-IMU
+Accelerometer
 Text Notes 650  7650 0    50   ~ 0
 EOS S3
 $Comp
