@@ -1,5 +1,5 @@
-Quicklogic Qomu board
-=====================
+Qomu Development Board
+======================
 
 .. figure:: Images/qomu-board.png
 
