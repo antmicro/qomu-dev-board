@@ -1,0 +1,13 @@
+6d0479e6d32cc839c93f6e7dbe47d27c16ed1de1 fixed USB_D_P pull-up connection, tied U5 CS pin to VDDIO, added some remarks on schematics
+103e1775ee03caadb79722129bd64d0393aa1258 Connected missing nets, schematic cleanup
+c3d65c63134b9a0cfaaf11afbc00b1a8bcefcc5b Added README file
+aeb088a24d2943c52cef81f2bb8f71a01a82e305 Updated component placement a little bit
+a10356babc78473b06f62327763eff03fbf44e5f Added OSHW logotypes
+d6c5aa60f0b3d3fbe846e547771a8de18764d2d4 Added case outline to PCB design, done initial placement of the components
+18f072e90a2ea0064c3561dc34eace4e6ae31dfd Connected U4 and U5 to EOS S3
+01f8de2dba3fae1880fbe917f9cd87b24992f8e7 Fixed missing library components, fixed MC3635 footprint
+e164d04b7ff914084269247af00ad1b5f7d03e47 Added IMU and replaced Flash to schematic and PCB
+568314c614c73c58f392dace9437f6c9478bfadc added EOS-S3 chip to schematics and PCB, added flash memory to schematics
+cea7bf24929a6a0d6436cddff7c75e35f2468df8 removed unnecessary part from schematic and PCB
+1f6050879d2ca3e93c5201bb9e3405be4ecdda5c renamed project
+a8a5e637565d2c498cac8ef763dfa89f9406bd4f Initial commit- PCB design files for Fomu (production) taken from https://github.com/im-tomu/fomu-hardware commit 07383f38da9d5a36aa6105ee2a01cb04b6fe3e73
