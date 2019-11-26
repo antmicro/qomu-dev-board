@@ -595,8 +595,8 @@ $Comp
 L qomu-board:EOS-S3 IC1
 U 1 1 5DCB0652
 P 1600 2700
-F 0 "IC1" H 2525 2865 50  0000 C CNN
-F 1 "EOS-S3" H 2525 2774 50  0000 C CNN
+F 0 "IC1" H 1650 2850 50  0000 C CNN
+F 1 "EOS-S3" H 1750 2750 50  0000 C CNN
 F 2 "qomu-board:42-WLCSP" H 3250 -400 50  0001 C CNN
 F 3 "https://dev.antmicro.com/attachments/download/9063/ql-eos-s3-datasheet.pdf" H 3350 -300 50  0001 C CNN
 	1    1600 2700
@@ -1685,16 +1685,16 @@ $Comp
 L qomu-board:LDO-X2SON U2
 U 1 1 5BF61C95
 P 1900 1450
-F 0 "U2" H 1900 1975 50  0000 C CNN
-F 1 "LDO-X2SON-3.3V" H 1900 1884 50  0000 C CNN
+F 0 "U2" H 1750 1950 50  0000 C CNN
+F 1 "MIC5504-3.3YMT" H 2000 1850 50  0000 C CNN
 F 2 "qomu-board:Texas_X2SON-4_1x1mm_P0.65mm" H 1900 1450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lp5907.pdf" H 1900 1450 50  0001 C CNN
+F 3 "" H 1900 1450 50  0001 C CNN
 F 4 "MIC5504-3.3YMT" H 250 150 50  0001 C CNN "AMPN"
-F 5 "Microchip" H 250 150 50  0001 C CNN "AManufacturer"
-F 6 "576-4305-1-ND" H 250 150 50  0001 C CNN "APN"
-F 7 "LP5907SNX-3.3/NOPB" H 250 150 50  0001 C CNN "MPN"
-F 8 "TI" H 250 150 50  0001 C CNN "Manufacturer"
-F 9 "296-39066-2-ND " H 1900 1450 50  0001 C CNN "DPN"
+F 5 "" H 250 2750 50  0001 C CNN "AManufacturer"
+F 6 "" H 250 150 50  0001 C CNN "APN"
+F 7 "MIC5504-3.3YMT" H 250 150 50  0001 C CNN "MPN"
+F 8 "Microchip" H 250 150 50  0001 C CNN "Manufacturer"
+F 9 "" H 1900 1450 50  0001 C CNN "DPN"
 	1    1900 1450
 	1    0    0    -1  
 $EndComp
@@ -1769,4 +1769,6 @@ Text Label 9200 4400 1    50   ~ 0
 3V3_SYS
 Text Notes 7950 3550 0    50   ~ 0
 TODO: match LED current, add transistors?
+Text Notes 2900 1150 0    50   ~ 0
+3.3V@300mA
 $EndSCHEMATC
