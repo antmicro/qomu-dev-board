@@ -74,7 +74,7 @@ L qomu-board:RGB-LED U10
 U 1 1 5BD90F18
 P 9100 3200
 F 0 "U10" H 8900 3150 50  0000 C CNN
-F 1 "RGB-LED" H 9000 3050 50  0000 C CNN
+F 1 "UHD1110-FKA" H 9100 3050 50  0000 C CNN
 F 2 "qomu-board:LED-RGB-5DS-UHD1110-FKA" H 9100 3200 50  0001 C CNN
 F 3 "https://www.cree.com/led-components/media/documents/ds-UHD1110-FKA.pdf" H 9100 3200 50  0001 C CNN
 F 4 "UHD1110-FKA" H 9100 3200 50  0001 C CNN "MPN"
@@ -512,33 +512,17 @@ F 4 "ANY" H 1000 -50 50  0001 C CNN "MPN"
 	1    9750 1750
 	0    1    1    0   
 $EndComp
-$Comp
-L qomu-board:R_Small-Device R2
-U 1 1 5DC79CE9
-P 1200 4300
-F 0 "R2" V 1250 4500 50  0000 C CNN
-F 1 "0R" V 1250 4150 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 1200 4300 50  0001 C CNN
-F 3 "" H 1200 4300 50  0001 C CNN
-F 4 "ANY" H -7550 2600 50  0001 C CNN "MPN"
-	1    1200 4300
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	1500 4300 1300 4300
-Wire Wire Line
-	1100 4300 900  4300
-Wire Wire Line
-	900  4300 900  4400
+	1300 4300 1300 4400
 $Comp
 L power:GND #PWR0101
 U 1 1 5DC830C3
-P 900 4900
-F 0 "#PWR0101" H 900 4650 50  0001 C CNN
-F 1 "GND" H 905 4727 50  0000 C CNN
-F 2 "" H 900 4900 50  0001 C CNN
-F 3 "" H 900 4900 50  0001 C CNN
-	1    900  4900
+P 1300 4900
+F 0 "#PWR0101" H 1300 4650 50  0001 C CNN
+F 1 "GND" H 1305 4727 50  0000 C CNN
+F 2 "" H 1300 4900 50  0001 C CNN
+F 3 "" H 1300 4900 50  0001 C CNN
+	1    1300 4900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -550,25 +534,25 @@ Text Label 8650 2950 1    50   ~ 0
 Text Label 1050 1150 0    50   ~ 0
 USB_VBUS
 Wire Wire Line
-	1500 4400 900  4400
-Connection ~ 900  4400
+	1500 4400 1300 4400
+Connection ~ 1300 4400
 Wire Wire Line
-	900  4400 900  4500
+	1300 4400 1300 4500
 Wire Wire Line
-	1500 4500 900  4500
-Connection ~ 900  4500
+	1500 4500 1300 4500
+Connection ~ 1300 4500
 Wire Wire Line
-	900  4500 900  4600
+	1300 4500 1300 4600
 Wire Wire Line
-	1500 4600 900  4600
-Connection ~ 900  4600
+	1500 4600 1300 4600
+Connection ~ 1300 4600
 Wire Wire Line
-	900  4600 900  4700
+	1300 4600 1300 4700
 Wire Wire Line
-	1500 4700 900  4700
-Connection ~ 900  4700
+	1500 4700 1300 4700
+Connection ~ 1300 4700
 Wire Wire Line
-	900  4700 900  4900
+	1300 4700 1300 4900
 $Comp
 L qomu-board:C_Small-Device C2
 U 1 1 5DCA4936
@@ -1767,8 +1751,12 @@ Wire Wire Line
 	10600 5200 10600 4900
 Text Label 9200 4400 1    50   ~ 0
 3V3_SYS
-Text Notes 7950 3550 0    50   ~ 0
-TODO: match LED current, add transistors?
 Text Notes 2900 1150 0    50   ~ 0
 3.3V@300mA
+Text Notes 9550 2800 0    50   ~ 0
+5mA/channel
+Wire Wire Line
+	1300 4300 1500 4300
+Wire Wire Line
+	3550 3450 3950 3450
 $EndSCHEMATC
