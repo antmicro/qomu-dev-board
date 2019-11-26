@@ -1,4 +1,3 @@
 (sym_lib_table
-  (lib (name qomu-board-rescue)(type Legacy)(uri ${KIPRJMOD}/qomu-board-rescue.lib)(options "")(descr ""))
-  (lib (name qomu-board)(type Legacy)(uri ${KIPRJMOD}/qomu-board.lib)(options "")(descr ""))
+  (lib (name qomu-board)(type Legacy)(uri ${KIPRJMOD}/lib/qomu-board.lib)(options "")(descr ""))
 )

@@ -19,7 +19,7 @@ Wire Wire Line
 Wire Wire Line
 	2350 1050 2350 1150
 $Comp
-L power:GND #PWR013
+L qomu-board:GND #PWR013
 U 1 1 5BD6F3CD
 P 2350 1900
 F 0 "#PWR013" H 2350 1650 50  0001 C CNN
@@ -30,7 +30,7 @@ F 3 "" H 2350 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR02
+L qomu-board:GND #PWR02
 U 1 1 5BD86186
 P 1000 1200
 F 0 "#PWR02" H 1000 950 50  0001 C CNN
@@ -59,7 +59,7 @@ $EndComp
 Wire Wire Line
 	9050 1950 9200 1950
 $Comp
-L power:GND #PWR035
+L qomu-board:GND #PWR035
 U 1 1 5BD8C8EF
 P 9200 2000
 F 0 "#PWR035" H 9200 1750 50  0001 C CNN
@@ -290,7 +290,7 @@ F 5 "D5V0L1B2LP3-7" V 5550 2200 50  0001 C CNN "MPN"
 $EndComp
 Connection ~ 5850 1950
 $Comp
-L power:GND #PWR011
+L qomu-board:GND #PWR011
 U 1 1 5C0C6907
 P 6150 2550
 F 0 "#PWR011" H 6150 2300 50  0001 C CNN
@@ -416,7 +416,7 @@ Wire Wire Line
 	9600 1350 9600 1250
 Connection ~ 9600 1250
 $Comp
-L power:GND #PWR019
+L qomu-board:GND #PWR019
 U 1 1 5C204D0E
 P 10100 1250
 F 0 "#PWR019" H 10100 1000 50  0001 C CNN
@@ -503,7 +503,7 @@ $EndComp
 Wire Wire Line
 	1300 4300 1300 4400
 $Comp
-L power:GND #PWR0101
+L qomu-board:GND #PWR0101
 U 1 1 5DC830C3
 P 1300 4900
 F 0 "#PWR0101" H 1300 4650 50  0001 C CNN
@@ -588,7 +588,7 @@ Wire Wire Line
 Wire Wire Line
 	6650 5300 6650 5400
 $Comp
-L power:GND #PWR04
+L qomu-board:GND #PWR04
 U 1 1 5DD80B9F
 P 6650 5400
 F 0 "#PWR04" H 6650 5150 50  0001 C CNN
@@ -608,7 +608,7 @@ Connection ~ 10250 5200
 Wire Wire Line
 	10250 5200 10250 5400
 $Comp
-L power:GND #PWR06
+L qomu-board:GND #PWR06
 U 1 1 5DD8D219
 P 10250 5400
 F 0 "#PWR06" H 10250 5150 50  0001 C CNN
@@ -627,7 +627,7 @@ Wire Wire Line
 Wire Wire Line
 	9300 4900 8650 4900
 $Comp
-L power:GND #PWR05
+L qomu-board:GND #PWR05
 U 1 1 5DDB8FF0
 P 9100 5400
 F 0 "#PWR05" H 9100 5150 50  0001 C CNN
@@ -1609,7 +1609,7 @@ Wire Wire Line
 	9200 5100 9200 4550
 Connection ~ 9200 4550
 $Comp
-L power:GND #PWR017
+L qomu-board:GND #PWR017
 U 1 1 5DEB67F5
 P 10600 5400
 F 0 "#PWR017" H 10600 5150 50  0001 C CNN
@@ -1661,7 +1661,7 @@ Wire Wire Line
 Wire Wire Line
 	1000 1150 1000 1200
 $Comp
-L power:GND #PWR010
+L qomu-board:GND #PWR010
 U 1 1 5DE54C6B
 P 2900 1250
 F 0 "#PWR010" H 2900 1000 50  0001 C CNN
@@ -1676,7 +1676,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 900  2900 950 
 $Comp
-L power:GND #PWR016
+L qomu-board:GND #PWR016
 U 1 1 5DEBE893
 P 6250 6000
 F 0 "#PWR016" H 6250 5750 50  0001 C CNN
@@ -1727,7 +1727,7 @@ $EndComp
 Wire Wire Line
 	1650 6950 1650 7100
 $Comp
-L power:GND #PWR03
+L qomu-board:GND #PWR03
 U 1 1 5DDF07D6
 P 1650 7100
 F 0 "#PWR03" H 1650 6850 50  0001 C CNN
@@ -1759,7 +1759,7 @@ $EndComp
 Wire Wire Line
 	2150 6950 2150 7100
 $Comp
-L power:GND #PWR07
+L qomu-board:GND #PWR07
 U 1 1 5DEA618E
 P 2150 7100
 F 0 "#PWR07" H 2150 6850 50  0001 C CNN
@@ -1783,7 +1783,7 @@ $EndComp
 Wire Wire Line
 	2700 6950 2700 7100
 $Comp
-L power:GND #PWR09
+L qomu-board:GND #PWR09
 U 1 1 5DEAC06C
 P 2700 7100
 F 0 "#PWR09" H 2700 6850 50  0001 C CNN
@@ -1805,7 +1805,7 @@ F 3 "" H 3350 6850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR012
+L qomu-board:GND #PWR012
 U 1 1 5DEB1E65
 P 3500 7100
 F 0 "#PWR012" H 3500 6850 50  0001 C CNN
@@ -1873,7 +1873,7 @@ F 3 "" H 2700 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR08
+L qomu-board:GND #PWR08
 U 1 1 5DF1D33C
 P 2700 1900
 F 0 "#PWR08" H 2700 1650 50  0001 C CNN
@@ -1906,7 +1906,7 @@ Connection ~ 1500 1400
 Wire Wire Line
 	1500 1400 1500 1650
 $Comp
-L power:GND #PWR01
+L qomu-board:GND #PWR01
 U 1 1 5DF42981
 P 800 1200
 F 0 "#PWR01" H 800 950 50  0001 C CNN
@@ -2019,7 +2019,7 @@ Wire Wire Line
 	4300 3250 4300 3350
 Connection ~ 4300 3250
 $Comp
-L power:GND #PWR015
+L qomu-board:GND #PWR015
 U 1 1 5DE27F69
 P 4300 4300
 F 0 "#PWR015" H 4300 4050 50  0001 C CNN
@@ -2030,7 +2030,7 @@ F 3 "" H 4300 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR014
+L qomu-board:GND #PWR014
 U 1 1 5DE56F16
 P 4300 3350
 F 0 "#PWR014" H 4300 3100 50  0001 C CNN
