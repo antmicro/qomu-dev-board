@@ -14,6 +14,36 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
+# qomu-board_+3V3
+#
+DEF qomu-board_+3V3 #PWR 0 40 Y Y 1 F P
+F0 "#PWR" 0 0 50 H I C CNN
+F1 "qomu-board_+3V3" 0 100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 1 0 -30 0 0 50 N
+P 2 1 1 0 0 -50 0 50 N
+P 2 1 1 0 0 50 30 0 N
+X +3V3 1 0 -50 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# qomu-board_+VBUS
+#
+DEF qomu-board_+VBUS #PWR 0 40 Y Y 1 F P
+F0 "#PWR" 0 0 50 H I C CNN
+F1 "qomu-board_+VBUS" 0 100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 1 0 -30 0 0 50 N
+P 2 1 1 0 0 -50 0 50 N
+P 2 1 1 0 0 50 30 0 N
+X +VBUS 1 0 -50 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
 # qomu-board_C_Small-Device
 #
 DEF qomu-board_C_Small-Device C 0 10 N N 1 F N
