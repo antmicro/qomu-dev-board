@@ -1741,7 +1741,7 @@ Wire Wire Line
 	5600 5000 5600 4700
 Wire Wire Line
 	5600 4150 5600 4700
-Text Notes 700  6250 0    50   ~ 0
+Text Notes 2450 2650 0    50   ~ 0
 TODO: Add filtering  caps
 Text Notes 900  800  0    50   ~ 0
 TODO: update symbols for power rails
@@ -1759,4 +1759,12 @@ Wire Wire Line
 	1300 4300 1500 4300
 Wire Wire Line
 	3550 3450 3950 3450
+Text Notes 5450 5600 0    50   ~ 0
+operating current\nmax. 20mA
+Text Notes 1600 5950 0    50   ~ 0
+Maximum power consumption for A and B rails:\nLDO mode: 65mA (VCCIOA) 114mA (VCCIOB)\nLDO bypass mode: 77mA (VCCIOA) 269mA (VCCIOB) 
+Text Notes 1600 6250 0    50   ~ 0
+The multi-functional IOs have four programmable drive \nstrength states: 2 mA, 4 mA, 8 mA, 12 mA \n(refer to datasheet page 92)
+Text Notes 9050 5900 0    50   ~ 0
+operating current  for 1V8 supply\nmax. 36mA\nlow-power mode: max. 2.8mA\n
 $EndSCHEMATC
