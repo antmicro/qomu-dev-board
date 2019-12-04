@@ -1,41 +1,38 @@
-Reference, Value, Footprint, Datasheet, DNP, Description, MPN, MYPN, Manufacturer, AManufacturer, APN, DPN, Spice_Model, Spice_Netlist_Enabled, Spice_Primitive, AMPN
-"U9","USB-B","qomu-board:USB-PCB","","X","PCB-etched USB pads","DNP","DNP","DNP","","","","","","",""
-"U10","UHD1110-FKA","qomu-board:LED-RGB-5DS-UHD1110-FKA","https://www.cree.com/led-components/media/documents/ds-UHD1110-FKA.pdf","","","UHD1110-FKA","","Cree","Citizen","CL-505S-X-SD-T","N/A","","","",""
-"R12","22R","qomu-board:R_0201_0603Metric","","","","ANY","","","","","","","","",""
-"R9","1k5","qomu-board:R_0201_0603Metric","","","","ANY","","","","","","","","",""
-"SW2","Captouch Pads","qomu-board:captouch-edge","","X","PCB-etched captouch pads","DNP","DNP","DNP","","","","","","",""
-"XX1","Touchpad Mask Removal","qomu-board:soldermask-removal","","X","","DNP","DNP","DNP","","","","Touchpad Mask Removal","N","X",""
-"XX2","Case","qomu-board:nothing","","X","Case for Tomu, customized for FPGA","qomu-board-Case","","Jiada","","","","Case","N","X",""
-"XX3","ESD Bag","qomu-board:nothing","","X","ESD bag containing case and PCBA","Tomu-ESD-Bag","","ANY","","","","ESD Bag","N","X",""
-"D1","D5V0L1B2LP3-7","qomu-board:X1-DFN1006-2","https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf","","","D5V0L1B2LP3-7","","Diodes Incorporated","","","","","","",""
-"D2","D5V0L1B2LP3-7","qomu-board:X1-DFN1006-2","https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf","","","D5V0L1B2LP3-7","","Diodes Incorporated","","","","","","",""
-"D3","D5V0L1B2LP3-7","qomu-board:X1-DFN1006-2","https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf","","","D5V0L1B2LP3-7","","Diodes Incorporated","","","","","","",""
-"D4","D5V0L1B2LP3-7","qomu-board:X1-DFN1006-2","https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf","","","D5V0L1B2LP3-7","","Diodes Incorporated","","","","","","",""
-"D6","D5V0L1B2LP3-7","qomu-board:X1-DFN1006-2","https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf","","","D5V0L1B2LP3-7","","Diodes Incorporated","","","","","","",""
-"D7","D5V0L1B2LP3-7","qomu-board:X1-DFN1006-2","https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf","","","D5V0L1B2LP3-7","","Diodes Incorporated","","","","","","",""
-"D5","VCUT05E1-SD0","qomu-board:TVS-11V","http://www.vishay.com/docs/85900/vcut05e1-sd0.pdf","","","VCUT05E1-SD0-G4-08","","Vishay Semiconductor Diodes Division","","","","","","",""
-"R1","10k","qomu-board:R_0201_0603Metric","","","","ANY","","","","","","","","",""
-"R11","22R","qomu-board:R_0201_0603Metric","","","","ANY","","","","","","","","",""
-"C2","4u7/10V","qomu-board:C_0201_0603Metric",""
-"C9","4u7/10V","qomu-board:C_0201_0603Metric",""
-"IC1","EOS-S3","qomu-board:42-WLCSP","https://dev.antmicro.com/attachments/download/9063/ql-eos-s3-datasheet.pdf"
-"U4","GD25Q16CEIGR","qomu-board:GD25Q16CEIGR","http://www.gigadevice.com/datasheet/gd25q16c/"
-"R3","4k7","qomu-board:R_0201_0603Metric","","","","ANY","","","","","","","","",""
-"R4","4k7","qomu-board:R_0201_0603Metric","","","","ANY","","","","","","","","",""
-"C5","100n","qomu-board:C_0201_0603Metric",""
-"U5","MC3635","qomu-board:MC3635","https://mcubemems.com/wp-content/uploads/2019/06/MC3635-Datasheet-APS-048-0044v1.6.pdf"
-"C4","100n","qomu-board:C_0201_0603Metric",""
-"U2","MIC5504-3.3YMT","qomu-board:Texas_X2SON-4_1x1mm_P0.65mm","","","","MIC5504-3.3YMT","","Microchip","","","","","","","MIC5504-3.3YMT"
-"C3","100n","qomu-board:C_0201_0603Metric",""
-"C6","100n","qomu-board:C_0201_0603Metric",""
-"C8","100n","qomu-board:C_0201_0603Metric",""
-"C10","100n","qomu-board:C_0201_0603Metric",""
-"C11","100n","qomu-board:C_0201_0603Metric",""
-"U1","MIC5504-3.3YMT","qomu-board:Texas_X2SON-4_1x1mm_P0.65mm","","","","MIC5504-3.3YMT","","Microchip","","","","","","","MIC5504-3.3YMT"
-"C7","4u7/10V","qomu-board:C_0201_0603Metric",""
-"C1","4u7/10V","qomu-board:C_0201_0603Metric",""
-"R5","10k","qomu-board:R_0201_0603Metric","","","","ANY","","","","","","","","",""
-"R2","10k","qomu-board:R_0201_0603Metric","","","","ANY","","","","","","","","",""
-"R7","10k","qomu-board:R_0201_0603Metric","","","","ANY","","","","","","","","",""
-"R6","10k","qomu-board:R_0201_0603Metric","","","","ANY","","","","","","","","",""
-"R8","4k7","qomu-board:R_0201_0603Metric","","","","ANY","","","","","","","","",""
+Reference, Value, Footprint, Datasheet, MPN, Manufacturer
+U9,USB-B,qomu-board:USB-PCB,,N/A,N/A
+U10,UHD1110-FKA,qomu-board:LED-RGB-5DS-UHD1110-FKA,https://www.cree.com/led-components/media/documents/ds-UHD1110-FKA.pdf,UHD1110-FKA,Cree
+R12,22R,qomu-board:R_0201_0603Metric,,ANY,
+R9,1k5,qomu-board:R_0201_0603Metric,,ANY,
+SW2,Captouch Pads,qomu-board:captouch-edge,,N/A,N/A
+D1,D5V0L1B2LP3-7,qomu-board:X1-DFN1006-2,https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf,D5V0L1B2LP3-7,Diodes Incorporated
+D2,D5V0L1B2LP3-7,qomu-board:X1-DFN1006-2,https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf,D5V0L1B2LP3-7,Diodes Incorporated
+D3,D5V0L1B2LP3-7,qomu-board:X1-DFN1006-2,https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf,D5V0L1B2LP3-7,Diodes Incorporated
+D4,D5V0L1B2LP3-7,qomu-board:X1-DFN1006-2,https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf,D5V0L1B2LP3-7,Diodes Incorporated
+D6,D5V0L1B2LP3-7,qomu-board:X1-DFN1006-2,https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf,D5V0L1B2LP3-7,Diodes Incorporated
+D7,D5V0L1B2LP3-7,qomu-board:X1-DFN1006-2,https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf,D5V0L1B2LP3-7,Diodes Incorporated
+D5,VCUT05E1-SD0,qomu-board:TVS-11V,http://www.vishay.com/docs/85900/vcut05e1-sd0.pdf,VCUT05E1-SD0-G4-08,Vishay Semiconductor Diodes Division
+R1,10k,qomu-board:R_0201_0603Metric,,ANY,
+R11,22R,qomu-board:R_0201_0603Metric,,ANY,
+C2,4u7/10V,qomu-board:C_0201_0603Metric,,,
+C9,4u7/10V,qomu-board:C_0201_0603Metric,,,
+IC1,EOS-S3,qomu-board:42-WLCSP,https://dev.antmicro.com/attachments/download/9063/ql-eos-s3-datasheet.pdf,,
+U4,GD25Q16CEIGR,qomu-board:GD25Q16CEIGR,http://www.gigadevice.com/datasheet/gd25q16c/,,
+R3,4k7,qomu-board:R_0201_0603Metric,,ANY,
+R4,4k7,qomu-board:R_0201_0603Metric,,ANY,
+C5,100n,qomu-board:C_0201_0603Metric,,,
+U5,MC3635,qomu-board:MC3635,https://mcubemems.com/wp-content/uploads/2019/06/MC3635-Datasheet-APS-048-0044v1.6.pdf,,
+C4,100n,qomu-board:C_0201_0603Metric,,,
+U2,MIC5504-3.3YMT,qomu-board:Texas_X2SON-4_1x1mm_P0.65mm,,MIC5504-3.3YMT,Microchip
+C3,100n,qomu-board:C_0201_0603Metric,,,
+C6,100n,qomu-board:C_0201_0603Metric,,,
+C8,100n,qomu-board:C_0201_0603Metric,,,
+C10,100n,qomu-board:C_0201_0603Metric,,,
+C11,100n,qomu-board:C_0201_0603Metric,,,
+U1,MIC5504-3.3YMT,qomu-board:Texas_X2SON-4_1x1mm_P0.65mm,,MIC5504-3.3YMT,Microchip
+C7,4u7/10V,qomu-board:C_0201_0603Metric,,,
+C1,4u7/10V,qomu-board:C_0201_0603Metric,,,
+R5,10k,qomu-board:R_0201_0603Metric,,ANY,
+R2,10k,qomu-board:R_0201_0603Metric,,ANY,
+R7,10k,qomu-board:R_0201_0603Metric,,ANY,
+R6,10k,qomu-board:R_0201_0603Metric,,ANY,
+R8,4k7,qomu-board:R_0201_0603Metric,,ANY,
