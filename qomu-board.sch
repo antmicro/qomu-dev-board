@@ -2251,4 +2251,8 @@ F 3 "" H 8650 2900 50  0001 C CNN
 	1    8650 2900
 	1    0    0    -1  
 $EndComp
+Text Notes 7850 3550 0    50   ~ 0
+TBD- LED driving
+Text Notes 4650 6200 0    50   ~ 0
+TBD - flash memory programming
 $EndSCHEMATC
