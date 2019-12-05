@@ -108,18 +108,18 @@ $EndComp
 $Comp
 L qomu-board:PADS SW2
 U 1 1 5BE44C19
-P 6200 1000
-F 0 "SW2" V 6450 1300 50  0000 C CNN
-F 1 "Captouch Pads" V 6350 1100 50  0000 C CNN
-F 2 "qomu-board:captouch-edge" H 6250 1000 50  0001 C CNN
-F 3 "" H 6250 1000 50  0001 C CNN
-F 4 "N/A" H 6200 1000 50  0001 C CNN "MPN"
-F 5 "N/A" H 6200 1000 50  0001 C CNN "Manufacturer"
-	1    6200 1000
+P 5850 900
+F 0 "SW2" V 6000 1500 50  0000 C CNN
+F 1 "Captouch Pads" V 6000 1050 50  0000 C CNN
+F 2 "qomu-board:captouch-edge" H 5900 900 50  0001 C CNN
+F 3 "" H 5900 900 50  0001 C CNN
+F 4 "N/A" H 5850 900 50  0001 C CNN "MPN"
+F 5 "N/A" H 5850 900 50  0001 C CNN "Manufacturer"
+	1    5850 900 
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	7300 1850 6150 1850
+	6950 1450 6200 1450
 Wire Wire Line
 	9200 950  9200 1250
 Wire Notes Line
@@ -133,27 +133,25 @@ Wire Notes Line
 Text Notes 700  2100 0    50   ~ 0
 Power supply
 Wire Notes Line
-	11100 3800 7750 3800
+	11100 3900 7750 3900
 Wire Notes Line
-	7750 3800 7750 600 
+	7750 3900 7750 600 
 Wire Notes Line
 	7750 600  11100 600 
-Text Notes 7800 3750 0    50   ~ 0
+Text Notes 7800 3850 0    50   ~ 0
 User I/O, USB
 Wire Wire Line
 	9200 1950 9200 2000
 Wire Notes Line
 	4600 600  7600 600 
 Wire Notes Line
-	7600 600  7600 3000
+	7600 600  7600 2200
 Wire Notes Line
-	7600 3800 4600 3800
-Wire Notes Line
-	4600 3800 4600 600 
-Text Notes 4650 3750 0    50   ~ 0
+	4600 2200 4600 600 
+Text Notes 4650 2150 0    50   ~ 0
 Captouch Input
 Wire Wire Line
-	7300 1650 6650 1650
+	6950 1250 6500 1250
 Wire Wire Line
 	9050 1850 9350 1850
 Connection ~ 9350 1850
@@ -170,15 +168,15 @@ LED_G
 Text Label 9600 3150 0    50   ~ 0
 LED_R
 Wire Wire Line
-	7300 1750 5950 1750
+	6950 1350 6350 1350
 Wire Wire Line
-	6050 1650 6050 1200
+	5700 1250 5700 1100
 Wire Wire Line
-	5950 1750 5950 1200
+	5600 1350 5600 1100
 Wire Wire Line
-	5850 1200 5850 1950
+	5500 1100 5500 1550
 Wire Wire Line
-	5850 1950 7300 1950
+	5500 1550 6050 1550
 Wire Wire Line
 	2200 1150 2350 1150
 Connection ~ 2350 1150
@@ -188,18 +186,16 @@ Wire Wire Line
 	9050 1750 9600 1750
 Wire Wire Line
 	8650 2950 8750 2950
-Text Label 6950 1950 0    50   ~ 0
+Text Label 6600 1550 0    50   ~ 0
 TOUCH_4
-Text Label 6950 1850 0    50   ~ 0
+Text Label 6600 1450 0    50   ~ 0
 TOUCH_3
-Text Label 6950 1750 0    50   ~ 0
+Text Label 6600 1350 0    50   ~ 0
 TOUCH_2
-Text Label 6950 1650 0    50   ~ 0
+Text Label 6600 1250 0    50   ~ 0
 TOUCH_1
-Wire Notes Line
-	7600 3100 7600 3800
 Wire Wire Line
-	6150 1200 6150 1850
+	5800 1100 5800 1450
 Text Label 9150 1850 0    50   ~ 0
 USB_P
 Text Label 9150 1750 0    50   ~ 0
@@ -207,100 +203,55 @@ USB_N
 $Comp
 L qomu-board:D_Small-Device D1
 U 1 1 5C0AD27F
-P 5550 2200
-F 0 "D1" V 5450 2200 50  0000 L CNN
-F 1 "D5V0L1B2LP3-7" H 5400 2100 50  0000 L CNN
-F 2 "qomu-board:X1-DFN1006-2" V 5550 2200 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 5550 2200 50  0001 C CNN
-F 4 "Diodes Incorporated" V 5550 2200 50  0001 C CNN "Manufacturer"
-F 5 "D5V0L1B2LP3-7" V 5550 2200 50  0001 C CNN "MPN"
-	1    5550 2200
+P 6050 1700
+F 0 "D1" V 5950 1600 50  0000 L CNN
+F 1 "D5V0L1B2LP3-7" H 6000 1800 50  0001 L CNN
+F 2 "qomu-board:X1-DFN1006-2" V 6050 1700 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 6050 1700 50  0001 C CNN
+F 4 "Diodes Incorporated" V 6050 1700 50  0001 C CNN "Manufacturer"
+F 5 "D5V0L1B2LP3-7" V 6050 1700 50  0001 C CNN "MPN"
+	1    6050 1700
 	0    1    1    0   
 $EndComp
-Connection ~ 5850 1950
-$Comp
-L qomu-board:GND #PWR011
-U 1 1 5C0C6907
-P 6150 2550
-F 0 "#PWR011" H 6150 2300 50  0001 C CNN
-F 1 "GND" H 6155 2377 50  0000 C CNN
-F 2 "" H 6150 2550 50  0001 C CNN
-F 3 "" H 6150 2550 50  0001 C CNN
-	1    6150 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6150 2550 6150 2400
-Connection ~ 6150 2400
-Wire Wire Line
-	6150 2400 6650 2400
 $Comp
 L qomu-board:D_Small-Device D2
 U 1 1 5C0F0E57
-P 5950 2200
-F 0 "D2" V 5850 2200 50  0000 L CNN
-F 1 "D5V0L1B2LP3-7" H 5800 2100 50  0000 L CNN
-F 2 "qomu-board:X1-DFN1006-2" V 5950 2200 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 5950 2200 50  0001 C CNN
-F 4 "Diodes Incorporated" V 5950 2200 50  0001 C CNN "Manufacturer"
-F 5 "D5V0L1B2LP3-7" V 5950 2200 50  0001 C CNN "MPN"
-	1    5950 2200
+P 6350 1700
+F 0 "D2" V 6250 1600 50  0000 L CNN
+F 1 "D5V0L1B2LP3-7" H 6300 1800 50  0001 L CNN
+F 2 "qomu-board:X1-DFN1006-2" V 6350 1700 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 6350 1700 50  0001 C CNN
+F 4 "Diodes Incorporated" V 6350 1700 50  0001 C CNN "Manufacturer"
+F 5 "D5V0L1B2LP3-7" V 6350 1700 50  0001 C CNN "MPN"
+	1    6350 1700
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5850 1950 5550 1950
-Wire Wire Line
-	5550 1950 5550 2100
-Wire Wire Line
-	5550 2400 5550 2300
-Wire Wire Line
-	5550 2400 5950 2400
-Wire Wire Line
-	5950 2100 5950 1750
-Connection ~ 5950 1750
-Wire Wire Line
-	5950 2300 5950 2400
-Connection ~ 5950 2400
-Wire Wire Line
-	5950 2400 6150 2400
 $Comp
 L qomu-board:D_Small-Device D3
 U 1 1 5C1671C0
-P 6150 2200
-F 0 "D3" V 6050 2100 50  0000 L CNN
-F 1 "D5V0L1B2LP3-7" H 6000 2350 50  0000 L CNN
-F 2 "qomu-board:X1-DFN1006-2" V 6150 2200 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 6150 2200 50  0001 C CNN
-F 4 "Diodes Incorporated" V 6150 2200 50  0001 C CNN "Manufacturer"
-F 5 "D5V0L1B2LP3-7" V 6150 2200 50  0001 C CNN "MPN"
-	1    6150 2200
+P 6200 1700
+F 0 "D3" V 6100 1600 50  0000 L CNN
+F 1 "D5V0L1B2LP3-7" H 6150 1800 50  0001 L CNN
+F 2 "qomu-board:X1-DFN1006-2" V 6200 1700 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 6200 1700 50  0001 C CNN
+F 4 "Diodes Incorporated" V 6200 1700 50  0001 C CNN "Manufacturer"
+F 5 "D5V0L1B2LP3-7" V 6200 1700 50  0001 C CNN "MPN"
+	1    6200 1700
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6150 2300 6150 2400
-Wire Wire Line
-	6150 2100 6150 1850
-Connection ~ 6150 1850
 $Comp
 L qomu-board:D_Small-Device D4
 U 1 1 5C182AF1
-P 6650 2200
-F 0 "D4" V 6550 2100 50  0000 L CNN
-F 1 "D5V0L1B2LP3-7" H 6500 2300 50  0000 L CNN
-F 2 "qomu-board:X1-DFN1006-2" V 6650 2200 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 6650 2200 50  0001 C CNN
-F 4 "Diodes Incorporated" V 6650 2200 50  0001 C CNN "Manufacturer"
-F 5 "D5V0L1B2LP3-7" V 6650 2200 50  0001 C CNN "MPN"
-	1    6650 2200
+P 6500 1700
+F 0 "D4" V 6400 1600 50  0000 L CNN
+F 1 "D5V0L1B2LP3-7" V 6600 600 50  0000 L CNN
+F 2 "qomu-board:X1-DFN1006-2" V 6500 1700 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 6500 1700 50  0001 C CNN
+F 4 "Diodes Incorporated" V 6500 1700 50  0001 C CNN "Manufacturer"
+F 5 "D5V0L1B2LP3-7" V 6500 1700 50  0001 C CNN "MPN"
+	1    6500 1700
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6650 2100 6650 1650
-Connection ~ 6650 1650
-Wire Wire Line
-	6650 1650 6050 1650
-Wire Wire Line
-	6650 2300 6650 2400
 $Comp
 L qomu-board:D_Small-Device D6
 U 1 1 5C1C9C2F
@@ -381,7 +332,7 @@ Wire Wire Line
 Wire Wire Line
 	9500 3050 10100 3050
 Wire Notes Line
-	11100 600  11100 3800
+	11100 600  11100 3900
 Text Label 9700 2100 0    50   ~ 0
 PU_CTRL_USBP
 Wire Wire Line
@@ -485,85 +436,74 @@ F 3 "" H 2900 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L qomu-board:EOS-S3 IC1
-U 1 1 5DCB0652
-P 1600 2700
-F 0 "IC1" H 1650 2850 50  0000 C CNN
-F 1 "EOS-S3" H 1750 2750 50  0000 C CNN
-F 2 "qomu-board:42-WLCSP" H 3250 -400 50  0001 C CNN
-F 3 "https://www.quicklogic.com/wp-content/uploads/2020/06/QL-EOS-S3-Ultra-Low-Power-multicore-MCU-Datasheet.pdf" H 3350 -300 50  0001 C CNN
-	1    1600 2700
-	1    0    0    -1  
-$EndComp
-$Comp
 L qomu-board:GD25Q16CEIGR U4
 U 1 1 5DD5D055
-P 5800 4600
-F 0 "U4" H 6175 4765 50  0000 C CNN
-F 1 "GD25Q16CEIGR" H 6175 4674 50  0000 C CNN
-F 2 "qomu-board:GD25Q16CEIGR" H 5750 4550 50  0001 C CNN
-F 3 "http://www.gigadevice.com/datasheet/gd25q16c/" H 5850 4650 50  0001 C CNN
-	1    5800 4600
+P 5800 2600
+F 0 "U4" H 6175 2765 50  0000 C CNN
+F 1 "GD25Q16CEIGR" H 6175 2674 50  0000 C CNN
+F 2 "qomu-board:GD25Q16CEIGR" H 5750 2550 50  0001 C CNN
+F 3 "http://www.gigadevice.com/datasheet/gd25q16c/" H 5850 2650 50  0001 C CNN
+	1    5800 2600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5700 5200 5050 5200
+	5700 3200 5050 3200
 Wire Wire Line
-	5700 5300 5050 5300
+	5700 3300 5050 3300
 Wire Wire Line
-	5700 4850 5050 4850
+	5700 2850 5050 2850
 Wire Wire Line
-	6650 4850 7100 4850
+	6650 2850 7100 2850
 Wire Wire Line
-	6650 5300 6650 5400
+	6650 3300 6650 3400
 $Comp
 L qomu-board:GND #PWR04
 U 1 1 5DD80B9F
-P 6650 5400
-F 0 "#PWR04" H 6650 5150 50  0001 C CNN
-F 1 "GND" H 6655 5227 50  0000 C CNN
-F 2 "" H 6650 5400 50  0001 C CNN
-F 3 "" H 6650 5400 50  0001 C CNN
-	1    6650 5400
+P 6650 3400
+F 0 "#PWR04" H 6650 3150 50  0001 C CNN
+F 1 "GND" H 6655 3227 50  0000 C CNN
+F 2 "" H 6650 3400 50  0001 C CNN
+F 3 "" H 6650 3400 50  0001 C CNN
+	1    6650 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10150 5100 10250 5100
+	10150 5350 10250 5350
 Wire Wire Line
-	10250 5100 10250 5200
+	10250 5350 10250 5450
 Wire Wire Line
-	10150 5200 10250 5200
-Connection ~ 10250 5200
+	10150 5450 10250 5450
+Connection ~ 10250 5450
 Wire Wire Line
-	10250 5200 10250 5400
+	10250 5450 10250 5650
 $Comp
 L qomu-board:GND #PWR06
 U 1 1 5DD8D219
-P 10250 5400
-F 0 "#PWR06" H 10250 5150 50  0001 C CNN
-F 1 "GND" H 10255 5227 50  0000 C CNN
-F 2 "" H 10250 5400 50  0001 C CNN
-F 3 "" H 10250 5400 50  0001 C CNN
-	1    10250 5400
+P 10250 5650
+F 0 "#PWR06" H 10250 5400 50  0001 C CNN
+F 1 "GND" H 10255 5477 50  0000 C CNN
+F 2 "" H 10250 5650 50  0001 C CNN
+F 3 "" H 10250 5650 50  0001 C CNN
+	1    10250 5650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9300 4550 9200 4550
+	9300 4800 9200 4800
 Wire Wire Line
-	9200 4550 9200 4450
+	9200 4800 9200 4700
 Wire Wire Line
-	9300 4450 9200 4450
+	9300 4700 9200 4700
 Wire Wire Line
-	9300 4900 8650 4900
+	9300 5150 8650 5150
 $Comp
 L qomu-board:GND #PWR05
 U 1 1 5DDB8FF0
-P 9100 5400
-F 0 "#PWR05" H 9100 5150 50  0001 C CNN
-F 1 "GND" H 9105 5227 50  0000 C CNN
-F 2 "" H 9100 5400 50  0001 C CNN
-F 3 "" H 9100 5400 50  0001 C CNN
-	1    9100 5400
+P 9100 5650
+F 0 "#PWR05" H 9100 5400 50  0001 C CNN
+F 1 "GND" H 9105 5477 50  0000 C CNN
+F 2 "" H 9100 5650 50  0001 C CNN
+F 3 "" H 9100 5650 50  0001 C CNN
+	1    9100 5650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -574,49 +514,49 @@ Text Label 3650 3550 0    50   ~ 0
 I2C_SDA
 Text Label 3650 3650 0    50   ~ 0
 I2C_SCL
-Text Label 8250 4900 0    50   ~ 0
+Text Label 8250 5150 0    50   ~ 0
 I2C_SDA
-Text Label 8250 5200 0    50   ~ 0
+Text Label 8250 5450 0    50   ~ 0
 I2C_SCL
 Wire Wire Line
-	8650 4900 8650 4850
+	8650 5150 8650 5100
 $Comp
 L qomu-board:R_Small-Device R3
 U 1 1 5DDF05EA
-P 8650 4750
-F 0 "R3" V 8750 4750 50  0000 C CNN
-F 1 "4k7" V 8750 4600 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 8650 4750 50  0001 C CNN
-F 3 "" H 8650 4750 50  0001 C CNN
-F 4 "ANY" H -100 3050 50  0001 C CNN "MPN"
-	1    8650 4750
+P 8650 5000
+F 0 "R3" V 8750 5000 50  0000 C CNN
+F 1 "4k7" V 8750 4850 50  0000 C CNN
+F 2 "qomu-board:R_0201_0603Metric" H 8650 5000 50  0001 C CNN
+F 3 "" H 8650 5000 50  0001 C CNN
+F 4 "ANY" H -100 3300 50  0001 C CNN "MPN"
+	1    8650 5000
 	-1   0    0    1   
 $EndComp
 $Comp
 L qomu-board:R_Small-Device R4
 U 1 1 5DDF069C
-P 8850 4750
-F 0 "R4" V 8750 4800 50  0000 C CNN
-F 1 "4k7" V 8750 4650 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 8850 4750 50  0001 C CNN
-F 3 "" H 8850 4750 50  0001 C CNN
-F 4 "ANY" H 100 3050 50  0001 C CNN "MPN"
-	1    8850 4750
+P 8850 5000
+F 0 "R4" V 8750 5050 50  0000 C CNN
+F 1 "4k7" V 8750 4900 50  0000 C CNN
+F 2 "qomu-board:R_0201_0603Metric" H 8850 5000 50  0001 C CNN
+F 3 "" H 8850 5000 50  0001 C CNN
+F 4 "ANY" H 100 3300 50  0001 C CNN "MPN"
+	1    8850 5000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8650 4650 8650 4450
+	8650 4900 8650 4700
 Wire Wire Line
-	8650 4450 8850 4450
-Connection ~ 8650 4450
+	8650 4700 8850 4700
+Connection ~ 8650 4700
 Wire Wire Line
-	8650 4900 8250 4900
-Connection ~ 8650 4900
-Text Label 5050 4850 0    50   ~ 0
+	8650 5150 8250 5150
+Connection ~ 8650 5150
+Text Label 5050 2850 0    50   ~ 0
 SPI_MOSI
-Text Label 6750 4850 0    50   ~ 0
+Text Label 6750 2850 0    50   ~ 0
 SPI_MISO
-Text Label 5050 5300 0    50   ~ 0
+Text Label 5050 3300 0    50   ~ 0
 SPI_SCLK
 Wire Wire Line
 	9500 3150 10100 3150
@@ -637,12 +577,12 @@ SPI_MISO
 $Comp
 L qomu-board:C_Small-Device C5
 U 1 1 5DF5E56A
-P 6250 5900
-F 0 "C5" H 6450 5900 50  0000 L CNN
-F 1 "100n" H 6350 6000 50  0000 L CNN
-F 2 "qomu-board:C_0201_0603Metric" H 6250 5900 50  0001 C CNN
-F 3 "" H 6250 5900 50  0001 C CNN
-	1    6250 5900
+P 7400 3300
+F 0 "C5" H 7600 3300 50  0000 L CNN
+F 1 "100n" H 7500 3400 50  0000 L CNN
+F 2 "qomu-board:C_0201_0603Metric" H 7400 3300 50  0001 C CNN
+F 3 "" H 7400 3300 50  0001 C CNN
+	1    7400 3300
 	-1   0    0    1   
 $EndComp
 $Bitmap
@@ -1444,12 +1384,12 @@ EndData
 $EndBitmap
 Text Label 3650 5250 0    50   ~ 0
 SPI_SS
-Text Label 5050 5200 0    50   ~ 0
+Text Label 5050 3200 0    50   ~ 0
 SPI_SS
 Wire Wire Line
-	5600 5000 5700 5000
+	5600 3000 5700 3000
 Wire Wire Line
-	5600 5100 5700 5100
+	5600 3100 5700 3100
 Wire Wire Line
 	9850 1750 10350 1750
 Wire Wire Line
@@ -1479,24 +1419,24 @@ Wire Notes Line
 Wire Notes Line
 	600  7700 600  2300
 Wire Notes Line
-	4600 3950 7600 3950
+	4600 4000 7600 4000
 Wire Notes Line
-	7600 3950 7600 6350
+	7600 4000 7600 6350
 Wire Notes Line
 	7600 6350 4600 6350
 Wire Notes Line
-	4600 6350 4600 3950
+	4600 6350 4600 4000
 Wire Notes Line
-	7750 3950 11100 3950
+	7750 4000 11100 4000
 Wire Notes Line
-	11100 3950 11100 6350
+	11100 4000 11100 6350
 Wire Notes Line
 	11100 6350 7750 6350
 Wire Notes Line
-	7750 6350 7750 3950
+	7750 6350 7750 4000
 Wire Wire Line
 	9600 1250 10100 1250
-Text Notes 4650 6300 0    50   ~ 0
+Text Notes 4650 3850 0    50   ~ 0
 Flash memory
 Text Notes 7800 6300 0    50   ~ 0
 Accelerometer
@@ -1505,58 +1445,58 @@ EOS S3
 $Comp
 L qomu-board:MC3635 U5
 U 1 1 5E2FC133
-P 9400 4250
-F 0 "U5" H 9725 4315 50  0000 C CNN
-F 1 "MC3635" H 9725 4224 50  0000 C CNN
-F 2 "qomu-board:MC3635" H 9400 4100 50  0001 C CNN
-F 3 "https://mcubemems.com/wp-content/uploads/2019/06/MC3635-Datasheet-APS-048-0044v1.6.pdf" H 9850 3150 50  0001 C CNN
-	1    9400 4250
+P 9400 4500
+F 0 "U5" H 9725 4565 50  0000 C CNN
+F 1 "MC3635" H 9725 4474 50  0000 C CNN
+F 2 "qomu-board:MC3635" H 9400 4350 50  0001 C CNN
+F 3 "https://mcubemems.com/wp-content/uploads/2019/06/MC3635-Datasheet-APS-048-0044v1.6.pdf" H 9850 3400 50  0001 C CNN
+	1    9400 4500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3550 4650 4300 4650
-Text Notes 6300 1300 0    50   ~ 0
+Text Notes 5950 900  0    50   ~ 0
 TBD: Shall we keep those?
 $Comp
 L qomu-board:C_Small-Device C4
 U 1 1 5DE4FACB
-P 10600 5300
-F 0 "C4" H 10400 5250 50  0000 L CNN
-F 1 "100n" H 10300 5350 50  0000 L CNN
-F 2 "qomu-board:C_0201_0603Metric" H 10600 5300 50  0001 C CNN
-F 3 "" H 10600 5300 50  0001 C CNN
-	1    10600 5300
+P 10600 5550
+F 0 "C4" H 10400 5500 50  0000 L CNN
+F 1 "100n" H 10300 5600 50  0000 L CNN
+F 2 "qomu-board:C_0201_0603Metric" H 10600 5550 50  0001 C CNN
+F 3 "" H 10600 5550 50  0001 C CNN
+	1    10600 5550
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9300 4800 9100 4800
+	9300 5050 9100 5050
 Wire Wire Line
-	9100 4800 9100 5400
+	9100 5050 9100 5650
 Wire Wire Line
-	9300 5100 9200 5100
+	9300 5350 9200 5350
 Wire Wire Line
-	9200 5100 9200 4550
-Connection ~ 9200 4550
+	9200 5350 9200 4800
+Connection ~ 9200 4800
 $Comp
 L qomu-board:GND #PWR017
 U 1 1 5DEB67F5
-P 10600 5400
-F 0 "#PWR017" H 10600 5150 50  0001 C CNN
-F 1 "GND" H 10605 5227 50  0000 C CNN
-F 2 "" H 10600 5400 50  0001 C CNN
-F 3 "" H 10600 5400 50  0001 C CNN
-	1    10600 5400
+P 10600 5650
+F 0 "#PWR017" H 10600 5400 50  0001 C CNN
+F 1 "GND" H 10605 5477 50  0000 C CNN
+F 2 "" H 10600 5650 50  0001 C CNN
+F 3 "" H 10600 5650 50  0001 C CNN
+	1    10600 5650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8250 5200 8850 5200
+	8250 5450 8850 5450
 Wire Wire Line
-	8850 4450 8850 4650
+	8850 4700 8850 4900
 Wire Wire Line
-	8850 4850 8850 5200
-Connection ~ 8850 5200
+	8850 5100 8850 5450
+Connection ~ 8850 5450
 Wire Wire Line
-	8850 5200 9300 5200
+	8850 5450 9300 5450
 $Comp
 L qomu-board:LDO-X2SON U2
 U 1 1 5BF61C95
@@ -1603,23 +1543,23 @@ Wire Wire Line
 $Comp
 L qomu-board:GND #PWR016
 U 1 1 5DEBE893
-P 6250 6000
-F 0 "#PWR016" H 6250 5750 50  0001 C CNN
-F 1 "GND" H 6255 5827 50  0000 C CNN
-F 2 "" H 6250 6000 50  0001 C CNN
-F 3 "" H 6250 6000 50  0001 C CNN
-	1    6250 6000
+P 7400 3400
+F 0 "#PWR016" H 7400 3150 50  0001 C CNN
+F 1 "GND" H 7405 3227 50  0000 C CNN
+F 2 "" H 7400 3400 50  0001 C CNN
+F 3 "" H 7400 3400 50  0001 C CNN
+	1    7400 3400
 	1    0    0    -1  
 $EndComp
-Text Label 8250 5000 0    50   ~ 0
+Text Label 8250 5250 0    50   ~ 0
 ACC_INT
 Wire Wire Line
-	5600 5100 5600 5000
+	5600 3100 5600 3000
 Wire Wire Line
-	5600 4700 5700 4700
-Connection ~ 5600 5000
+	5600 2700 5700 2700
+Connection ~ 5600 3000
 Wire Wire Line
-	5600 5000 5600 4700
+	5600 3000 5600 2700
 Text Label 3650 3450 0    50   ~ 0
 ACC_INT
 Text Notes 3400 950  0    50   ~ 0
@@ -1630,13 +1570,13 @@ Wire Wire Line
 	1300 4300 1500 4300
 Wire Wire Line
 	3550 3450 3950 3450
-Text Notes 5450 5600 0    50   ~ 0
+Text Notes 5450 3600 0    50   ~ 0
 operating current\nmax. 20mA
 Text Notes 650  5950 0    50   ~ 0
 Maximum power consumption for A and B rails:\nLDO mode: 65mA (VCCIOA) 114mA (VCCIOB)\nLDO bypass mode: 77mA (VCCIOA) 269mA (VCCIOB) 
 Text Notes 650  6250 0    50   ~ 0
 The multi-functional IOs have four programmable drive \nstrength states: 2 mA, 4 mA, 8 mA, 12 mA \n(refer to datasheet page 92)
-Text Notes 9050 5900 0    50   ~ 0
+Text Notes 9050 6150 0    50   ~ 0
 operating current  for 1V8 supply\nmax. 36mA\nlow-power mode: max. 2.8mA\n
 $Comp
 L qomu-board:C_Small-Device C3
@@ -1918,7 +1858,7 @@ F 4 "ANY" H -4900 2350 50  0001 C CNN "MPN"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3550 4050 3750 4050
+	3550 4050 3650 4050
 Wire Wire Line
 	3550 4150 3750 4150
 Wire Wire Line
@@ -1968,34 +1908,30 @@ FBIO_19 and FPIO_20 are bootstrap\npins for SPI flash boot.\nThey must be pulled
 $Comp
 L qomu-board:R_Small-Device R8
 U 1 1 5DE58338
-P 7950 4850
-F 0 "R8" V 7850 4900 50  0000 C CNN
-F 1 "4k7" V 7850 4750 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 7950 4850 50  0001 C CNN
-F 3 "" H 7950 4850 50  0001 C CNN
-F 4 "ANY" H -800 3150 50  0001 C CNN "MPN"
-	1    7950 4850
+P 7950 5100
+F 0 "R8" V 7850 5150 50  0000 C CNN
+F 1 "4k7" V 7850 5000 50  0000 C CNN
+F 2 "qomu-board:R_0201_0603Metric" H 7950 5100 50  0001 C CNN
+F 3 "" H 7950 5100 50  0001 C CNN
+F 4 "ANY" H -800 3400 50  0001 C CNN "MPN"
+	1    7950 5100
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	7950 5000 7950 4950
+	7950 5250 7950 5200
 Wire Wire Line
-	7950 5000 9300 5000
+	7950 5250 9300 5250
 Wire Wire Line
-	7950 4750 7950 4450
+	7950 5000 7950 4700
 Wire Wire Line
-	7950 4450 8400 4450
+	7950 4700 8400 4700
 NoConn ~ 3550 4350
 NoConn ~ 3550 4450
 NoConn ~ 3550 4750
 NoConn ~ 3550 4850
 NoConn ~ 3550 5350
-NoConn ~ 3550 5450
-NoConn ~ 3550 5550
 NoConn ~ 3550 3350
 NoConn ~ 3550 3050
-NoConn ~ 3550 2950
-NoConn ~ 3550 2850
 Wire Wire Line
 	750  3250 1500 3250
 Wire Wire Line
@@ -2034,54 +1970,54 @@ Connection ~ 2900 900
 $Comp
 L qomu-board:+3V3 #PWR0104
 U 1 1 5DF23435
-P 5600 4350
-F 0 "#PWR0104" H 5600 4350 50  0001 C CNN
-F 1 "+3V3" H 5585 4473 50  0000 C CNN
-F 2 "" H 5600 4350 50  0001 C CNN
-F 3 "" H 5600 4350 50  0001 C CNN
-	1    5600 4350
+P 5600 2550
+F 0 "#PWR0104" H 5600 2550 50  0001 C CNN
+F 1 "+3V3" H 5585 2673 50  0000 C CNN
+F 2 "" H 5600 2550 50  0001 C CNN
+F 3 "" H 5600 2550 50  0001 C CNN
+	1    5600 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5600 4700 5600 4400
-Connection ~ 5600 4700
+	5600 2700 5600 2600
+Connection ~ 5600 2700
 $Comp
 L qomu-board:+3V3 #PWR0105
 U 1 1 5DF2D4C9
-P 8400 4400
-F 0 "#PWR0105" H 8400 4400 50  0001 C CNN
-F 1 "+3V3" H 8385 4523 50  0000 C CNN
-F 2 "" H 8400 4400 50  0001 C CNN
-F 3 "" H 8400 4400 50  0001 C CNN
-	1    8400 4400
+P 8400 4650
+F 0 "#PWR0105" H 8400 4650 50  0001 C CNN
+F 1 "+3V3" H 8385 4773 50  0000 C CNN
+F 2 "" H 8400 4650 50  0001 C CNN
+F 3 "" H 8400 4650 50  0001 C CNN
+	1    8400 4650
 	1    0    0    -1  
 $EndComp
-Connection ~ 8400 4450
+Connection ~ 8400 4700
 Wire Wire Line
-	8400 4450 8650 4450
+	8400 4700 8650 4700
 $Comp
 L qomu-board:+3V3 #PWR0106
 U 1 1 5DF2D809
-P 9200 4250
-F 0 "#PWR0106" H 9200 4250 50  0001 C CNN
-F 1 "+3V3" H 9185 4373 50  0000 C CNN
-F 2 "" H 9200 4250 50  0001 C CNN
-F 3 "" H 9200 4250 50  0001 C CNN
-	1    9200 4250
+P 9200 4500
+F 0 "#PWR0106" H 9200 4500 50  0001 C CNN
+F 1 "+3V3" H 9185 4623 50  0000 C CNN
+F 2 "" H 9200 4500 50  0001 C CNN
+F 3 "" H 9200 4500 50  0001 C CNN
+	1    9200 4500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9200 4300 9200 4450
-Connection ~ 9200 4450
+	9200 4550 9200 4700
+Connection ~ 9200 4700
 $Comp
 L qomu-board:+3V3 #PWR0107
 U 1 1 5DF404ED
-P 10600 5050
-F 0 "#PWR0107" H 10600 5050 50  0001 C CNN
-F 1 "+3V3" H 10585 5173 50  0000 C CNN
-F 2 "" H 10600 5050 50  0001 C CNN
-F 3 "" H 10600 5050 50  0001 C CNN
-	1    10600 5050
+P 10600 5300
+F 0 "#PWR0107" H 10600 5300 50  0001 C CNN
+F 1 "+3V3" H 10585 5423 50  0000 C CNN
+F 2 "" H 10600 5300 50  0001 C CNN
+F 3 "" H 10600 5300 50  0001 C CNN
+	1    10600 5300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2098,7 +2034,7 @@ $EndComp
 Wire Wire Line
 	1650 6650 1650 6750
 Wire Wire Line
-	10600 5100 10600 5200
+	10600 5350 10600 5450
 $Comp
 L qomu-board:+3V3 #PWR0109
 U 1 1 5DF4ADC0
@@ -2151,16 +2087,16 @@ $EndComp
 $Comp
 L qomu-board:+3V3 #PWR0113
 U 1 1 5DF60B5F
-P 6250 5700
-F 0 "#PWR0113" H 6250 5700 50  0001 C CNN
-F 1 "+3V3" H 6235 5823 50  0000 C CNN
-F 2 "" H 6250 5700 50  0001 C CNN
-F 3 "" H 6250 5700 50  0001 C CNN
-	1    6250 5700
+P 7400 3100
+F 0 "#PWR0113" H 7400 3100 50  0001 C CNN
+F 1 "+3V3" H 7385 3223 50  0000 C CNN
+F 2 "" H 7400 3100 50  0001 C CNN
+F 3 "" H 7400 3100 50  0001 C CNN
+	1    7400 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6250 5750 6250 5800
+	7400 3150 7400 3200
 $Comp
 L qomu-board:+3V3 #PWR0114
 U 1 1 5DF6A5E8
@@ -2172,8 +2108,391 @@ F 3 "" H 8650 2900 50  0001 C CNN
 	1    8650 2900
 	1    0    0    -1  
 $EndComp
-Text Notes 7850 3550 0    50   ~ 0
+Text Notes 7800 3750 0    50   ~ 0
 TBD- LED driving
-Text Notes 4650 6200 0    50   ~ 0
+Text Notes 4650 3750 0    50   ~ 0
 TBD - flash memory programming
+Wire Wire Line
+	5550 4800 5450 4800
+Wire Wire Line
+	5450 4800 5450 4900
+Wire Wire Line
+	5550 5100 5450 5100
+Connection ~ 5450 5100
+Wire Wire Line
+	5450 5100 5450 5200
+Wire Wire Line
+	5550 4900 5450 4900
+Connection ~ 5450 4900
+Wire Wire Line
+	5450 4900 5450 5100
+Wire Wire Line
+	5550 4700 5200 4700
+Wire Wire Line
+	4900 4700 4900 4800
+Connection ~ 5200 4700
+Wire Wire Line
+	5200 4700 4900 4700
+Wire Wire Line
+	4900 5000 4900 5200
+Wire Wire Line
+	5200 4750 5200 4700
+Wire Wire Line
+	5200 5150 5200 5200
+Wire Wire Line
+	4900 4450 4900 4700
+Connection ~ 4900 4700
+Wire Wire Line
+	5950 5100 7400 5100
+Wire Wire Line
+	5950 4900 6100 4900
+Wire Wire Line
+	6700 4900 7400 4900
+Text Notes 6700 4900 0    50   ~ 10
+DNP
+Wire Wire Line
+	5950 4800 6400 4800
+Wire Wire Line
+	5950 4700 6700 4700
+Wire Wire Line
+	6100 4650 6100 4900
+Connection ~ 6100 4900
+Wire Wire Line
+	6100 4900 6400 4900
+Wire Wire Line
+	6400 4650 6400 4800
+Connection ~ 6400 4800
+Wire Wire Line
+	6400 4800 7400 4800
+Wire Wire Line
+	6700 4650 6700 4700
+Connection ~ 6700 4700
+Wire Wire Line
+	6700 4700 7400 4700
+Text Label 7000 4700 0    50   ~ 0
+SWD_IO
+Text Label 7000 4800 0    50   ~ 0
+SWD_CLK
+Text Label 7000 4900 0    50   ~ 0
+DBG_SS
+Wire Wire Line
+	6950 5950 6800 5950
+Wire Wire Line
+	6800 5650 6950 5650
+Wire Wire Line
+	6950 5650 6950 5600
+Wire Wire Line
+	6800 5850 7350 5850
+Wire Wire Line
+	6800 5750 7350 5750
+Text Label 3650 5450 0    50   ~ 0
+UART_TX
+$Comp
+L qomu-board:SD05C.TCT D8
+U 1 1 5DED4186
+P 5200 4950
+F 0 "D8" V 5350 4900 60  0000 R CNN
+F 1 "SD05C.TCT" H 5400 5100 60  0000 R CNN
+F 2 "qomu-board-footprints:SOD-323" H 5400 5150 60  0001 L CNN
+F 3 "https://www.mouser.com/datasheet/2/761/sdxxc-1277747.pdf" H 5400 5250 60  0001 L CNN
+F 4 "Semtec" H 5400 5550 60  0001 L CNN "Manufacturer"
+F 5 "SD05C.TCT" H 5400 5450 60  0001 L CNN "MPN"
+	1    5200 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L qomu-board:825437-4 J2
+U 1 1 5DED4C12
+P 6650 5650
+F 0 "J2" V 6550 5650 50  0000 C CNN
+F 1 "825437-4" H 6800 5550 50  0000 C CNN
+F 2 "qomu-board-footprints:TE_825437-4" H 6850 5950 60  0001 L CNN
+F 3 "https://www.te.com/usa-en/product-825437-4.datasheet.pdf" H 6850 6050 60  0001 L CNN
+F 4 "825437-4" H 6850 6150 60  0001 L CNN "MPN"
+F 5 "TE Connectivity" H 6850 6250 60  0001 L CNN "Manufacturer"
+	1    6650 5650
+	0    1    1    0   
+$EndComp
+$Comp
+L qomu-board:R_0R_0402 R14
+U 1 1 5DED5709
+P 6550 4900
+F 0 "R14" H 6250 4950 60  0000 C CNN
+F 1 "R_0R_0402" H 6550 4750 60  0001 C CNN
+F 2 "qomu-board-footprints:0402-res" H 6750 5100 60  0001 L CNN
+F 3 "" H 6550 4900 50  0001 C CNN
+F 4 "PANASONIC" H 6750 5300 60  0001 L CNN "Manufacturer"
+F 5 "ERJ2GE0R00X" H 6750 5200 60  0001 L CNN "MPN"
+F 6 "0R" H 6250 4850 50  0000 C CNN "Val"
+	1    6550 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:FTSH-105-01-L-DV-K J1
+U 1 1 5DED6D58
+P 5750 4900
+F 0 "J1" H 5700 5350 50  0000 C CNN
+F 1 "FTSH-105-01-L-DV-K" H 5500 5250 50  0000 C CNN
+F 2 "qomu-board-footprints:PinHeader_2x5_P1.27_SMD" H 5950 5100 60  0001 L CNN
+F 3 "http://suddendocs.samtec.com/prints/ftsh-1xx-xx-xxx-dv-xxx-xxx-mkt.pdf" H 5950 5200 60  0001 L CNN
+F 4 "FTSH-105-01-L-DV-K" H 5950 5400 60  0001 L CNN "MPN"
+F 5 "Samtec Inc." H 5950 6000 60  0001 L CNN "Manufacturer"
+	1    5750 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:R_Small-Device R15
+U 1 1 5DEA3DDA
+P 6700 4550
+F 0 "R15" H 6750 4450 50  0000 C CNN
+F 1 "10k" V 6600 4550 50  0000 C CNN
+F 2 "qomu-board:R_0201_0603Metric" H 6700 4550 50  0001 C CNN
+F 3 "" H 6700 4550 50  0001 C CNN
+F 4 "ANY" H -2050 2850 50  0001 C CNN "MPN"
+	1    6700 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L qomu-board:R_Small-Device R13
+U 1 1 5DEA73A8
+P 6400 4550
+F 0 "R13" H 6450 4450 50  0000 C CNN
+F 1 "10k" V 6300 4550 50  0000 C CNN
+F 2 "qomu-board:R_0201_0603Metric" H 6400 4550 50  0001 C CNN
+F 3 "" H 6400 4550 50  0001 C CNN
+F 4 "ANY" H -2350 2850 50  0001 C CNN "MPN"
+	1    6400 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L qomu-board:R_Small-Device R10
+U 1 1 5DEA75F7
+P 6100 4550
+F 0 "R10" H 6150 4450 50  0000 C CNN
+F 1 "10k" V 6000 4550 50  0000 C CNN
+F 2 "qomu-board:R_0201_0603Metric" H 6100 4550 50  0001 C CNN
+F 3 "" H 6100 4550 50  0001 C CNN
+F 4 "ANY" H -2650 2850 50  0001 C CNN "MPN"
+	1    6100 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6100 4450 6100 4400
+Wire Wire Line
+	6100 4400 6400 4400
+Wire Wire Line
+	6700 4400 6700 4450
+Wire Wire Line
+	6400 4450 6400 4400
+Connection ~ 6400 4400
+Wire Wire Line
+	6400 4400 6700 4400
+$Comp
+L qomu-board:C_Small-Device C12
+U 1 1 5DED905E
+P 4900 4900
+F 0 "C12" H 4750 5000 50  0000 L CNN
+F 1 "100n" V 4800 4650 50  0000 L CNN
+F 2 "qomu-board:C_0201_0603Metric" H 4900 4900 50  0001 C CNN
+F 3 "" H 4900 4900 50  0001 C CNN
+	1    4900 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 5950 6950 6000
+$Comp
+L qomu-board:+3V3 #PWR0115
+U 1 1 5DF00C49
+P 6950 5550
+F 0 "#PWR0115" H 6950 5550 50  0001 C CNN
+F 1 "+3V3" H 6935 5673 50  0000 C CNN
+F 2 "" H 6950 5550 50  0001 C CNN
+F 3 "" H 6950 5550 50  0001 C CNN
+	1    6950 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0116
+U 1 1 5DF012DB
+P 6950 6000
+F 0 "#PWR0116" H 6950 5750 50  0001 C CNN
+F 1 "GND" H 6955 5827 50  0000 C CNN
+F 2 "" H 6950 6000 50  0001 C CNN
+F 3 "" H 6950 6000 50  0001 C CNN
+	1    6950 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0117
+U 1 1 5DF05494
+P 4900 5200
+F 0 "#PWR0117" H 4900 4950 50  0001 C CNN
+F 1 "GND" H 4905 5027 50  0000 C CNN
+F 2 "" H 4900 5200 50  0001 C CNN
+F 3 "" H 4900 5200 50  0001 C CNN
+	1    4900 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0118
+U 1 1 5DF05792
+P 5200 5200
+F 0 "#PWR0118" H 5200 4950 50  0001 C CNN
+F 1 "GND" H 5205 5027 50  0000 C CNN
+F 2 "" H 5200 5200 50  0001 C CNN
+F 3 "" H 5200 5200 50  0001 C CNN
+	1    5200 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0119
+U 1 1 5DF05A2B
+P 5450 5200
+F 0 "#PWR0119" H 5450 4950 50  0001 C CNN
+F 1 "GND" H 5455 5027 50  0000 C CNN
+F 2 "" H 5450 5200 50  0001 C CNN
+F 3 "" H 5450 5200 50  0001 C CNN
+	1    5450 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:+3V3 #PWR0120
+U 1 1 5DF11E3D
+P 4900 4400
+F 0 "#PWR0120" H 4900 4400 50  0001 C CNN
+F 1 "+3V3" H 4885 4523 50  0000 C CNN
+F 2 "" H 4900 4400 50  0001 C CNN
+F 3 "" H 4900 4400 50  0001 C CNN
+	1    4900 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:+3V3 #PWR0121
+U 1 1 5DF1217B
+P 6400 4350
+F 0 "#PWR0121" H 6400 4350 50  0001 C CNN
+F 1 "+3V3" H 6385 4473 50  0000 C CNN
+F 2 "" H 6400 4350 50  0001 C CNN
+F 3 "" H 6400 4350 50  0001 C CNN
+	1    6400 4350
+	1    0    0    -1  
+$EndComp
+Text Label 7250 5100 2    50   ~ 0
+RST_N
+Wire Wire Line
+	6500 1600 6500 1250
+Connection ~ 6500 1250
+Wire Wire Line
+	5700 1250 6500 1250
+Wire Wire Line
+	6350 1600 6350 1350
+Connection ~ 6350 1350
+Wire Wire Line
+	6350 1350 5600 1350
+Wire Wire Line
+	6200 1600 6200 1450
+Connection ~ 6200 1450
+Wire Wire Line
+	6200 1450 5800 1450
+Wire Wire Line
+	6050 1600 6050 1550
+Connection ~ 6050 1550
+Wire Wire Line
+	6050 1550 6950 1550
+$Comp
+L qomu-board:GND #PWR0122
+U 1 1 5DFAF08B
+P 6350 1800
+F 0 "#PWR0122" H 6350 1550 50  0001 C CNN
+F 1 "GND" H 6355 1627 50  0000 C CNN
+F 2 "" H 6350 1800 50  0001 C CNN
+F 3 "" H 6350 1800 50  0001 C CNN
+	1    6350 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0123
+U 1 1 5DFAED08
+P 6050 1800
+F 0 "#PWR0123" H 6050 1550 50  0001 C CNN
+F 1 "GND" H 6055 1627 50  0000 C CNN
+F 2 "" H 6050 1800 50  0001 C CNN
+F 3 "" H 6050 1800 50  0001 C CNN
+	1    6050 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0124
+U 1 1 5DFBB669
+P 6200 1800
+F 0 "#PWR0124" H 6200 1550 50  0001 C CNN
+F 1 "GND" H 6205 1627 50  0000 C CNN
+F 2 "" H 6200 1800 50  0001 C CNN
+F 3 "" H 6200 1800 50  0001 C CNN
+	1    6200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0125
+U 1 1 5DFBB8A5
+P 6500 1800
+F 0 "#PWR0125" H 6500 1550 50  0001 C CNN
+F 1 "GND" H 6505 1627 50  0000 C CNN
+F 2 "" H 6500 1800 50  0001 C CNN
+F 3 "" H 6500 1800 50  0001 C CNN
+	1    6500 1800
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4600 2200 7600 2200
+Wire Notes Line
+	4600 2300 7600 2300
+Wire Notes Line
+	7600 2300 7600 3900
+Wire Notes Line
+	4600 3900 4600 2300
+Wire Notes Line
+	4600 3900 7600 3900
+Text Notes 4650 6300 0    50   ~ 0
+Programming and debug headers
+Wire Wire Line
+	3550 2950 3950 2950
+Wire Wire Line
+	3550 2850 3950 2850
+Text Label 3650 2850 0    50   ~ 0
+SWD_IO
+Text Label 3650 2950 0    50   ~ 0
+SWD_CLK
+Wire Wire Line
+	3650 4050 3650 3950
+Wire Wire Line
+	3650 3950 3950 3950
+Connection ~ 3650 4050
+Wire Wire Line
+	3650 4050 3750 4050
+Text Label 3650 3950 0    50   ~ 0
+DBG_SS
+$Comp
+L qomu-board:EOS-S3 IC1
+U 1 1 5DCB0652
+P 1600 2700
+F 0 "IC1" H 1650 2850 50  0000 C CNN
+F 1 "EOS-S3" H 1750 2750 50  0000 C CNN
+F 2 "qomu-board:42-WLCSP" H 3250 -400 50  0001 C CNN
+F 3 "https://www.quicklogic.com/wp-content/uploads/2020/06/QL-EOS-S3-Ultra-Low-Power-multicore-MCU-Datasheet.pdf" H 3350 -300 50  0001 C CNN
+	1    1600 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 5450 4000 5450
+Wire Wire Line
+	3550 5550 4000 5550
+Text Label 3650 5550 0    50   ~ 0
+UART_RX
+NoConn ~ 5550 5000
+NoConn ~ 5950 5000
+Text Label 7000 5850 0    50   ~ 0
+UART_RX
+Text Label 7000 5750 0    50   ~ 0
+UART_TX
 $EndSCHEMATC
