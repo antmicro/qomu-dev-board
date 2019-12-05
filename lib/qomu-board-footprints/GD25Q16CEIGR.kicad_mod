@@ -39,7 +39,7 @@
     (solder_paste_margin -0.1))
   (pad 9 smd rect (at 0.05 0.4) (size 0.15 0.9) (layers F.Cu F.Paste F.Mask)
     (solder_paste_margin -0.1))
-  (model ${KIPRJMOD}/lib/qomu-board-footprints/GD25Q16CEIGR.step
+  (model ${KIPRJMOD}/qomu-board.pretty/GD25Q16CEIGR.step
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))

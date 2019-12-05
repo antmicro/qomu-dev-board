@@ -1,12 +1,6 @@
-<<<<<<< HEAD:archive/evt/pcb/lib/qomu-board-footprints/SPST-NO-Button.kicad_mod
 (module SPST-NO-Button (layer F.Cu) (tedit 5BF2D514)
   (attr smd)
   (fp_text reference SW1 (at -0.2 -0.1 -180) (layer F.SilkS)
-=======
-(module SPST-NO-Button (layer F.Cu) (tedit 5C015653)
-  (attr smd)
-  (fp_text reference SW? (at 3.4 3.9) (layer F.SilkS)
->>>>>>> dvt:archive/dvt/pcb/lib/qomu-board-footprints/SPST-NO-Button.kicad_mod
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value Reset (at 5.7 0 -270) (layer F.SilkS)
