@@ -69,14 +69,14 @@ $EndComp
 $Comp
 L qomu-board:RGB-LED U10
 U 1 1 5BD90F18
-P 9100 3200
-F 0 "U10" H 8900 3150 50  0000 C CNN
-F 1 "UHD1110-FKA" H 9100 3050 50  0000 C CNN
-F 2 "qomu-board:LED-RGB-5DS-UHD1110-FKA" H 9100 3200 50  0001 C CNN
-F 3 "https://www.cree.com/led-components/media/documents/ds-UHD1110-FKA.pdf" H 9100 3200 50  0001 C CNN
-F 4 "UHD1110-FKA" H 9100 3200 50  0001 C CNN "MPN"
-F 5 "Cree" H 9100 3200 50  0001 C CNN "Manufacturer"
-	1    9100 3200
+P 8600 2950
+F 0 "U10" H 8400 2900 50  0000 C CNN
+F 1 "UHD1110-FKA" H 8600 2800 50  0000 C CNN
+F 2 "qomu-board:LED-RGB-5DS-UHD1110-FKA" H 8600 2950 50  0001 C CNN
+F 3 "https://www.cree.com/led-components/media/documents/ds-UHD1110-FKA.pdf" H 8600 2950 50  0001 C CNN
+F 4 "UHD1110-FKA" H 8600 2950 50  0001 C CNN "MPN"
+F 5 "Cree" H 8600 2950 50  0001 C CNN "Manufacturer"
+	1    8600 2950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -161,12 +161,12 @@ Wire Wire Line
 	9400 2100 9350 2100
 Wire Wire Line
 	9350 2100 9350 1850
-Text Label 9600 2950 0    50   ~ 0
-LED_B
-Text Label 9600 3050 0    50   ~ 0
-LED_G
-Text Label 9600 3150 0    50   ~ 0
-LED_R
+Text Label 9000 2700 0    50   ~ 0
+LED_BK
+Text Label 9000 2800 0    50   ~ 0
+LED_GK
+Text Label 9000 2900 0    50   ~ 0
+LED_RK
 Wire Wire Line
 	6950 1350 6350 1350
 Wire Wire Line
@@ -185,7 +185,7 @@ Wire Wire Line
 Wire Wire Line
 	9050 1750 9600 1750
 Wire Wire Line
-	8650 2950 8750 2950
+	8150 2700 8250 2700
 Text Label 6600 1550 0    50   ~ 0
 TOUCH_4
 Text Label 6600 1450 0    50   ~ 0
@@ -328,9 +328,9 @@ Wire Wire Line
 	9450 1250 9500 1250
 Connection ~ 9500 1250
 Wire Wire Line
-	10100 2950 9500 2950
+	9400 2700 9000 2700
 Wire Wire Line
-	9500 3050 10100 3050
+	9000 2800 9400 2800
 Wire Notes Line
 	11100 600  11100 3900
 Text Label 9700 2100 0    50   ~ 0
@@ -559,7 +559,7 @@ SPI_MISO
 Text Label 5050 3300 0    50   ~ 0
 SPI_SCLK
 Wire Wire Line
-	9500 3150 10100 3150
+	9000 2900 9400 2900
 Wire Wire Line
 	3550 4950 4000 4950
 Wire Wire Line
@@ -1564,7 +1564,7 @@ Text Label 3650 3450 0    50   ~ 0
 ACC_INT
 Text Notes 3400 950  0    50   ~ 0
 2x 3.3V@300mA
-Text Notes 9550 2800 0    50   ~ 0
+Text Notes 9050 2550 0    50   ~ 0
 5mA/channel
 Wire Wire Line
 	1300 4300 1500 4300
@@ -2100,16 +2100,14 @@ Wire Wire Line
 $Comp
 L qomu-board:+3V3 #PWR0114
 U 1 1 5DF6A5E8
-P 8650 2900
-F 0 "#PWR0114" H 8650 2900 50  0001 C CNN
-F 1 "+3V3" H 8635 3023 50  0000 C CNN
-F 2 "" H 8650 2900 50  0001 C CNN
-F 3 "" H 8650 2900 50  0001 C CNN
-	1    8650 2900
+P 8150 2650
+F 0 "#PWR0114" H 8150 2650 50  0001 C CNN
+F 1 "+3V3" H 8135 2773 50  0000 C CNN
+F 2 "" H 8150 2650 50  0001 C CNN
+F 3 "" H 8150 2650 50  0001 C CNN
+	1    8150 2650
 	1    0    0    -1  
 $EndComp
-Text Notes 7800 3750 0    50   ~ 0
-TBD- LED driving
 Text Notes 4650 3750 0    50   ~ 0
 TBD - flash memory programming
 Wire Wire Line
@@ -2495,4 +2493,155 @@ Text Label 7000 5850 0    50   ~ 0
 UART_RX
 Text Label 7000 5750 0    50   ~ 0
 UART_TX
+$Comp
+L qomu-board:R_Small-Device R16
+U 1 1 5DF394C7
+P 9500 2700
+F 0 "R16" V 9450 2550 50  0000 C CNN
+F 1 "100R" V 9450 2900 50  0000 C CNN
+F 2 "qomu-board:R_0201_0603Metric" H 9500 2700 50  0001 C CNN
+F 3 "" H 9500 2700 50  0001 C CNN
+F 4 "ANY" H 1000 500 50  0001 C CNN "MPN"
+	1    9500 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L qomu-board:R_Small-Device R17
+U 1 1 5DF6B65E
+P 9500 2800
+F 0 "R17" V 9450 2650 50  0000 C CNN
+F 1 "100R" V 9450 3000 50  0000 C CNN
+F 2 "qomu-board:R_0201_0603Metric" H 9500 2800 50  0001 C CNN
+F 3 "" H 9500 2800 50  0001 C CNN
+F 4 "ANY" H 1000 600 50  0001 C CNN "MPN"
+	1    9500 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L qomu-board:R_Small-Device R18
+U 1 1 5DF6BA6D
+P 9500 2900
+F 0 "R18" V 9450 2750 50  0000 C CNN
+F 1 "220R" V 9450 3100 50  0000 C CNN
+F 2 "qomu-board:R_0201_0603Metric" H 9500 2900 50  0001 C CNN
+F 3 "" H 9500 2900 50  0001 C CNN
+F 4 "ANY" H 1000 700 50  0001 C CNN "MPN"
+	1    9500 2900
+	0    1    1    0   
+$EndComp
+Text Label 10750 3300 0    50   ~ 0
+LED_B
+Text Label 10750 3400 0    50   ~ 0
+LED_G
+Text Label 10750 3500 0    50   ~ 0
+LED_R
+$Comp
+L qomu-board:RV1C002UN Q2
+U 1 1 5DF91114
+P 10200 3100
+F 0 "Q2" H 10100 3250 50  0000 L CNN
+F 1 "RV1C002UN" V 10400 2850 50  0000 L CNN
+F 2 "qomu-board-footprints:VML0806" H 10400 2700 50  0001 L BNN
+F 3 "https://d1d2qsbl8m0m72.cloudfront.net/en/products/databook/datasheet/discrete/transistor/mosfet/rv1c002un-e.pdf" H 10425 2925 50  0001 L BNN
+F 4 "RV1C002UN" H 10425 3075 50  0001 L BNN "Field4"
+F 5 "Nch 20V 180mA Small Signal MOSFET" H 10400 2850 50  0001 L BNN "Field5"
+F 6 "None" H 10400 2775 50  0001 L BNN "Field6"
+F 7 "Unavailable" H 10400 2925 50  0001 L BNN "Field7"
+F 8 "Rohm" H 10425 3000 50  0001 L BNN "Field8"
+	1    10200 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L qomu-board:RV1C002UN Q3
+U 1 1 5DF95B3F
+P 10600 3100
+F 0 "Q3" H 10500 3250 50  0000 L CNN
+F 1 "RV1C002UN" V 10800 2850 50  0000 L CNN
+F 2 "qomu-board-footprints:VML0806" H 10800 2700 50  0001 L BNN
+F 3 "https://d1d2qsbl8m0m72.cloudfront.net/en/products/databook/datasheet/discrete/transistor/mosfet/rv1c002un-e.pdf" H 10825 2925 50  0001 L BNN
+F 4 "RV1C002UN" H 10825 3075 50  0001 L BNN "Field4"
+F 5 "Nch 20V 180mA Small Signal MOSFET" H 10800 2850 50  0001 L BNN "Field5"
+F 6 "None" H 10800 2775 50  0001 L BNN "Field6"
+F 7 "Unavailable" H 10800 2925 50  0001 L BNN "Field7"
+F 8 "Rohm" H 10825 3000 50  0001 L BNN "Field8"
+	1    10600 3100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 2900 9600 2900
+Wire Wire Line
+	9600 2800 10100 2800
+Wire Wire Line
+	10100 2800 10100 2900
+Wire Wire Line
+	10500 2900 10500 2700
+Wire Wire Line
+	10500 2700 9600 2700
+$Comp
+L qomu-board:RV1C002UN Q1
+U 1 1 5DF27508
+P 9800 3100
+F 0 "Q1" H 9700 3250 50  0000 L CNN
+F 1 "RV1C002UN" V 10050 2800 50  0000 L CNN
+F 2 "qomu-board-footprints:VML0806" H 10000 2700 50  0001 L BNN
+F 3 "https://d1d2qsbl8m0m72.cloudfront.net/en/products/databook/datasheet/discrete/transistor/mosfet/rv1c002un-e.pdf" H 10025 2925 50  0001 L BNN
+F 4 "RV1C002UN" H 10025 3075 50  0001 L BNN "Field4"
+F 5 "Nch 20V 180mA Small Signal MOSFET" H 10000 2850 50  0001 L BNN "Field5"
+F 6 "None" H 10000 2775 50  0001 L BNN "Field6"
+F 7 "Unavailable" H 10000 2925 50  0001 L BNN "Field7"
+F 8 "Rohm" H 10025 3000 50  0001 L BNN "Field8"
+	1    9800 3100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 3200 10700 3300
+Wire Wire Line
+	10700 3300 11000 3300
+Wire Wire Line
+	10300 3200 10300 3400
+Wire Wire Line
+	10300 3400 11000 3400
+Wire Wire Line
+	9900 3200 9900 3500
+Wire Wire Line
+	9900 3500 11000 3500
+$Comp
+L qomu-board:GND #PWR0126
+U 1 1 5E018B96
+P 9700 3600
+F 0 "#PWR0126" H 9700 3350 50  0001 C CNN
+F 1 "GND" H 9705 3427 50  0000 C CNN
+F 2 "" H 9700 3600 50  0001 C CNN
+F 3 "" H 9700 3600 50  0001 C CNN
+	1    9700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0127
+U 1 1 5E060D94
+P 10100 3600
+F 0 "#PWR0127" H 10100 3350 50  0001 C CNN
+F 1 "GND" H 10105 3427 50  0000 C CNN
+F 2 "" H 10100 3600 50  0001 C CNN
+F 3 "" H 10100 3600 50  0001 C CNN
+	1    10100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0128
+U 1 1 5E0610BA
+P 10500 3600
+F 0 "#PWR0128" H 10500 3350 50  0001 C CNN
+F 1 "GND" H 10505 3427 50  0000 C CNN
+F 2 "" H 10500 3600 50  0001 C CNN
+F 3 "" H 10500 3600 50  0001 C CNN
+	1    10500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 3300 9700 3600
+Wire Wire Line
+	10100 3300 10100 3600
+Wire Wire Line
+	10500 3300 10500 3600
 $EndSCHEMATC
