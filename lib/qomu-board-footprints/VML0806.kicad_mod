@@ -1,4 +1,4 @@
-(module VML0806 (layer F.Cu) (tedit 5DEE2B77)
+(module VML0806 (layer F.Cu) (tedit 5DEE4A38)
   (attr smd)
   (fp_text reference VML0806 (at 1.29 -2.06) (layer F.SilkS)
     (effects (font (size 0.629921 0.629921) (thickness 0.05)))
@@ -22,4 +22,9 @@
   (pad 3 smd rect (at 0.325 0) (size 0.27 0.52) (layers F.Cu F.Paste F.Mask))
   (pad 2 smd rect (at -0.175 0.175) (size 0.27 0.18) (layers F.Cu F.Paste F.Mask))
   (pad 1 smd rect (at -0.175 -0.175) (size 0.27 0.18) (layers F.Cu F.Paste F.Mask))
+  (model ${KIPRJMOD}/lib/3d-models/42-WLCSP.step
+    (offset (xyz -0.32 0.3 0.35))
+    (scale (xyz 0.3 1 0.26))
+    (rotate (xyz 90 0 0))
+  )
 )
