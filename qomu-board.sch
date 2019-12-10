@@ -108,15 +108,15 @@ $EndComp
 $Comp
 L qomu-board:PADS SW2
 U 1 1 5BE44C19
-P 5850 900
-F 0 "SW2" V 6000 1500 50  0000 C CNN
-F 1 "Captouch Pads" V 6000 1050 50  0000 C CNN
-F 2 "qomu-board:captouch-edge" H 5900 900 50  0001 C CNN
-F 3 "" H 5900 900 50  0001 C CNN
-F 4 "N/A" H 5850 900 50  0001 C CNN "MPN"
-F 5 "N/A" H 5850 900 50  0001 C CNN "Manufacturer"
-	1    5850 900 
-	0    -1   -1   0   
+P 5450 900
+F 0 "SW2" V 5600 1500 50  0000 C CNN
+F 1 "Captouch Pads" V 5600 1050 50  0000 C CNN
+F 2 "qomu-board:captouch-edge" H 5500 900 50  0001 C CNN
+F 3 "" H 5500 900 50  0001 C CNN
+F 4 "N/A" H 5450 900 50  0001 C CNN "MPN"
+F 5 "N/A" H 5450 900 50  0001 C CNN "Manufacturer"
+	1    5450 900 
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	6950 1450 6200 1450
@@ -151,8 +151,6 @@ Wire Notes Line
 Text Notes 4650 2150 0    50   ~ 0
 Captouch Input
 Wire Wire Line
-	6950 1250 6500 1250
-Wire Wire Line
 	9050 1850 9350 1850
 Connection ~ 9350 1850
 Wire Wire Line
@@ -169,10 +167,6 @@ Text Label 9000 2900 0    50   ~ 0
 LED_RK
 Wire Wire Line
 	6950 1350 6350 1350
-Wire Wire Line
-	5700 1250 5700 1100
-Wire Wire Line
-	5600 1350 5600 1100
 Wire Wire Line
 	5500 1100 5500 1550
 Wire Wire Line
@@ -194,8 +188,6 @@ Text Label 6600 1350 0    50   ~ 0
 TOUCH_2
 Text Label 6600 1250 0    50   ~ 0
 TOUCH_1
-Wire Wire Line
-	5800 1100 5800 1450
 Text Label 9150 1850 0    50   ~ 0
 USB_P
 Text Label 9150 1750 0    50   ~ 0
@@ -1405,7 +1397,7 @@ R_USB_P
 Wire Wire Line
 	3550 4250 4200 4250
 Wire Wire Line
-	3550 4550 4300 4550
+	3550 4550 4000 4550
 Text Label 3650 4250 0    50   ~ 0
 PU_CTRL_USBP
 Wire Wire Line
@@ -1454,7 +1446,7 @@ F 3 "https://mcubemems.com/wp-content/uploads/2019/06/MC3635-Datasheet-APS-048-0
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3550 4650 4300 4650
+	3550 4650 4000 4650
 Text Notes 5950 900  0    50   ~ 0
 TBD: Shall we keep those?
 $Comp
@@ -1925,9 +1917,6 @@ Wire Wire Line
 	7950 5000 7950 4700
 Wire Wire Line
 	7950 4700 8400 4700
-NoConn ~ 3550 4350
-NoConn ~ 3550 4450
-NoConn ~ 3550 4750
 NoConn ~ 3550 4850
 NoConn ~ 3550 5350
 NoConn ~ 3550 3350
@@ -2379,19 +2368,11 @@ Text Label 7250 5100 2    50   ~ 0
 RST_N
 Wire Wire Line
 	6500 1600 6500 1250
-Connection ~ 6500 1250
-Wire Wire Line
-	5700 1250 6500 1250
 Wire Wire Line
 	6350 1600 6350 1350
-Connection ~ 6350 1350
-Wire Wire Line
-	6350 1350 5600 1350
 Wire Wire Line
 	6200 1600 6200 1450
 Connection ~ 6200 1450
-Wire Wire Line
-	6200 1450 5800 1450
 Wire Wire Line
 	6050 1600 6050 1550
 Connection ~ 6050 1550
@@ -2470,17 +2451,6 @@ Wire Wire Line
 	3650 4050 3750 4050
 Text Label 3650 3950 0    50   ~ 0
 DBG_SS
-$Comp
-L qomu-board:EOS-S3 IC1
-U 1 1 5DCB0652
-P 1600 2700
-F 0 "IC1" H 1650 2850 50  0000 C CNN
-F 1 "EOS-S3" H 1750 2750 50  0000 C CNN
-F 2 "qomu-board:42-WLCSP" H 3250 -400 50  0001 C CNN
-F 3 "https://dev.antmicro.com/attachments/download/9063/ql-eos-s3-datasheet.pdf" H 3350 -300 50  0001 C CNN
-	1    1600 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3550 5450 4000 5450
 Wire Wire Line
@@ -2644,4 +2614,45 @@ Wire Wire Line
 	10100 3300 10100 3600
 Wire Wire Line
 	10500 3300 10500 3600
+Text Label 3650 4750 0    50   ~ 0
+LED_B
+Text Label 3650 4450 0    50   ~ 0
+LED_G
+Text Label 3650 4350 0    50   ~ 0
+LED_R
+$Comp
+L qomu-board:EOS-S3 IC1
+U 1 1 5DCB0652
+P 1600 2700
+F 0 "IC1" H 1650 2850 50  0000 C CNN
+F 1 "EOS-S3" H 1750 2750 50  0000 C CNN
+F 2 "qomu-board:42-WLCSP" H 3250 -400 50  0001 C CNN
+F 3 "https://dev.antmicro.com/attachments/download/9063/ql-eos-s3-datasheet.pdf" H 3350 -300 50  0001 C CNN
+	1    1600 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4350 4000 4350
+Wire Wire Line
+	3550 4450 4000 4450
+Wire Wire Line
+	3550 4750 4000 4750
+Wire Wire Line
+	6500 1250 6950 1250
+Wire Wire Line
+	5800 1100 5800 1250
+Wire Wire Line
+	5800 1250 6500 1250
+Connection ~ 6500 1250
+Wire Wire Line
+	6350 1350 5700 1350
+Wire Wire Line
+	5700 1350 5700 1100
+Connection ~ 6350 1350
+Wire Wire Line
+	5600 1450 5600 1100
+Wire Wire Line
+	5600 1450 6200 1450
+Text Notes 5950 1000 0    50   ~ 0
+Currently not connected
 $EndSCHEMATC
