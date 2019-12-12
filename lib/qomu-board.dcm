@@ -1,0 +1,23 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 825437-4
+F https://www.te.com/usa-en/product-825437-4.datasheet.pdf
+$ENDCMP
+#
+$CMP FTSH-105-01-L-DV-K
+F http://suddendocs.samtec.com/prints/ftsh-1xx-xx-xxx-dv-xxx-xxx-mkt.pdf
+$ENDCMP
+#
+$CMP GD25Q16CEIGR
+F http://www.gigadevice.com/datasheet/gd25q16c/
+$ENDCMP
+#
+$CMP MC3635
+F https://mcubemems.com/wp-content/uploads/2019/06/MC3635-Datasheet-APS-048-0044v1.6.pdf
+$ENDCMP
+#
+$CMP R_22R_0201
+F Multicomp
+$ENDCMP
+#
+#End Doc Library
