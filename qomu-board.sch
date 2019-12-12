@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:qomu-board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -80,28 +79,30 @@ F 5 "Cree" H 8600 2950 50  0001 C CNN "Manufacturer"
 	1    0    0    -1  
 $EndComp
 $Comp
-L qomu-board:R_Small-Device R12
+L qomu-board:R_22R_0201 R12
 U 1 1 5BDB00B1
 P 9750 1850
 F 0 "R12" V 9750 1850 50  0000 C CNN
 F 1 "22R" V 9850 1850 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 9750 1850 50  0001 C CNN
-F 3 "" H 9750 1850 50  0001 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 9750 1850 50  0001 C CNN
+F 3 "Multicomp" H 9750 1850 50  0001 C CNN
 F 4 "ANY" H 1000 50  50  0001 C CNN "MPN"
+F 5 "MCRE000100 " H 0   0   50  0001 C CNN "Manufacturer"
 	1    9750 1850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	9200 1650 9050 1650
 $Comp
-L qomu-board:R_Small-Device R9
+L qomu-board:R_1k5_0201 R9
 U 1 1 5BDC6632
 P 9500 2100
 F 0 "R9" V 9400 2100 50  0000 C CNN
 F 1 "1k5" V 9600 2100 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 9500 2100 50  0001 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 9500 2100 50  0001 C CNN
 F 3 "" H 9500 2100 50  0001 C CNN
-F 4 "ANY" H 1000 -100 50  0001 C CNN "MPN"
+F 4 "MCRE000144" H 1000 -100 50  0001 C CNN "MPN"
+F 5 "Multicomp" H 0   0   50  0001 C CNN "Manufacturer"
 	1    9500 2100
 	0    1    1    0   
 $EndComp
@@ -200,7 +201,7 @@ F 0 "D1" V 5950 1600 50  0000 L CNN
 F 1 "D5V0L1B2LP3-7" H 6000 1800 50  0001 L CNN
 F 2 "qomu-board:X1-DFN1006-2" V 6050 1700 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 6050 1700 50  0001 C CNN
-F 4 "Diodes Incorporated" V 6050 1700 50  0001 C CNN "Manufacturer"
+F 4 "Diodes Inc." V 6050 1700 50  0001 C CNN "Manufacturer"
 F 5 "D5V0L1B2LP3-7" V 6050 1700 50  0001 C CNN "MPN"
 	1    6050 1700
 	0    1    1    0   
@@ -213,7 +214,7 @@ F 0 "D2" V 6250 1600 50  0000 L CNN
 F 1 "D5V0L1B2LP3-7" H 6300 1800 50  0001 L CNN
 F 2 "qomu-board:X1-DFN1006-2" V 6350 1700 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 6350 1700 50  0001 C CNN
-F 4 "Diodes Incorporated" V 6350 1700 50  0001 C CNN "Manufacturer"
+F 4 "Diodes Inc." V 6350 1700 50  0001 C CNN "Manufacturer"
 F 5 "D5V0L1B2LP3-7" V 6350 1700 50  0001 C CNN "MPN"
 	1    6350 1700
 	0    1    1    0   
@@ -226,7 +227,7 @@ F 0 "D3" V 6100 1600 50  0000 L CNN
 F 1 "D5V0L1B2LP3-7" H 6150 1800 50  0001 L CNN
 F 2 "qomu-board:X1-DFN1006-2" V 6200 1700 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 6200 1700 50  0001 C CNN
-F 4 "Diodes Incorporated" V 6200 1700 50  0001 C CNN "Manufacturer"
+F 4 "Diodes Inc." V 6200 1700 50  0001 C CNN "Manufacturer"
 F 5 "D5V0L1B2LP3-7" V 6200 1700 50  0001 C CNN "MPN"
 	1    6200 1700
 	0    1    1    0   
@@ -239,7 +240,7 @@ F 0 "D4" V 6400 1600 50  0000 L CNN
 F 1 "D5V0L1B2LP3-7" V 6600 600 50  0000 L CNN
 F 2 "qomu-board:X1-DFN1006-2" V 6500 1700 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 6500 1700 50  0001 C CNN
-F 4 "Diodes Incorporated" V 6500 1700 50  0001 C CNN "Manufacturer"
+F 4 "Diodes Inc." V 6500 1700 50  0001 C CNN "Manufacturer"
 F 5 "D5V0L1B2LP3-7" V 6500 1700 50  0001 C CNN "MPN"
 	1    6500 1700
 	0    1    1    0   
@@ -252,7 +253,7 @@ F 0 "D6" V 9500 1500 50  0000 L CNN
 F 1 "D5V0L1B2LP3-7" V 9500 550 50  0000 L CNN
 F 2 "qomu-board:X1-DFN1006-2" V 9500 1450 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 9500 1450 50  0001 C CNN
-F 4 "Diodes Incorporated" V 9500 1450 50  0001 C CNN "Manufacturer"
+F 4 "Diodes Inc." V 9500 1450 50  0001 C CNN "Manufacturer"
 F 5 "D5V0L1B2LP3-7" V 9500 1450 50  0001 C CNN "MPN"
 	1    9500 1450
 	0    -1   -1   0   
@@ -270,7 +271,7 @@ F 0 "D7" V 9600 1300 50  0000 L CNN
 F 1 "D5V0L1B2LP3-7" V 9500 650 50  0000 L CNN
 F 2 "qomu-board:X1-DFN1006-2" V 9600 1450 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf" V 9600 1450 50  0001 C CNN
-F 4 "Diodes Incorporated" V 9600 1450 50  0001 C CNN "Manufacturer"
+F 4 "Diodes Inc." V 9600 1450 50  0001 C CNN "Manufacturer"
 F 5 "D5V0L1B2LP3-7" V 9600 1450 50  0001 C CNN "MPN"
 	1    9600 1450
 	0    -1   -1   0   
@@ -306,8 +307,8 @@ F 0 "D5" H 9300 1450 50  0000 L CNN
 F 1 "VCUT05E1-SD0" H 9300 1350 50  0000 L CNN
 F 2 "qomu-board:TVS-11V" V 9350 1250 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/85900/vcut05e1-sd0.pdf" V 9350 1250 50  0001 C CNN
-F 4 "Vishay Semiconductor Diodes Division" V 9350 1250 50  0001 C CNN "Manufacturer"
-F 5 "VCUT05E1-SD0-G4-08" V 9350 1250 50  0001 C CNN "MPN"
+F 4 "Diodes Inc." V 9350 1250 50  0001 C CNN "Manufacturer"
+F 5 "D5V0L1B2LP3-7" V 9350 1250 50  0001 C CNN "MPN"
 	1    9350 1250
 	1    0    0    -1  
 $EndComp
@@ -341,14 +342,15 @@ Wire Wire Line
 Text Label 1000 3700 2    50   ~ 0
 RST_N
 $Comp
-L qomu-board:R_Small-Device R1
+L qomu-board:R_10k_0201 R1
 U 1 1 5DC70040
 P 1100 3450
 F 0 "R1" V 1200 3450 50  0000 C CNN
 F 1 "10k" V 1000 3450 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 1100 3450 50  0001 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 1100 3450 50  0001 C CNN
 F 3 "" H 1100 3450 50  0001 C CNN
-F 4 "ANY" H -7650 1750 50  0001 C CNN "MPN"
+F 4 "ERJ1GNF1002C " H -7650 1750 50  0001 C CNN "MPN"
+F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
 	1    1100 3450
 	-1   0    0    1   
 $EndComp
@@ -361,14 +363,15 @@ Connection ~ 1100 3700
 Wire Wire Line
 	1100 3700 750  3700
 $Comp
-L qomu-board:R_Small-Device R11
+L qomu-board:R_22R_0201 R11
 U 1 1 5DC79766
 P 9750 1750
 F 0 "R11" V 9750 1750 50  0000 C CNN
 F 1 "22R" V 9650 1750 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 9750 1750 50  0001 C CNN
-F 3 "" H 9750 1750 50  0001 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 9750 1750 50  0001 C CNN
+F 3 "Multicomp" H 9750 1750 50  0001 C CNN
 F 4 "ANY" H 1000 -50 50  0001 C CNN "MPN"
+F 5 "MCRE000100 " H 0   0   50  0001 C CNN "Manufacturer"
 	1    9750 1750
 	0    1    1    0   
 $EndComp
@@ -406,24 +409,28 @@ Connection ~ 1300 4700
 Wire Wire Line
 	1300 4700 1300 4900
 $Comp
-L qomu-board:C_Small-Device C2
+L qomu-board:C_2u2_0201 C2
 U 1 1 5DCA4936
 P 1000 1050
 F 0 "C2" H 1050 1150 50  0000 L CNN
-F 1 "4u7/10V" H 1100 900 50  0000 L CNN
-F 2 "qomu-board:C_0201_0603Metric" H 1000 1050 50  0001 C CNN
+F 1 "2u2/10V" H 1100 900 50  0000 L CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 1000 1050 50  0001 C CNN
 F 3 "" H 1000 1050 50  0001 C CNN
+F 4 "CL03A225MP3CRNC " H 0   0   50  0001 C CNN "MPN"
+F 5 "Samsung" H 0   0   50  0001 C CNN "Manufacturer"
 	1    1000 1050
 	1    0    0    -1  
 $EndComp
 $Comp
-L qomu-board:C_Small-Device C9
+L qomu-board:C_2u2_0201 C9
 U 1 1 5DCA4BAC
 P 2900 1050
 F 0 "C9" H 2950 950 50  0000 L CNN
-F 1 "4u7/10V" H 2950 850 50  0000 L CNN
-F 2 "qomu-board:C_0201_0603Metric" H 2900 1050 50  0001 C CNN
+F 1 "2u2/10V" H 2950 850 50  0000 L CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 2900 1050 50  0001 C CNN
 F 3 "" H 2900 1050 50  0001 C CNN
+F 4 "CL03A225MP3CRNC " H 0   0   50  0001 C CNN "MPN"
+F 5 "Samsung" H 0   0   50  0001 C CNN "Manufacturer"
 	1    2900 1050
 	1    0    0    -1  
 $EndComp
@@ -435,6 +442,8 @@ F 0 "U4" H 6175 2765 50  0000 C CNN
 F 1 "GD25Q16CEIGR" H 6175 2674 50  0000 C CNN
 F 2 "qomu-board:GD25Q16CEIGR" H 5750 2550 50  0001 C CNN
 F 3 "http://www.gigadevice.com/datasheet/gd25q16c/" H 5850 2650 50  0001 C CNN
+F 4 "GD25Q16CEIGR" H 0   0   50  0001 C CNN "MPN"
+F 5 "GigaDevice Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
 	1    5800 2600
 	1    0    0    -1  
 $EndComp
@@ -513,26 +522,28 @@ I2C_SCL
 Wire Wire Line
 	8650 5150 8650 5100
 $Comp
-L qomu-board:R_Small-Device R3
+L qomu-board:R_10k_0201 R3
 U 1 1 5DDF05EA
 P 8650 5000
 F 0 "R3" V 8750 5000 50  0000 C CNN
 F 1 "4k7" V 8750 4850 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 8650 5000 50  0001 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 8650 5000 50  0001 C CNN
 F 3 "" H 8650 5000 50  0001 C CNN
-F 4 "ANY" H -100 3300 50  0001 C CNN "MPN"
+F 4 "ERJ1GNF1002C " H -100 3300 50  0001 C CNN "MPN"
+F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
 	1    8650 5000
 	-1   0    0    1   
 $EndComp
 $Comp
-L qomu-board:R_Small-Device R4
+L qomu-board:R_10k_0201 R4
 U 1 1 5DDF069C
 P 8850 5000
 F 0 "R4" V 8750 5050 50  0000 C CNN
 F 1 "4k7" V 8750 4900 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 8850 5000 50  0001 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 8850 5000 50  0001 C CNN
 F 3 "" H 8850 5000 50  0001 C CNN
-F 4 "ANY" H 100 3300 50  0001 C CNN "MPN"
+F 4 "ERJ1GNF1002C " H 100 3300 50  0001 C CNN "MPN"
+F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
 	1    8850 5000
 	-1   0    0    1   
 $EndComp
@@ -567,13 +578,15 @@ SPI_MOSI
 Text Label 3650 5050 0    50   ~ 0
 SPI_MISO
 $Comp
-L qomu-board:C_Small-Device C5
+L qomu-board:C_100n_0201 C5
 U 1 1 5DF5E56A
 P 7400 3300
 F 0 "C5" H 7600 3300 50  0000 L CNN
 F 1 "100n" H 7500 3400 50  0000 L CNN
-F 2 "qomu-board:C_0201_0603Metric" H 7400 3300 50  0001 C CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 7400 3300 50  0001 C CNN
 F 3 "" H 7400 3300 50  0001 C CNN
+F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
 	1    7400 3300
 	-1   0    0    1   
 $EndComp
@@ -1442,6 +1455,8 @@ F 0 "U5" H 9725 4565 50  0000 C CNN
 F 1 "MC3635" H 9725 4474 50  0000 C CNN
 F 2 "qomu-board:MC3635" H 9400 4350 50  0001 C CNN
 F 3 "https://mcubemems.com/wp-content/uploads/2019/06/MC3635-Datasheet-APS-048-0044v1.6.pdf" H 9850 3400 50  0001 C CNN
+F 4 "MC3635" H 0   0   50  0001 C CNN "MPN"
+F 5 "mCube" H 0   0   50  0001 C CNN "Manufacturer"
 	1    9400 4500
 	1    0    0    -1  
 $EndComp
@@ -1450,13 +1465,15 @@ Wire Wire Line
 Text Notes 5950 900  0    50   ~ 0
 TBD: Shall we keep those?
 $Comp
-L qomu-board:C_Small-Device C4
+L qomu-board:C_100n_0201 C4
 U 1 1 5DE4FACB
 P 10600 5550
 F 0 "C4" H 10400 5500 50  0000 L CNN
 F 1 "100n" H 10300 5600 50  0000 L CNN
-F 2 "qomu-board:C_0201_0603Metric" H 10600 5550 50  0001 C CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 10600 5550 50  0001 C CNN
 F 3 "" H 10600 5550 50  0001 C CNN
+F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
 	1    10600 5550
 	-1   0    0    1   
 $EndComp
@@ -1571,13 +1588,15 @@ The multi-functional IOs have four programmable drive \nstrength states: 2 mA, 4
 Text Notes 9050 6150 0    50   ~ 0
 operating current  for 1V8 supply\nmax. 36mA\nlow-power mode: max. 2.8mA\n
 $Comp
-L qomu-board:C_Small-Device C3
+L qomu-board:C_100n_0201 C3
 U 1 1 5DDD75D2
 P 1650 6850
 F 0 "C3" H 1700 6750 50  0000 L CNN
 F 1 "100n" H 1700 6650 50  0000 L CNN
-F 2 "qomu-board:C_0201_0603Metric" H 1650 6850 50  0001 C CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 1650 6850 50  0001 C CNN
 F 3 "" H 1650 6850 50  0001 C CNN
+F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
 	1    1650 6850
 	1    0    0    -1  
 $EndComp
@@ -1603,13 +1622,15 @@ LDO_VIN
 Text Notes 3150 6850 1    50   ~ 0
 VCCIOB
 $Comp
-L qomu-board:C_Small-Device C6
+L qomu-board:C_100n_0201 C6
 U 1 1 5DEA6187
 P 2150 6850
 F 0 "C6" H 2200 6750 50  0000 L CNN
 F 1 "100n" H 2200 6650 50  0000 L CNN
-F 2 "qomu-board:C_0201_0603Metric" H 2150 6850 50  0001 C CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 2150 6850 50  0001 C CNN
 F 3 "" H 2150 6850 50  0001 C CNN
+F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
 	1    2150 6850
 	1    0    0    -1  
 $EndComp
@@ -1627,13 +1648,15 @@ F 3 "" H 2150 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L qomu-board:C_Small-Device C8
+L qomu-board:C_100n_0201 C8
 U 1 1 5DEAC065
 P 2700 6850
 F 0 "C8" H 2750 6750 50  0000 L CNN
 F 1 "100n" H 2750 6650 50  0000 L CNN
-F 2 "qomu-board:C_0201_0603Metric" H 2700 6850 50  0001 C CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 2700 6850 50  0001 C CNN
 F 3 "" H 2700 6850 50  0001 C CNN
+F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
 	1    2700 6850
 	1    0    0    -1  
 $EndComp
@@ -1651,13 +1674,15 @@ F 3 "" H 2700 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L qomu-board:C_Small-Device C10
+L qomu-board:C_100n_0201 C10
 U 1 1 5DEB1E5E
 P 3350 6850
 F 0 "C10" H 3200 6750 50  0000 L CNN
 F 1 "100n" H 3200 6650 50  0000 L CNN
-F 2 "qomu-board:C_0201_0603Metric" H 3350 6850 50  0001 C CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 3350 6850 50  0001 C CNN
 F 3 "" H 3350 6850 50  0001 C CNN
+F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
 	1    3350 6850
 	1    0    0    -1  
 $EndComp
@@ -1673,13 +1698,15 @@ F 3 "" H 3500 7100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L qomu-board:C_Small-Device C11
+L qomu-board:C_100n_0201 C11
 U 1 1 5DEB7AF4
 P 3650 6850
 F 0 "C11" H 3700 6750 50  0000 L CNN
 F 1 "100n" H 3700 6650 50  0000 L CNN
-F 2 "qomu-board:C_0201_0603Metric" H 3650 6850 50  0001 C CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 3650 6850 50  0001 C CNN
 F 3 "" H 3650 6850 50  0001 C CNN
+F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
 	1    3650 6850
 	1    0    0    -1  
 $EndComp
@@ -1715,13 +1742,15 @@ F 5 "Microchip" H 250 400 50  0001 C CNN "Manufacturer"
 	1    0    0    -1  
 $EndComp
 $Comp
-L qomu-board:C_Small-Device C7
+L qomu-board:C_2u2_0201 C7
 U 1 1 5DF1CD1E
 P 2700 1600
 F 0 "C7" H 2750 1500 50  0000 L CNN
-F 1 "4u7/10V" H 2750 1400 50  0000 L CNN
-F 2 "qomu-board:C_0201_0603Metric" H 2700 1600 50  0001 C CNN
+F 1 "2u2/10V" H 2750 1400 50  0000 L CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 2700 1600 50  0001 C CNN
 F 3 "" H 2700 1600 50  0001 C CNN
+F 4 "CL03A225MP3CRNC " H 0   0   50  0001 C CNN "MPN"
+F 5 "Samsung" H 0   0   50  0001 C CNN "Manufacturer"
 	1    2700 1600
 	1    0    0    -1  
 $EndComp
@@ -1770,13 +1799,15 @@ F 3 "" H 800 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L qomu-board:C_Small-Device C1
+L qomu-board:C_2u2_0201 C1
 U 1 1 5DF42987
 P 800 1050
 F 0 "C1" H 850 1150 50  0000 L CNN
-F 1 "4u7/10V" H 1100 1000 50  0000 L CNN
-F 2 "qomu-board:C_0201_0603Metric" H 800 1050 50  0001 C CNN
+F 1 "2u2/10V" H 1100 1000 50  0000 L CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 800 1050 50  0001 C CNN
 F 3 "" H 800 1050 50  0001 C CNN
+F 4 "CL03A225MP3CRNC " H 0   0   50  0001 C CNN "MPN"
+F 5 "Samsung" H 0   0   50  0001 C CNN "Manufacturer"
 	1    800  1050
 	1    0    0    -1  
 $EndComp
@@ -1798,26 +1829,28 @@ VCCIOB
 Text Label 3500 6600 1    50   ~ 0
 VCCIOB
 $Comp
-L qomu-board:R_Small-Device R5
+L qomu-board:R_10k_0201 R5
 U 1 1 5DDE81B7
 P 3850 3250
 F 0 "R5" V 3800 3100 50  0000 C CNN
 F 1 "10k" V 3800 3400 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 3850 3250 50  0001 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 3850 3250 50  0001 C CNN
 F 3 "" H 3850 3250 50  0001 C CNN
-F 4 "ANY" H -4900 1550 50  0001 C CNN "MPN"
+F 4 "ERJ1GNF1002C " H -4900 1550 50  0001 C CNN "MPN"
+F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
 	1    3850 3250
 	0    1    1    0   
 $EndComp
 $Comp
-L qomu-board:R_Small-Device R2
+L qomu-board:R_10k_0201 R2
 U 1 1 5DDE8D8D
 P 3850 3150
 F 0 "R2" V 3900 3300 50  0000 C CNN
 F 1 "10k" V 3900 3000 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 3850 3150 50  0001 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 3850 3150 50  0001 C CNN
 F 3 "" H 3850 3150 50  0001 C CNN
-F 4 "ANY" H -4900 1450 50  0001 C CNN "MPN"
+F 4 "ERJ1GNF1002C " H -4900 1450 50  0001 C CNN "MPN"
+F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
 	1    3850 3150
 	0    -1   -1   0   
 $EndComp
@@ -1826,26 +1859,28 @@ Wire Wire Line
 Wire Wire Line
 	3550 3250 3750 3250
 $Comp
-L qomu-board:R_Small-Device R7
+L qomu-board:R_10k_0201 R7
 U 1 1 5DDFBEAE
 P 3850 4150
 F 0 "R7" V 3800 4000 50  0000 C CNN
 F 1 "10k" V 3800 4300 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 3850 4150 50  0001 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 3850 4150 50  0001 C CNN
 F 3 "" H 3850 4150 50  0001 C CNN
-F 4 "ANY" H -4900 2450 50  0001 C CNN "MPN"
+F 4 "ERJ1GNF1002C " H -4900 2450 50  0001 C CNN "MPN"
+F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
 	1    3850 4150
 	0    1    1    0   
 $EndComp
 $Comp
-L qomu-board:R_Small-Device R6
+L qomu-board:R_10k_0201 R6
 U 1 1 5DDFBEB5
 P 3850 4050
 F 0 "R6" V 3900 4200 50  0000 C CNN
 F 1 "10k" V 3900 3900 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 3850 4050 50  0001 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 3850 4050 50  0001 C CNN
 F 3 "" H 3850 4050 50  0001 C CNN
-F 4 "ANY" H -4900 2350 50  0001 C CNN "MPN"
+F 4 "ERJ1GNF1002C " H -4900 2350 50  0001 C CNN "MPN"
+F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
 	1    3850 4050
 	0    -1   -1   0   
 $EndComp
@@ -1898,14 +1933,15 @@ FBIO_8 and FBIO_9 are bootstrap pins for HS oscillator.\nThey should be pulled-d
 Text Notes 3050 6000 0    50   ~ 0
 FBIO_19 and FPIO_20 are bootstrap\npins for SPI flash boot.\nThey must be pulled low
 $Comp
-L qomu-board:R_Small-Device R8
+L qomu-board:R_4k7_0201 R8
 U 1 1 5DE58338
 P 7950 5100
 F 0 "R8" V 7850 5150 50  0000 C CNN
 F 1 "4k7" V 7850 5000 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 7950 5100 50  0001 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 7950 5100 50  0001 C CNN
 F 3 "" H 7950 5100 50  0001 C CNN
-F 4 "ANY" H -800 3400 50  0001 C CNN "MPN"
+F 4 "CRCW02014K70FNED" H -800 3400 50  0001 C CNN "MPN"
+F 5 "Vishay" H 0   0   50  0001 C CNN "Manufacturer"
 	1    7950 5100
 	-1   0    0    1   
 $EndComp
@@ -2228,38 +2264,41 @@ F 5 "Samtec Inc." H 5950 6000 60  0001 L CNN "Manufacturer"
 	1    0    0    -1  
 $EndComp
 $Comp
-L qomu-board:R_Small-Device R15
+L qomu-board:R_10k_0201 R15
 U 1 1 5DEA3DDA
 P 6700 4550
 F 0 "R15" H 6750 4450 50  0000 C CNN
 F 1 "10k" V 6600 4550 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 6700 4550 50  0001 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 6700 4550 50  0001 C CNN
 F 3 "" H 6700 4550 50  0001 C CNN
-F 4 "ANY" H -2050 2850 50  0001 C CNN "MPN"
+F 4 "ERJ1GNF1002C " H -2050 2850 50  0001 C CNN "MPN"
+F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
 	1    6700 4550
 	-1   0    0    1   
 $EndComp
 $Comp
-L qomu-board:R_Small-Device R13
+L qomu-board:R_10k_0201 R13
 U 1 1 5DEA73A8
 P 6400 4550
 F 0 "R13" H 6450 4450 50  0000 C CNN
 F 1 "10k" V 6300 4550 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 6400 4550 50  0001 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 6400 4550 50  0001 C CNN
 F 3 "" H 6400 4550 50  0001 C CNN
-F 4 "ANY" H -2350 2850 50  0001 C CNN "MPN"
+F 4 "ERJ1GNF1002C " H -2350 2850 50  0001 C CNN "MPN"
+F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
 	1    6400 4550
 	-1   0    0    1   
 $EndComp
 $Comp
-L qomu-board:R_Small-Device R10
+L qomu-board:R_10k_0201 R10
 U 1 1 5DEA75F7
 P 6100 4550
 F 0 "R10" H 6150 4450 50  0000 C CNN
 F 1 "10k" V 6000 4550 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 6100 4550 50  0001 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 6100 4550 50  0001 C CNN
 F 3 "" H 6100 4550 50  0001 C CNN
-F 4 "ANY" H -2650 2850 50  0001 C CNN "MPN"
+F 4 "ERJ1GNF1002C " H -2650 2850 50  0001 C CNN "MPN"
+F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
 	1    6100 4550
 	-1   0    0    1   
 $EndComp
@@ -2275,13 +2314,15 @@ Connection ~ 6400 4400
 Wire Wire Line
 	6400 4400 6700 4400
 $Comp
-L qomu-board:C_Small-Device C12
+L qomu-board:C_100n_0201 C12
 U 1 1 5DED905E
 P 4900 4900
 F 0 "C12" H 4750 5000 50  0000 L CNN
 F 1 "100n" V 4800 4650 50  0000 L CNN
-F 2 "qomu-board:C_0201_0603Metric" H 4900 4900 50  0001 C CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 4900 4900 50  0001 C CNN
 F 3 "" H 4900 4900 50  0001 C CNN
+F 4 "GRM033R60J104KE19D " H 0   0   50  0001 C CNN "MPN"
+F 5 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
 	1    4900 4900
 	1    0    0    -1  
 $EndComp
@@ -2464,38 +2505,41 @@ UART_RX
 Text Label 7000 5750 0    50   ~ 0
 UART_TX
 $Comp
-L qomu-board:R_Small-Device R16
+L qomu-board:R_100R_0201 R16
 U 1 1 5DF394C7
 P 9500 2700
 F 0 "R16" V 9450 2550 50  0000 C CNN
 F 1 "100R" V 9450 2900 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 9500 2700 50  0001 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 9500 2700 50  0001 C CNN
 F 3 "" H 9500 2700 50  0001 C CNN
-F 4 "ANY" H 1000 500 50  0001 C CNN "MPN"
+F 4 "MCRE000116 " H 1000 500 50  0001 C CNN "MPN"
+F 5 "Multicomp" H 0   0   50  0001 C CNN "Manufacturer"
 	1    9500 2700
 	0    1    1    0   
 $EndComp
 $Comp
-L qomu-board:R_Small-Device R17
+L qomu-board:R_100R_0201 R17
 U 1 1 5DF6B65E
 P 9500 2800
 F 0 "R17" V 9450 2650 50  0000 C CNN
 F 1 "100R" V 9450 3000 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 9500 2800 50  0001 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 9500 2800 50  0001 C CNN
 F 3 "" H 9500 2800 50  0001 C CNN
-F 4 "ANY" H 1000 600 50  0001 C CNN "MPN"
+F 4 "MCRE000116 " H 1000 600 50  0001 C CNN "MPN"
+F 5 "Multicomp" H 0   0   50  0001 C CNN "Manufacturer"
 	1    9500 2800
 	0    1    1    0   
 $EndComp
 $Comp
-L qomu-board:R_Small-Device R18
+L qomu-board:R_220R_0201 R18
 U 1 1 5DF6BA6D
 P 9500 2900
 F 0 "R18" V 9450 2750 50  0000 C CNN
 F 1 "220R" V 9450 3100 50  0000 C CNN
-F 2 "qomu-board:R_0201_0603Metric" H 9500 2900 50  0001 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 9500 2900 50  0001 C CNN
 F 3 "" H 9500 2900 50  0001 C CNN
-F 4 "ANY" H 1000 700 50  0001 C CNN "MPN"
+F 4 "MCRE000124" H 1000 700 50  0001 C CNN "MPN"
+F 5 "Multicomp" H 0   0   50  0001 C CNN "Manufacturer"
 	1    9500 2900
 	0    1    1    0   
 $EndComp
@@ -2518,6 +2562,8 @@ F 5 "Nch 20V 180mA Small Signal MOSFET" H 10400 2850 50  0001 L BNN "Field5"
 F 6 "None" H 10400 2775 50  0001 L BNN "Field6"
 F 7 "Unavailable" H 10400 2925 50  0001 L BNN "Field7"
 F 8 "Rohm" H 10425 3000 50  0001 L BNN "Field8"
+F 9 "RV1C002UN" H 0   0   50  0001 C CNN "MPN"
+F 10 "ROHM Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
 	1    10200 3100
 	-1   0    0    -1  
 $EndComp
@@ -2534,6 +2580,8 @@ F 5 "Nch 20V 180mA Small Signal MOSFET" H 10800 2850 50  0001 L BNN "Field5"
 F 6 "None" H 10800 2775 50  0001 L BNN "Field6"
 F 7 "Unavailable" H 10800 2925 50  0001 L BNN "Field7"
 F 8 "Rohm" H 10825 3000 50  0001 L BNN "Field8"
+F 9 "RV1C002UN" H 0   0   50  0001 C CNN "MPN"
+F 10 "ROHM Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
 	1    10600 3100
 	-1   0    0    -1  
 $EndComp
@@ -2560,6 +2608,8 @@ F 5 "Nch 20V 180mA Small Signal MOSFET" H 10000 2850 50  0001 L BNN "Field5"
 F 6 "None" H 10000 2775 50  0001 L BNN "Field6"
 F 7 "Unavailable" H 10000 2925 50  0001 L BNN "Field7"
 F 8 "Rohm" H 10025 3000 50  0001 L BNN "Field8"
+F 9 "RV1C002UN" H 0   0   50  0001 C CNN "MPN"
+F 10 "ROHM Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
 	1    9800 3100
 	-1   0    0    -1  
 $EndComp
