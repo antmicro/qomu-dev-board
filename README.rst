@@ -10,7 +10,7 @@ Key features
 
 * PCB size fitting in USB socket (13x9.5mm)
 * EOS S3 Sensor Processing Platform
-* 16Mb of external flash memory
+* 16Mbit of external flash memory
 * Accelerometer
 * User RGB LED
 * Optional capacitive touch pads
