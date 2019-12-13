@@ -2107,20 +2107,9 @@ Connection ~ 4900 4700
 Wire Wire Line
 	5950 5100 7400 5100
 Wire Wire Line
-	5950 4900 6100 4900
-Wire Wire Line
-	6700 4900 7400 4900
-Text Notes 6700 4900 0    50   ~ 10
-DNP
-Wire Wire Line
 	5950 4800 6400 4800
 Wire Wire Line
 	5950 4700 6700 4700
-Wire Wire Line
-	6100 4650 6100 4900
-Connection ~ 6100 4900
-Wire Wire Line
-	6100 4900 6400 4900
 Wire Wire Line
 	6400 4650 6400 4800
 Connection ~ 6400 4800
@@ -2135,8 +2124,6 @@ Text Label 7000 4700 0    50   ~ 0
 SWD_IO
 Text Label 7000 4800 0    50   ~ 0
 SWD_CLK
-Text Label 7000 4900 0    50   ~ 0
-DBG_SS
 Wire Wire Line
 	6950 5950 6800 5950
 Wire Wire Line
@@ -2174,20 +2161,6 @@ F 4 "825437-4" H 6850 6150 60  0001 L CNN "MPN"
 F 5 "TE Connectivity" H 6850 6250 60  0001 L CNN "Manufacturer"
 	1    6650 5650
 	0    1    1    0   
-$EndComp
-$Comp
-L qomu-board:R_0R_0402 R14
-U 1 1 5DED5709
-P 6550 4900
-F 0 "R14" H 6250 4950 60  0000 C CNN
-F 1 "R_0R_0402" H 6550 4750 60  0001 C CNN
-F 2 "qomu-board-footprints:0402-res" H 6750 5100 60  0001 L CNN
-F 3 "" H 6550 4900 50  0001 C CNN
-F 4 "PANASONIC" H 6750 5300 60  0001 L CNN "Manufacturer"
-F 5 "ERJ2GE0R00X" H 6750 5200 60  0001 L CNN "MPN"
-F 6 "0R" H 6250 4850 50  0000 C CNN "Val"
-	1    6550 4900
-	1    0    0    -1  
 $EndComp
 $Comp
 L qomu-board:FTSH-105-01-L-DV-K J1
@@ -2228,23 +2201,6 @@ F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
 	1    6400 4550
 	-1   0    0    1   
 $EndComp
-$Comp
-L qomu-board:R_10k_0201 R10
-U 1 1 5DEA75F7
-P 6100 4550
-F 0 "R10" H 6150 4450 50  0000 C CNN
-F 1 "10k" V 6000 4550 50  0000 C CNN
-F 2 "qomu-board-footprints:R_0201_0603Metric" H 6100 4550 50  0001 C CNN
-F 3 "" H 6100 4550 50  0001 C CNN
-F 4 "ERJ1GNF1002C " H -2650 2850 50  0001 C CNN "MPN"
-F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
-	1    6100 4550
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6100 4450 6100 4400
-Wire Wire Line
-	6100 4400 6400 4400
 Wire Wire Line
 	6700 4400 6700 4450
 Wire Wire Line
@@ -2422,8 +2378,6 @@ Text Label 3650 2850 0    50   ~ 0
 SWD_IO
 Text Label 3650 2950 0    50   ~ 0
 SWD_CLK
-Text Label 3650 4050 0    50   ~ 0
-DBG_SS
 Wire Wire Line
 	3550 5450 4000 5450
 Wire Wire Line
@@ -2654,8 +2608,9 @@ Wire Wire Line
 	3550 3350 3950 3350
 Wire Wire Line
 	3550 3050 3950 3050
-Wire Wire Line
-	3550 4050 4000 4050
 NoConn ~ 3550 4150
 NoConn ~ 3550 3850
+NoConn ~ 5950 4900
+NoConn ~ 3550 3950
+NoConn ~ 3550 4050
 $EndSCHEMATC
