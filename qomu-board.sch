@@ -1859,56 +1859,6 @@ Wire Wire Line
 Wire Wire Line
 	3550 3250 4100 3250
 $Comp
-L qomu-board:R_10k_0201 R7
-U 1 1 5DDFBEAE
-P 3850 4150
-F 0 "R7" V 3800 4000 50  0000 C CNN
-F 1 "10k" V 3800 4300 50  0000 C CNN
-F 2 "qomu-board-footprints:R_0201_0603Metric" H 3850 4150 50  0001 C CNN
-F 3 "" H 3850 4150 50  0001 C CNN
-F 4 "ERJ1GNF1002C " H -4900 2450 50  0001 C CNN "MPN"
-F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
-	1    3850 4150
-	0    1    1    0   
-$EndComp
-$Comp
-L qomu-board:R_10k_0201 R6
-U 1 1 5DDFBEB5
-P 3850 4050
-F 0 "R6" V 3900 4200 50  0000 C CNN
-F 1 "10k" V 3900 3900 50  0000 C CNN
-F 2 "qomu-board-footprints:R_0201_0603Metric" H 3850 4050 50  0001 C CNN
-F 3 "" H 3850 4050 50  0001 C CNN
-F 4 "ERJ1GNF1002C " H -4900 2350 50  0001 C CNN "MPN"
-F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
-	1    3850 4050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3550 4050 3650 4050
-Wire Wire Line
-	3550 4150 3750 4150
-Wire Wire Line
-	3950 4050 4300 4050
-Wire Wire Line
-	4300 4050 4300 4150
-Wire Wire Line
-	4300 4150 3950 4150
-Wire Wire Line
-	4300 4150 4300 4300
-Connection ~ 4300 4150
-$Comp
-L qomu-board:GND #PWR015
-U 1 1 5DE27F69
-P 4300 4300
-F 0 "#PWR015" H 4300 4050 50  0001 C CNN
-F 1 "GND" H 4305 4127 50  0000 C CNN
-F 2 "" H 4300 4300 50  0001 C CNN
-F 3 "" H 4300 4300 50  0001 C CNN
-	1    4300 4300
-	1    0    0    -1  
-$EndComp
-$Comp
 L qomu-board:GND #PWR014
 U 1 1 5DE56F16
 P 4300 3350
@@ -2472,14 +2422,7 @@ Text Label 3650 2850 0    50   ~ 0
 SWD_IO
 Text Label 3650 2950 0    50   ~ 0
 SWD_CLK
-Wire Wire Line
-	3650 4050 3650 3950
-Wire Wire Line
-	3650 3950 3950 3950
-Connection ~ 3650 4050
-Wire Wire Line
-	3650 4050 3750 4050
-Text Label 3650 3950 0    50   ~ 0
+Text Label 3650 4050 0    50   ~ 0
 DBG_SS
 Wire Wire Line
 	3550 5450 4000 5450
@@ -2711,4 +2654,8 @@ Wire Wire Line
 	3550 3350 3950 3350
 Wire Wire Line
 	3550 3050 3950 3050
+Wire Wire Line
+	3550 4050 4000 4050
+NoConn ~ 3550 4150
+NoConn ~ 3550 3850
 $EndSCHEMATC
