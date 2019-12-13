@@ -1,5 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 22-23-2021
+F https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf
+$ENDCMP
+#
 $CMP 825437-4
 F https://www.te.com/usa-en/product-825437-4.datasheet.pdf
 $ENDCMP
