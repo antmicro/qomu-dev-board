@@ -1831,33 +1831,33 @@ VCCIOB
 $Comp
 L qomu-board:R_10k_0201 R5
 U 1 1 5DDE81B7
-P 3850 3250
-F 0 "R5" V 3800 3100 50  0000 C CNN
-F 1 "10k" V 3800 3400 50  0000 C CNN
-F 2 "qomu-board-footprints:R_0201_0603Metric" H 3850 3250 50  0001 C CNN
-F 3 "" H 3850 3250 50  0001 C CNN
-F 4 "ERJ1GNF1002C " H -4900 1550 50  0001 C CNN "MPN"
-F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
-	1    3850 3250
+P 4200 3250
+F 0 "R5" V 4150 3100 50  0000 C CNN
+F 1 "10k" V 4300 3250 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 4200 3250 50  0001 C CNN
+F 3 "" H 4200 3250 50  0001 C CNN
+F 4 "ERJ1GNF1002C " H -4550 1550 50  0001 C CNN "MPN"
+F 5 "Panasonic" H 350 0   50  0001 C CNN "Manufacturer"
+	1    4200 3250
 	0    1    1    0   
 $EndComp
 $Comp
 L qomu-board:R_10k_0201 R2
 U 1 1 5DDE8D8D
-P 3850 3150
-F 0 "R2" V 3900 3300 50  0000 C CNN
-F 1 "10k" V 3900 3000 50  0000 C CNN
-F 2 "qomu-board-footprints:R_0201_0603Metric" H 3850 3150 50  0001 C CNN
-F 3 "" H 3850 3150 50  0001 C CNN
-F 4 "ERJ1GNF1002C " H -4900 1450 50  0001 C CNN "MPN"
-F 5 "Panasonic" H 0   0   50  0001 C CNN "Manufacturer"
-	1    3850 3150
+P 4200 3150
+F 0 "R2" V 4250 3300 50  0000 C CNN
+F 1 "10k" V 4300 3150 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 4200 3150 50  0001 C CNN
+F 3 "" H 4200 3150 50  0001 C CNN
+F 4 "ERJ1GNF1002C " H -4550 1450 50  0001 C CNN "MPN"
+F 5 "Panasonic" H 350 0   50  0001 C CNN "Manufacturer"
+	1    4200 3150
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3550 3150 3750 3150
+	3550 3150 4100 3150
 Wire Wire Line
-	3550 3250 3750 3250
+	3550 3250 4100 3250
 $Comp
 L qomu-board:R_10k_0201 R7
 U 1 1 5DDFBEAE
@@ -1897,15 +1897,6 @@ Wire Wire Line
 Wire Wire Line
 	4300 4150 4300 4300
 Connection ~ 4300 4150
-Wire Wire Line
-	4300 3150 4300 3250
-Wire Wire Line
-	3950 3250 4300 3250
-Wire Wire Line
-	3950 3150 4300 3150
-Wire Wire Line
-	4300 3250 4300 3350
-Connection ~ 4300 3250
 $Comp
 L qomu-board:GND #PWR015
 U 1 1 5DE27F69
@@ -1955,8 +1946,6 @@ Wire Wire Line
 	7950 4700 8400 4700
 NoConn ~ 3550 4850
 NoConn ~ 3550 5350
-NoConn ~ 3550 3350
-NoConn ~ 3550 3050
 Wire Wire Line
 	750  3250 1500 3250
 Wire Wire Line
@@ -2670,17 +2659,6 @@ Text Label 3650 4450 0    50   ~ 0
 LED_G
 Text Label 3650 4350 0    50   ~ 0
 LED_R
-$Comp
-L qomu-board:EOS-S3 IC1
-U 1 1 5DCB0652
-P 1600 2700
-F 0 "IC1" H 1650 2850 50  0000 C CNN
-F 1 "EOS-S3" H 1750 2750 50  0000 C CNN
-F 2 "qomu-board:42-WLCSP" H 3250 -400 50  0001 C CNN
-F 3 "https://dev.antmicro.com/attachments/download/9063/ql-eos-s3-datasheet.pdf" H 3350 -300 50  0001 C CNN
-	1    1600 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3550 4350 4000 4350
 Wire Wire Line
@@ -2705,4 +2683,32 @@ Wire Wire Line
 	5600 1450 6200 1450
 Text Notes 5950 1000 0    50   ~ 0
 Currently not connected
+Wire Wire Line
+	4300 3150 4300 3250
+Connection ~ 4300 3250
+Wire Wire Line
+	4300 3250 4300 3350
+$Comp
+L qomu-board:EOS-S3 IC1
+U 1 1 5DCB0652
+P 1600 2700
+F 0 "IC1" H 1650 2850 50  0000 C CNN
+F 1 "EOS-S3" H 1750 2750 50  0000 C CNN
+F 2 "qomu-board:42-WLCSP" H 3250 -400 50  0001 C CNN
+F 3 "https://dev.antmicro.com/attachments/download/9063/ql-eos-s3-datasheet.pdf" H 3350 -300 50  0001 C CNN
+	1    1600 2700
+	1    0    0    -1  
+$EndComp
+Text Label 3650 3050 0    50   ~ 0
+TOUCH_1
+Text Label 3650 3150 0    50   ~ 0
+TOUCH_2
+Text Label 3650 3250 0    50   ~ 0
+TOUCH_3
+Text Label 3650 3350 0    50   ~ 0
+TOUCH_4
+Wire Wire Line
+	3550 3350 3950 3350
+Wire Wire Line
+	3550 3050 3950 3050
 $EndSCHEMATC
