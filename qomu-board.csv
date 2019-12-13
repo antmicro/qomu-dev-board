@@ -1,4 +1,4 @@
-Reference,Quantity,Value,Footprint,Manufacturer,MPN
+Reference,Quantity,Value,Footprint,Manufacturer,MPN,
 C1 C2 C7 C9,4,C_2u2_0201,C_0201_0603Metric,Samsung,CL03A225MP3CRNC,
 C10 C11 C12 C3 C4 C5 C6 C8,8,C_100n_0201,C_0201_0603Metric,Murata,GRM033R60J104KE19D,
 D1 D2 D3 D4 D5 D6 D7,7,D_Small-Device,X1-DFN1006-2,Diodes,D5V0L1B2LP3-7,
