@@ -339,7 +339,7 @@ Connection ~ 1350 2850
 Wire Wire Line
 	1350 2850 1100 2850
 Wire Wire Line
-	1500 3700 1100 3700
+	1500 3700 1300 3700
 Text Label 1000 3700 2    50   ~ 0
 RST_N
 $Comp
@@ -449,13 +449,13 @@ F 5 "GigaDevice Semiconductor" H 0   0   50  0001 C CNN "Manufacturer"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5700 3200 5050 3200
+	5700 3200 5450 3200
 Wire Wire Line
-	5700 3300 5050 3300
+	5700 3300 5450 3300
 Wire Wire Line
-	5700 2850 5050 2850
+	5700 2850 5450 2850
 Wire Wire Line
-	6650 2850 7100 2850
+	6650 2850 6700 2850
 Wire Wire Line
 	6650 3300 6650 3400
 $Comp
@@ -1409,8 +1409,6 @@ R_USB_N
 Text Label 3650 4650 0    50   ~ 0
 R_USB_P
 Wire Wire Line
-	3550 4250 4200 4250
-Wire Wire Line
 	3550 4550 4000 4550
 Text Label 3650 4250 0    50   ~ 0
 PU_CTRL_USBP
@@ -1418,8 +1416,6 @@ Wire Wire Line
 	9600 2100 10350 2100
 Wire Notes Line
 	600  2300 4450 2300
-Wire Notes Line
-	4450 2300 4450 7700
 Wire Notes Line
 	4450 7700 600  7700
 Wire Notes Line
@@ -1580,7 +1576,7 @@ Wire Wire Line
 	1300 4300 1500 4300
 Wire Wire Line
 	3550 3450 3950 3450
-Text Notes 5450 3600 0    50   ~ 0
+Text Notes 5800 3600 0    50   ~ 0
 operating current\nmax. 20mA
 Text Notes 650  5950 0    50   ~ 0
 Maximum power consumption for A and B rails:\nLDO mode: 65mA (VCCIOA) 114mA (VCCIOB)\nLDO bypass mode: 77mA (VCCIOA) 269mA (VCCIOB) 
@@ -2580,17 +2576,6 @@ Wire Wire Line
 Connection ~ 4300 3250
 Wire Wire Line
 	4300 3250 4300 3350
-$Comp
-L qomu-board:EOS-S3 IC1
-U 1 1 5DCB0652
-P 1600 2700
-F 0 "IC1" H 1650 2850 50  0000 C CNN
-F 1 "EOS-S3" H 1750 2750 50  0000 C CNN
-F 2 "qomu-board:42-WLCSP" H 3250 -400 50  0001 C CNN
-F 3 "https://dev.antmicro.com/attachments/download/9063/ql-eos-s3-datasheet.pdf" H 3350 -300 50  0001 C CNN
-	1    1600 2700
-	1    0    0    -1  
-$EndComp
 Text Label 3650 3050 0    50   ~ 0
 TOUCH_1
 Text Label 3650 3350 0    50   ~ 0
@@ -2603,55 +2588,46 @@ Wire Wire Line
 	3550 3350 3950 3350
 Wire Wire Line
 	3550 3050 3950 3050
-NoConn ~ 3550 3850
 NoConn ~ 5950 4900
 NoConn ~ 3550 3950
 NoConn ~ 3550 4050
 $Comp
 L qomu-board:22-23-2021 J3
 U 1 1 5E147536
-P 4300 3700
-F 0 "J3" H 4600 3750 50  0000 R CNN
-F 1 "22-23-2021" H 4900 3850 50  0000 R CNN
-F 2 "qomu-board-footprints:PinHeader_1x2_P2.54mm_Drill1.02mm" H 4500 3900 60  0001 L CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 4500 4000 60  0001 L CNN
-F 4 "22-23-2021" H 4500 4200 60  0001 L CNN "MPN"
-F 5 "Molex" H 4500 4800 60  0001 L CNN "Manufacturer"
-	1    4300 3700
-	-1   0    0    1   
+P 4900 5750
+F 0 "J3" V 4750 5750 50  0000 R CNN
+F 1 "22-23-2021" V 5100 6050 50  0000 R CNN
+F 2 "qomu-board-footprints:PinHeader_1x2_P2.54mm_Drill1.02mm" H 5100 5950 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 5100 6050 60  0001 L CNN
+F 4 "22-23-2021" H 5100 6250 60  0001 L CNN "MPN"
+F 5 "Molex" H 5100 6850 60  0001 L CNN "Manufacturer"
+	1    4900 5750
+	0    1    1    0   
 $EndComp
 $Comp
 L qomu-board:R_10k_0201 R6
 U 1 1 5E151CF7
-P 4100 4000
-F 0 "R6" V 4150 4200 50  0000 C CNN
-F 1 "10k" V 4000 4000 50  0000 C CNN
-F 2 "qomu-board-footprints:R_0201_0603Metric" H 4100 4000 50  0001 C CNN
-F 3 "" H 4100 4000 50  0001 C CNN
-F 4 "ERJ1GNF1002C " H -4650 2300 50  0001 C CNN "MPN"
-F 5 "Panasonic" H -2300 -550 50  0001 C CNN "Manufacturer"
-	1    4100 4000
-	0    -1   -1   0   
+P 5350 5850
+F 0 "R6" V 5250 5850 50  0000 C CNN
+F 1 "10k" V 5450 5850 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 5350 5850 50  0001 C CNN
+F 3 "" H 5350 5850 50  0001 C CNN
+F 4 "ERJ1GNF1002C " H -3400 4150 50  0001 C CNN "MPN"
+F 5 "Panasonic" H -1050 1300 50  0001 C CNN "Manufacturer"
+	1    5350 5850
+	0    1    1    0   
 $EndComp
 $Comp
 L qomu-board:+3V3 #PWR011
 U 1 1 5E1531DB
-P 4350 3800
-F 0 "#PWR011" H 4350 3800 50  0001 C CNN
-F 1 "+3V3" V 4450 3750 50  0000 C CNN
-F 2 "" H 4350 3800 50  0001 C CNN
-F 3 "" H 4350 3800 50  0001 C CNN
-	1    4350 3800
-	0    1    1    0   
+P 5050 5650
+F 0 "#PWR011" H 5050 5650 50  0001 C CNN
+F 1 "+3V3" H 5200 5650 50  0000 C CNN
+F 2 "" H 5050 5650 50  0001 C CNN
+F 3 "" H 5050 5650 50  0001 C CNN
+	1    5050 5650
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3550 4150 3850 4150
-Wire Wire Line
-	3850 4150 3850 4000
-Wire Wire Line
-	4200 4000 4200 3800
-Wire Wire Line
-	3850 4000 4000 4000
 $Comp
 L qomu-board:C_8p_0201 C14
 U 1 1 5E00A59A
@@ -2729,4 +2705,141 @@ Wire Wire Line
 	3550 5350 4000 5350
 Wire Wire Line
 	3550 4850 4000 4850
+$Comp
+L qomu-board:TP_SMD_0_75MM TP2
+U 1 1 5E378204
+P 4100 3850
+F 0 "TP2" V 4100 3800 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 4100 3750 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 4300 4050 60  0001 L CNN
+F 3 "" H 4300 4150 60  0001 L CNN
+	1    4100 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L qomu-board:EOS-S3 IC1
+U 1 1 5DCB0652
+P 1600 2700
+F 0 "IC1" H 1650 2850 50  0000 C CNN
+F 1 "EOS-S3" H 1750 2750 50  0000 C CNN
+F 2 "qomu-board:42-WLCSP" H 3250 -400 50  0001 C CNN
+F 3 "https://dev.antmicro.com/attachments/download/9063/ql-eos-s3-datasheet.pdf" H 3350 -300 50  0001 C CNN
+	1    1600 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 5750 5050 5750
+Wire Wire Line
+	5050 5750 5050 5700
+Wire Wire Line
+	5450 5850 5850 5850
+Wire Wire Line
+	5250 5850 5000 5850
+Wire Wire Line
+	3550 4150 4000 4150
+Wire Wire Line
+	3550 4250 4200 4250
+Text Label 3650 4150 0    50   ~ 0
+C1
+Text Label 5700 5850 0    50   ~ 0
+C1
+Wire Wire Line
+	3550 3850 4000 3850
+Wire Wire Line
+	4000 4150 4000 4050
+$Comp
+L qomu-board:TP_SMD_0_75MM TP3
+U 1 1 5E492FD8
+P 4100 4050
+F 0 "TP3" V 4100 4000 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 4100 3950 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 4300 4250 60  0001 L CNN
+F 3 "" H 4300 4350 60  0001 L CNN
+	1    4100 4050
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	4450 2300 4450 7700
+Connection ~ 5450 3200
+Wire Wire Line
+	5450 3200 5050 3200
+$Comp
+L qomu-board:TP_SMD_0_75MM TP5
+U 1 1 5E4D1EDD
+P 5450 3100
+F 0 "TP5" H 5500 3000 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 5450 3000 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 5650 3300 60  0001 L CNN
+F 3 "" H 5650 3400 60  0001 L CNN
+	1    5450 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L qomu-board:TP_SMD_0_75MM TP4
+U 1 1 5E4EF31B
+P 5450 2750
+F 0 "TP4" H 5500 2650 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 5450 2650 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 5650 2950 60  0001 L CNN
+F 3 "" H 5650 3050 60  0001 L CNN
+	1    5450 2750
+	-1   0    0    1   
+$EndComp
+Connection ~ 5450 2850
+Wire Wire Line
+	5450 2850 5050 2850
+$Comp
+L qomu-board:TP_SMD_0_75MM TP6
+U 1 1 5E509DA9
+P 5450 3400
+F 0 "TP6" H 5400 3300 50  0000 L CNN
+F 1 "TP_SMD_0_75MM" H 5450 3300 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 5650 3600 60  0001 L CNN
+F 3 "" H 5650 3700 60  0001 L CNN
+	1    5450 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 5450 3300
+Wire Wire Line
+	5450 3300 5050 3300
+$Comp
+L qomu-board:TP_SMD_0_75MM TP7
+U 1 1 5E52A8DA
+P 6700 2750
+F 0 "TP7" H 6750 2650 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 6700 2650 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 6900 2950 60  0001 L CNN
+F 3 "" H 6900 3050 60  0001 L CNN
+	1    6700 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L qomu-board:TP_SMD_0_75MM TP1
+U 1 1 5E53D85B
+P 1300 3600
+F 0 "TP1" H 1350 3500 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 1300 3500 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 1500 3800 60  0001 L CNN
+F 3 "" H 1500 3900 60  0001 L CNN
+	1    1300 3600
+	-1   0    0    1   
+$EndComp
+Connection ~ 1300 3700
+Wire Wire Line
+	1300 3700 1100 3700
+Connection ~ 6700 2850
+Wire Wire Line
+	6700 2850 7100 2850
+$Comp
+L qomu-board:TP_SMD_0_75MM TP8
+U 1 1 5E562531
+P 6750 3300
+F 0 "TP8" V 6850 3350 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 6750 3200 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 6950 3500 60  0001 L CNN
+F 3 "" H 6950 3600 60  0001 L CNN
+	1    6750 3300
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6650 3300
 $EndSCHEMATC
