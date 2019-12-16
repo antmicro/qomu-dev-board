@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:qomu-board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1905,8 +1906,6 @@ Wire Wire Line
 Connection ~ 1350 3000
 NoConn ~ 1500 3450
 NoConn ~ 1500 3550
-NoConn ~ 1500 3850
-NoConn ~ 1500 3950
 NoConn ~ 1500 4100
 $Comp
 L qomu-board:+3V3 #PWR0102
@@ -2616,7 +2615,7 @@ U 1 1 5E147536
 P 4300 3700
 F 0 "J3" H 4600 3750 50  0000 R CNN
 F 1 "22-23-2021" H 4900 3850 50  0000 R CNN
-F 2 "antmicro-footprints:PinHeader_1x2_P2.54mm_Drill1.02mm" H 4500 3900 60  0001 L CNN
+F 2 "qomu-board-footprints:PinHeader_1x2_P2.54mm_Drill1.02mm" H 4500 3900 60  0001 L CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 4500 4000 60  0001 L CNN
 F 4 "22-23-2021" H 4500 4200 60  0001 L CNN "MPN"
 F 5 "Molex" H 4500 4800 60  0001 L CNN "Manufacturer"
@@ -2655,4 +2654,77 @@ Wire Wire Line
 	4200 4000 4200 3800
 Wire Wire Line
 	3850 4000 4000 4000
+$Comp
+L qomu-board:C_8p_0201 C14
+U 1 1 5E00A59A
+P 1100 4100
+F 0 "C14" H 1201 4146 50  0000 L CNN
+F 1 "8p" H 1201 4055 50  0000 L CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 1256 4494 50  0001 C CNN
+F 3 "" H 1100 4100 50  0001 C CNN
+F 4 "Murata" H 1112 4654 50  0001 C CNN "Manufacturer"
+F 5 "GRM0335C1E8R0DA01D" H 1132 4578 50  0001 C CNN "MPN"
+	1    1100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:C_8p_0201 C13
+U 1 1 5E00BE50
+P 800 4100
+F 0 "C13" H 901 4146 50  0000 L CNN
+F 1 "8p" H 901 4055 50  0000 L CNN
+F 2 "qomu-board-footprints:C_0201_0603Metric" H 956 4494 50  0001 C CNN
+F 3 "" H 800 4100 50  0001 C CNN
+F 4 "Murata" H 812 4654 50  0001 C CNN "Manufacturer"
+F 5 "GRM0335C1E8R0DA01D" H 832 4578 50  0001 C CNN "MPN"
+	1    800  4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 3850 1100 3850
+Wire Wire Line
+	800  3950 800  3850
+Wire Wire Line
+	800  3950 800  4000
+Connection ~ 800  3950
+Wire Wire Line
+	1500 3950 800  3950
+Wire Wire Line
+	1100 3850 1100 4000
+Connection ~ 1100 3850
+$Comp
+L qomu-board:ECS-_327-12_5-1210-TR XTAL1
+U 1 1 5DFFBEFA
+P 950 3850
+F 0 "XTAL1" H 1250 3900 50  0000 C CNN
+F 1 "ECS-_327-12_5-1210-TR" V 693 3450 50  0000 C CNN
+F 2 "qomu-board-footprints:XTAL_ECS-.327-12.5-1210-TR" H 1150 4050 60  0001 L CNN
+F 3 "https://ecsxtal.com/store/pdf/ECX-1210.pdf" H 1150 4150 60  0001 L CNN
+F 4 "ECS-.327-12.5-1210-TR" H 1158 4224 60  0001 L CNN "MPN"
+F 5 "ECS Inc." H 1174 4302 60  0001 L CNN "Manufacturer"
+	1    950  3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0129
+U 1 1 5E06B803
+P 800 4200
+F 0 "#PWR0129" H 800 3950 50  0001 C CNN
+F 1 "GND" H 805 4027 50  0000 C CNN
+F 2 "" H 800 4200 50  0001 C CNN
+F 3 "" H 800 4200 50  0001 C CNN
+	1    800  4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:GND #PWR0130
+U 1 1 5E06BB21
+P 1100 4200
+F 0 "#PWR0130" H 1100 3950 50  0001 C CNN
+F 1 "GND" H 1105 4027 50  0000 C CNN
+F 2 "" H 1100 4200 50  0001 C CNN
+F 3 "" H 1100 4200 50  0001 C CNN
+	1    1100 4200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
