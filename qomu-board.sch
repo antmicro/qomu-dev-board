@@ -1895,8 +1895,6 @@ Wire Wire Line
 	7950 5000 7950 4700
 Wire Wire Line
 	7950 4700 8400 4700
-NoConn ~ 3550 4850
-NoConn ~ 3550 5350
 Wire Wire Line
 	750  3250 1500 3250
 Wire Wire Line
@@ -2595,11 +2593,11 @@ F 3 "https://www.quicklogic.com/wp-content/uploads/2020/06/QL-EOS-S3-Ultra-Low-P
 $EndComp
 Text Label 3650 3050 0    50   ~ 0
 TOUCH_1
-Text Label 3650 3150 0    50   ~ 0
-TOUCH_2
-Text Label 3650 3250 0    50   ~ 0
-TOUCH_3
 Text Label 3650 3350 0    50   ~ 0
+TOUCH_2
+Text Label 3650 5350 0    50   ~ 0
+TOUCH_3
+Text Label 3650 4850 0    50   ~ 0
 TOUCH_4
 Wire Wire Line
 	3550 3350 3950 3350
@@ -2727,4 +2725,8 @@ F 3 "" H 1100 4200 50  0001 C CNN
 	1    1100 4200
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3550 5350 4000 5350
+Wire Wire Line
+	3550 4850 4000 4850
 $EndSCHEMATC
