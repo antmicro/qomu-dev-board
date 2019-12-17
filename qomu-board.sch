@@ -2711,7 +2711,7 @@ U 1 1 5E378204
 P 4100 3850
 F 0 "TP2" V 4100 3800 50  0000 R CNN
 F 1 "TP_SMD_0_75MM" H 4100 3750 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 4300 4050 60  0001 L CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 4300 4050 60  0001 L CNN
 F 3 "" H 4300 4150 60  0001 L CNN
 	1    4100 3850
 	0    -1   -1   0   
@@ -2753,7 +2753,7 @@ U 1 1 5E492FD8
 P 4100 4050
 F 0 "TP3" V 4100 4000 50  0000 R CNN
 F 1 "TP_SMD_0_75MM" H 4100 3950 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 4300 4250 60  0001 L CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 4300 4250 60  0001 L CNN
 F 3 "" H 4300 4350 60  0001 L CNN
 	1    4100 4050
 	0    -1   -1   0   
@@ -2819,7 +2819,7 @@ U 1 1 5E53D85B
 P 1300 3600
 F 0 "TP1" H 1350 3500 50  0000 R CNN
 F 1 "TP_SMD_0_75MM" H 1300 3500 50  0001 C CNN
-F 2 "qomu-board-footprints:Testpoint_smd_0_75mm" H 1500 3800 60  0001 L CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 1500 3800 60  0001 L CNN
 F 3 "" H 1500 3900 60  0001 L CNN
 	1    1300 3600
 	-1   0    0    1   
@@ -2842,4 +2842,17 @@ F 3 "" H 6950 3600 60  0001 L CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 6650 3300
+$Comp
+L qomu-board:TP_SMD_0_75MM TP?
+U 1 1 5E5F7FB2
+P 1100 4600
+F 0 "TP?" H 1150 4500 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 1100 4500 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 1300 4800 60  0001 L CNN
+F 3 "" H 1300 4900 60  0001 L CNN
+	1    1100 4600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 4700 1300 4700
 $EndSCHEMATC
