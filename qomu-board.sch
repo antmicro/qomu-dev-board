@@ -1574,7 +1574,7 @@ Wire Wire Line
 	1300 4300 1500 4300
 Wire Wire Line
 	3550 3450 3950 3450
-Text Notes 5800 3600 0    50   ~ 0
+Text Notes 5800 3650 0    50   ~ 0
 operating current\nmax. 20mA
 Text Notes 650  5950 0    50   ~ 0
 Maximum power consumption for A and B rails:\nLDO mode: 65mA (VCCIOA) 114mA (VCCIOB)\nLDO bypass mode: 77mA (VCCIOA) 269mA (VCCIOB) 
@@ -1866,8 +1866,6 @@ F 3 "" H 4300 3350 50  0001 C CNN
 $EndComp
 Text Notes 2200 2500 0    50   ~ 0
 FBIO_8 and FBIO_9 are bootstrap pins for HS oscillator.\nThey should be pulled-down for internal HSO
-Text Notes 3050 6000 0    50   ~ 0
-FBIO_19 and FPIO_20 are bootstrap\npins for SPI flash boot.\nThey must be pulled low
 $Comp
 L qomu-board:R_4k7_0201 R8
 U 1 1 5DE58338
@@ -2590,7 +2588,7 @@ NoConn ~ 5950 4900
 NoConn ~ 3550 3950
 NoConn ~ 3550 4050
 $Comp
-L qomu-board:22-23-2021 J3
+L antmicroRectangularConnectorsHeadersMalePins:22-23-2021 J3
 U 1 1 5E147536
 P 4900 5750
 F 0 "J3" V 4750 5750 50  0000 R CNN
@@ -2853,4 +2851,8 @@ F 3 "" H 1300 4900 60  0001 L CNN
 $EndComp
 Wire Wire Line
 	1100 4700 1300 4700
+Text Notes 5800 3500 0    50   ~ 0
+16Mbit (2Mx8)
+Text Notes 2750 5800 0    50   ~ 0
+TBD: Consider adding a testpad to FBIO20
 $EndSCHEMATC
