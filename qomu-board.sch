@@ -2135,7 +2135,7 @@ U 1 1 5DED4186
 P 5200 4950
 F 0 "D8" V 5350 4900 60  0000 R CNN
 F 1 "SD05C.TCT" H 5400 5100 60  0000 R CNN
-F 2 "antmicro-footprints:SOD-323-SD05" H 5400 5150 60  0001 L CNN
+F 2 "qomu-board-footprints:SOD-323-SD05" H 5400 5150 60  0001 L CNN
 F 3 "https://www.mouser.com/datasheet/2/761/sdxxc-1277747.pdf" H 5400 5250 60  0001 L CNN
 F 4 "Semtec" H 5400 5550 60  0001 L CNN "Manufacturer"
 F 5 "SD05C.TCT" H 5400 5450 60  0001 L CNN "MPN"
@@ -2843,12 +2843,12 @@ $EndComp
 Wire Wire Line
 	1100 4700 1300 4700
 $Comp
-L antmicroRectangularConnectorsHeadersMalePins:MC-HVT1-S02-G J3
+L qomu-board:MC-HVT1-S02-G J3
 U 1 1 5E6A420A
 P 5300 5700
 F 0 "J3" V 5200 5700 50  0000 C CNN
 F 1 "MC-HVT1-S02-G" V 5700 6000 50  0000 C CNN
-F 2 "antmicro-footprints:PinHeader_1x2_P1.27mm_Drill.7mm_with_622002115121_plug" H 5500 6000 60  0001 L CNN
+F 2 "qomu-board-footprints:PinHeader_1x2_P1.27mm_Drill.7mm_with_622002115121_plug" H 5500 6000 60  0001 L CNN
 F 3 "http://www.farnell.com/datasheets/2605295.pdf" H 5500 6100 60  0001 L CNN
 F 4 "MC-HVT1-S02-G" H 5500 6200 60  0001 L CNN "MPN"
 F 5 "Multicomp" H 5500 6300 60  0001 L CNN "Manufacturer"
@@ -2856,12 +2856,12 @@ F 5 "Multicomp" H 5500 6300 60  0001 L CNN "Manufacturer"
 	0    1    1    0   
 $EndComp
 $Comp
-L antmicroSlideSwitches:MSS3-V-T_R S1
+L qomu-board:MSS3-V-T_R S1
 U 1 1 5E6D2395
 P 4800 5800
 F 0 "S1" V 5100 5700 50  0000 L CNN
 F 1 "MSS3-V-T_R" V 4500 5650 50  0000 L CNN
-F 2 "antmicro-footprints:Switch_Slide_MSS3" H 5000 6000 50  0001 L CNN
+F 2 "qomu-board-footprints:Switch_Slide_MSS3" H 5000 6000 50  0001 L CNN
 F 3 "https://pl.mouser.com/datasheet/2/910/605_MSS34-1571494.pdf" H 5000 6100 60  0001 L CNN
 F 4 "MSS3-V-T/R" H 5000 6300 60  0001 L CNN "MPN"
 F 5 "Diptronics" H 5000 6420 60  0001 L CNN "Manufacturer"
