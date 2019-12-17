@@ -2474,7 +2474,7 @@
   )
 
   (module qomu-board:USB-PCB locked (layer Top) (tedit 5DD673F1) (tstamp 5DC58C97)
-    (at 6.85 27.35)
+    (at 16.85 27.35)
     (path /5BD8B24F)
     (solder_mask_margin 0.000001)
     (attr virtual)
