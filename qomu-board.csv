@@ -1,22 +1,62 @@
-Reference,Quantity,Value,Footprint,Manufacturer,MPN,
-C1 C2 C7 C9,4,C_2u2_0201,C_0201_0603Metric,Samsung,CL03A225MP3CRNC,
-C10 C11 C12 C3 C4 C5 C6 C8,8,C_100n_0201,C_0201_0603Metric,Murata,GRM033R60J104KE19D,
-D1 D2 D3 D4 D5 D6 D7,7,D_Small-Device,X1-DFN1006-2,Diodes,D5V0L1B2LP3-7,
-D8,1,SD05C.TCT,SOD-323,Semtec,SD05C.TCT,
-IC1,1,EOS-S3,42-WLCSP,,,
-J1,1,FTSH-105-01-L-DV-K,PinHeader_2x5_P1.27_SMD,Samtec,FTSH-105-01-L-DV-K,
-J2,1,825437-4,TE_825437-4,TE,825437-4,
-J3,1,22-23-2021,PinHeader_1x2_P2.54mm_Drill1.02mm,22-23-2021,Molex,
-Q1 Q2 Q3,3,RV1C002UN,VML0806,ROHM,RV1C002UN,
-R1 R13 R15 R2 R3 R4 R5 R6,8,R_10k_0201,R_0201_0603Metric,Panasonic,ERJ1GNF1002C,
-R11 R12,2,R_22R_0201,R_0201_0603Metric,MCRE000100,,
-R16 R17,2,R_100R_0201,R_0201_0603Metric,Multicomp,MCRE000116,
-R18,1,R_220R_0201,R_0201_0603Metric,Multicomp,MCRE000124,
-R8,1,R_4k7_0201,R_0201_0603Metric,Vishay,CRCW02014K70FNED,
-R9,1,R_1k5_0201,R_0201_0603Metric,Multicomp,MCRE000144,
-SW2,1,PADS,,N/A,N/A,
-U1 U2,2,LDO-X2SON,Texas_X2SON-4_1x1mm_P0.65mm,Microchip,MIC5504-3.3YMT,
-U10,1,RGB-LED,LED-RGB-5DS-UHD1110-FKA,Cree,UHD1110-FKA,
-U4,1,GD25Q16CEIGR,GD25Q16CEIGR,GigaDevice,GD25Q16CEIGR,
-U5,1,MC3635,MC3635,mCube,MC3635,
-U9,1,USB-B,,N/A,N/A,
+Reference, Value, Footprint, Datasheet, MPN, Manufacturer, Field4, Field5, Field6, Field7, Field8
+"U9","USB-B","qomu-board:USB-PCB","","N/A","N/A","","","","",""
+"U10","UHD1110-FKA","qomu-board-footprints:LED-RGB-5DS-UHD1110-FKA","https://www.cree.com/led-components/media/documents/ds-UHD1110-FKA.pdf","UHD1110-FKA","Cree","","","","",""
+"R12","22R","qomu-board-footprints:R_0201_0603Metric","Multicomp","ANY","MCRE000100 ","","","","",""
+"R9","1k5","qomu-board-footprints:R_0201_0603Metric","","MCRE000144","Multicomp","","","","",""
+"SW2","Captouch Pads","qomu-board:captouch-edge","","N/A","N/A","","","","",""
+"D1","D5V0L1B2LP3-7","qomu-board-footprints:X1-DFN1006-2","https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf","D5V0L1B2LP3-7","Diodes Inc.","","","","",""
+"D2","D5V0L1B2LP3-7","qomu-board-footprints:X1-DFN1006-2","https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf","D5V0L1B2LP3-7","Diodes Inc.","","","","",""
+"D3","D5V0L1B2LP3-7","qomu-board-footprints:X1-DFN1006-2","https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf","D5V0L1B2LP3-7","Diodes Inc.","","","","",""
+"D4","D5V0L1B2LP3-7","qomu-board-footprints:X1-DFN1006-2","https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf","D5V0L1B2LP3-7","Diodes Inc.","","","","",""
+"D6","D5V0L1B2LP3-7","qomu-board-footprints:X1-DFN1006-2","https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf","D5V0L1B2LP3-7","Diodes Inc.","","","","",""
+"D7","D5V0L1B2LP3-7","qomu-board-footprints:X1-DFN1006-2","https://www.diodes.com/assets/Datasheets/D5V0L1B2LP3.pdf","D5V0L1B2LP3-7","Diodes Inc.","","","","",""
+"D5","VCUT05E1-SD0","qomu-board-footprints:X1-DFN1006-2","http://www.vishay.com/docs/85900/vcut05e1-sd0.pdf","D5V0L1B2LP3-7","Diodes Inc.","","","","",""
+"R1","10k","qomu-board-footprints:R_0201_0603Metric","","ERJ1GNF1002C ","Panasonic","","","","",""
+"R11","22R","qomu-board-footprints:R_0201_0603Metric","Multicomp","ANY","MCRE000100 ","","","","",""
+"C2","2u2/10V","qomu-board-footprints:C_0201_0603Metric","","CL03A225MP3CRNC ","Samsung","","","","",""
+"C9","2u2/10V","qomu-board-footprints:C_0201_0603Metric","","CL03A225MP3CRNC ","Samsung","","","","",""
+"U4","GD25Q16CEIGR","qomu-board:GD25Q16CEIGR","http://www.gigadevice.com/datasheet/gd25q16c/","GD25Q16CEIGR","GigaDevice Semiconductor","","","","",""
+"R3","4k7","qomu-board-footprints:R_0201_0603Metric","","ERJ1GNF1002C ","Panasonic","","","","",""
+"R4","4k7","qomu-board-footprints:R_0201_0603Metric","","ERJ1GNF1002C ","Panasonic","","","","",""
+"C5","100n","qomu-board-footprints:C_0201_0603Metric","","GRM033R60J104KE19D ","Murata","","","","",""
+"U5","MC3635","qomu-board:MC3635","https://mcubemems.com/wp-content/uploads/2019/06/MC3635-Datasheet-APS-048-0044v1.6.pdf","MC3635","mCube","","","","",""
+"C4","100n","qomu-board-footprints:C_0201_0603Metric","","GRM033R60J104KE19D ","Murata","","","","",""
+"U2","MIC5504-3.3YMT","qomu-board-footprints:Texas_X2SON-4_1x1mm_P0.65mm","","MIC5504-3.3YMT","Microchip","","","","",""
+"C3","100n","qomu-board-footprints:C_0201_0603Metric","","GRM033R60J104KE19D ","Murata","","","","",""
+"C6","100n","qomu-board-footprints:C_0201_0603Metric","","GRM033R60J104KE19D ","Murata","","","","",""
+"C8","100n","qomu-board-footprints:C_0201_0603Metric","","GRM033R60J104KE19D ","Murata","","","","",""
+"C10","100n","qomu-board-footprints:C_0201_0603Metric","","GRM033R60J104KE19D ","Murata","","","","",""
+"C11","100n","qomu-board-footprints:C_0201_0603Metric","","GRM033R60J104KE19D ","Murata","","","","",""
+"U1","MIC5504-3.3YMT","qomu-board-footprints:Texas_X2SON-4_1x1mm_P0.65mm","","MIC5504-3.3YMT","Microchip","","","","",""
+"C7","2u2/10V","qomu-board-footprints:C_0201_0603Metric","","CL03A225MP3CRNC ","Samsung","","","","",""
+"C1","2u2/10V","qomu-board-footprints:C_0201_0603Metric","","CL03A225MP3CRNC ","Samsung","","","","",""
+"R5","10k","qomu-board-footprints:R_0201_0603Metric","","ERJ1GNF1002C ","Panasonic","","","","",""
+"R2","10k","qomu-board-footprints:R_0201_0603Metric","","ERJ1GNF1002C ","Panasonic","","","","",""
+"R8","4k7","qomu-board-footprints:R_0201_0603Metric","","CRCW02014K70FNED","Vishay","","","","",""
+"D8","SD05C.TCT","qomu-board-footprints:SOD-323","https://www.mouser.com/datasheet/2/761/sdxxc-1277747.pdf","SD05C.TCT","Semtec","","","","",""
+"J2","825437-4","qomu-board-footprints:TE_825437-4","https://www.te.com/usa-en/product-825437-4.datasheet.pdf","825437-4","TE Connectivity","","","","",""
+"J1","FTSH-105-01-L-DV-K","qomu-board-footprints:PinHeader_2x5_P1.27_SMD","http://suddendocs.samtec.com/prints/ftsh-1xx-xx-xxx-dv-xxx-xxx-mkt.pdf","FTSH-105-01-L-DV-K","Samtec Inc.","","","","",""
+"R15","10k","qomu-board-footprints:R_0201_0603Metric","","ERJ1GNF1002C ","Panasonic","","","","",""
+"R13","10k","qomu-board-footprints:R_0201_0603Metric","","ERJ1GNF1002C ","Panasonic","","","","",""
+"C12","100n","qomu-board-footprints:C_0201_0603Metric","","GRM033R60J104KE19D ","Murata","","","","",""
+"R16","100R","qomu-board-footprints:R_0201_0603Metric","","MCRE000116 ","Multicomp","","","","",""
+"R17","100R","qomu-board-footprints:R_0201_0603Metric","","MCRE000116 ","Multicomp","","","","",""
+"R18","220R","qomu-board-footprints:R_0201_0603Metric","","MCRE000124","Multicomp","","","","",""
+"Q2","RV1C002UN","qomu-board-footprints:VML0806","https://d1d2qsbl8m0m72.cloudfront.net/en/products/databook/datasheet/discrete/transistor/mosfet/rv1c002un-e.pdf","RV1C002UN","ROHM Semiconductor","RV1C002UN","Nch 20V 180mA Small Signal MOSFET","None","Unavailable","Rohm"
+"Q3","RV1C002UN","qomu-board-footprints:VML0806","https://d1d2qsbl8m0m72.cloudfront.net/en/products/databook/datasheet/discrete/transistor/mosfet/rv1c002un-e.pdf","RV1C002UN","ROHM Semiconductor","RV1C002UN","Nch 20V 180mA Small Signal MOSFET","None","Unavailable","Rohm"
+"Q1","RV1C002UN","qomu-board-footprints:VML0806","https://d1d2qsbl8m0m72.cloudfront.net/en/products/databook/datasheet/discrete/transistor/mosfet/rv1c002un-e.pdf","RV1C002UN","ROHM Semiconductor","RV1C002UN","Nch 20V 180mA Small Signal MOSFET","None","Unavailable","Rohm"
+"J3","22-23-2021","qomu-board-footprints:PinHeader_1x2_P2.54mm_Drill1.02mm","https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf","22-23-2021","Molex","","","","",""
+"R6","10k","qomu-board-footprints:R_0201_0603Metric","","ERJ1GNF1002C ","Panasonic","","","","",""
+"C14","8p","qomu-board-footprints:C_0201_0603Metric","","GRM0335C1E8R0DA01D","Murata","","","","",""
+"C13","8p","qomu-board-footprints:C_0201_0603Metric","","GRM0335C1E8R0DA01D","Murata","","","","",""
+"XTAL1","ECS-_327-12_5-1210-TR","qomu-board-footprints:XTAL_ECS-.327-12.5-1210-TR","https://ecsxtal.com/store/pdf/ECX-1210.pdf","ECS-.327-12.5-1210-TR","ECS Inc.","","","","",""
+"TP2","TP_SMD_0_75MM","qomu-board-footprints:Testpoint_smd_0_75_0_6mm",""
+"IC1","EOS-S3","qomu-board:42-WLCSP","https://www.quicklogic.com/wp-content/uploads/2020/06/QL-EOS-S3-Ultra-Low-Power-multicore-MCU-Datasheet.pdf"
+"TP3","TP_SMD_0_75MM","qomu-board-footprints:Testpoint_smd_0_75_0_6mm",""
+"TP5","TP_SMD_0_75MM","qomu-board-footprints:Testpoint_smd_0_75mm",""
+"TP4","TP_SMD_0_75MM","qomu-board-footprints:Testpoint_smd_0_75mm",""
+"TP6","TP_SMD_0_75MM","qomu-board-footprints:Testpoint_smd_0_75mm",""
+"TP7","TP_SMD_0_75MM","qomu-board-footprints:Testpoint_smd_0_75mm",""
+"TP1","TP_SMD_0_75MM","qomu-board-footprints:Testpoint_smd_0_75_0_6mm",""
+"TP8","TP_SMD_0_75MM","qomu-board-footprints:Testpoint_smd_0_75mm",""
+"TP9","TP_SMD_0_75MM","qomu-board-footprints:Testpoint_smd_0_75_0_6mm",""
