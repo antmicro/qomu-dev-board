@@ -2378,7 +2378,6 @@ Wire Wire Line
 Text Label 3650 5550 0    50   ~ 0
 UART_RX
 NoConn ~ 5550 5000
-NoConn ~ 5950 5000
 Text Label 7000 5850 0    50   ~ 0
 UART_RX
 Text Label 7000 5750 0    50   ~ 0
@@ -2588,7 +2587,6 @@ Wire Wire Line
 	3550 3350 3950 3350
 Wire Wire Line
 	3550 3050 3950 3050
-NoConn ~ 5950 4900
 NoConn ~ 3550 3950
 NoConn ~ 3550 4050
 $Comp
@@ -2886,4 +2884,46 @@ Wire Wire Line
 Connection ~ 5500 5800
 Wire Wire Line
 	5500 5800 5450 5800
+$Comp
+L qomu-board:R_0R_0201 R7
+U 1 1 5DFC94D0
+P 6550 4900
+F 0 "R7" V 6500 4750 50  0000 C CNN
+F 1 "0R" V 6500 5050 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 6550 4900 50  0001 C CNN
+F 3 "" H 6550 4900 50  0001 C CNN
+F 4 "Multicomp" H 6550 4900 50  0001 C CNN "Manufacturer"
+F 5 "MCRE000086" H 6550 4900 50  0001 C CNN "MPN"
+	1    6550 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L qomu-board:R_0R_0201 R10
+U 1 1 5DFD001C
+P 6550 5000
+F 0 "R10" V 6500 4850 50  0000 C CNN
+F 1 "0R" V 6500 5150 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 6550 5000 50  0001 C CNN
+F 3 "" H 6550 5000 50  0001 C CNN
+F 4 "Multicomp" H 6550 5000 50  0001 C CNN "Manufacturer"
+F 5 "MCRE000086" H 6550 5000 50  0001 C CNN "MPN"
+	1    6550 5000
+	0    1    1    0   
+$EndComp
+Text Label 7000 4900 0    50   ~ 0
+UART_TX
+Text Label 7000 5000 0    50   ~ 0
+UART_RX
+Wire Wire Line
+	5950 4900 6450 4900
+Wire Wire Line
+	5950 5000 6450 5000
+Wire Wire Line
+	6650 4900 7400 4900
+Wire Wire Line
+	6650 5000 7400 5000
+Text Notes 6150 4900 0    50   ~ 0
+DNP\n
+Text Notes 6150 5000 0    50   ~ 0
+DNP\n
 $EndSCHEMATC
