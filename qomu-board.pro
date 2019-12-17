@@ -1,4 +1,4 @@
-update=wto, 17 gru 2019, 13:46:35
+update=wto, 17 gru 2019, 17:18:01
 version=1
 last_client=kicad
 [general]
@@ -91,11 +91,11 @@ Type=0
 Enabled=1
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
-Type=2
+Type=0
 Enabled=1
 [pcbnew/Layer.In3.Cu]
-Name=GND.Cu
-Type=1
+Name=In3.Cu
+Type=0
 Enabled=1
 [pcbnew/Layer.In4.Cu]
 Name=In4.Cu
