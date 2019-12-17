@@ -2135,7 +2135,7 @@ U 1 1 5DED4186
 P 5200 4950
 F 0 "D8" V 5350 4900 60  0000 R CNN
 F 1 "SD05C.TCT" H 5400 5100 60  0000 R CNN
-F 2 "qomu-board-footprints:SOD-323" H 5400 5150 60  0001 L CNN
+F 2 "antmicro-footprints:SOD-323-SD05" H 5400 5150 60  0001 L CNN
 F 3 "https://www.mouser.com/datasheet/2/761/sdxxc-1277747.pdf" H 5400 5250 60  0001 L CNN
 F 4 "Semtec" H 5400 5550 60  0001 L CNN "Manufacturer"
 F 5 "SD05C.TCT" H 5400 5450 60  0001 L CNN "MPN"
@@ -2592,40 +2592,27 @@ NoConn ~ 5950 4900
 NoConn ~ 3550 3950
 NoConn ~ 3550 4050
 $Comp
-L qomu-board:22-23-2021 J3
-U 1 1 5E147536
-P 4900 5750
-F 0 "J3" V 4750 5750 50  0000 R CNN
-F 1 "22-23-2021" V 5100 6050 50  0000 R CNN
-F 2 "qomu-board-footprints:PinHeader_1x2_P2.54mm_Drill1.02mm" H 5100 5950 60  0001 L CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 5100 6050 60  0001 L CNN
-F 4 "22-23-2021" H 5100 6250 60  0001 L CNN "MPN"
-F 5 "Molex" H 5100 6850 60  0001 L CNN "Manufacturer"
-	1    4900 5750
-	0    1    1    0   
-$EndComp
-$Comp
 L qomu-board:R_10k_0201 R6
 U 1 1 5E151CF7
-P 5350 5850
-F 0 "R6" V 5250 5850 50  0000 C CNN
-F 1 "10k" V 5450 5850 50  0000 C CNN
-F 2 "qomu-board-footprints:R_0201_0603Metric" H 5350 5850 50  0001 C CNN
-F 3 "" H 5350 5850 50  0001 C CNN
-F 4 "ERJ1GNF1002C " H -3400 4150 50  0001 C CNN "MPN"
-F 5 "Panasonic" H -1050 1300 50  0001 C CNN "Manufacturer"
-	1    5350 5850
+P 5800 5800
+F 0 "R6" V 5700 5800 50  0000 C CNN
+F 1 "10k" V 5900 5900 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 5800 5800 50  0001 C CNN
+F 3 "" H 5800 5800 50  0001 C CNN
+F 4 "ERJ1GNF1002C " H -2950 4100 50  0001 C CNN "MPN"
+F 5 "Panasonic" H -600 1250 50  0001 C CNN "Manufacturer"
+	1    5800 5800
 	0    1    1    0   
 $EndComp
 $Comp
 L qomu-board:+3V3 #PWR011
 U 1 1 5E1531DB
-P 5050 5650
-F 0 "#PWR011" H 5050 5650 50  0001 C CNN
-F 1 "+3V3" H 5200 5650 50  0000 C CNN
-F 2 "" H 5050 5650 50  0001 C CNN
-F 3 "" H 5050 5650 50  0001 C CNN
-	1    5050 5650
+P 5500 5600
+F 0 "#PWR011" H 5500 5600 50  0001 C CNN
+F 1 "+3V3" H 5650 5600 50  0000 C CNN
+F 2 "" H 5500 5600 50  0001 C CNN
+F 3 "" H 5500 5600 50  0001 C CNN
+	1    5500 5600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2728,20 +2715,20 @@ F 3 "https://www.quicklogic.com/wp-content/uploads/2020/06/QL-EOS-S3-Ultra-Low-P
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 5750 5050 5750
+	5450 5700 5500 5700
 Wire Wire Line
-	5050 5750 5050 5700
+	5500 5700 5500 5650
 Wire Wire Line
-	5450 5850 5850 5850
+	5900 5800 6300 5800
 Wire Wire Line
-	5250 5850 5000 5850
+	5700 5800 5500 5800
 Wire Wire Line
 	3550 4150 4000 4150
 Wire Wire Line
 	3550 4250 4200 4250
 Text Label 3650 4150 0    50   ~ 0
 C1
-Text Label 5700 5850 0    50   ~ 0
+Text Label 6150 5800 0    50   ~ 0
 C1
 Wire Wire Line
 	3550 3850 4000 3850
@@ -2855,4 +2842,48 @@ F 3 "" H 1300 4900 60  0001 L CNN
 $EndComp
 Wire Wire Line
 	1100 4700 1300 4700
+$Comp
+L antmicroRectangularConnectorsHeadersMalePins:MC-HVT1-S02-G J3
+U 1 1 5E6A420A
+P 5300 5700
+F 0 "J3" V 5200 5700 50  0000 C CNN
+F 1 "MC-HVT1-S02-G" V 5700 6000 50  0000 C CNN
+F 2 "antmicro-footprints:PinHeader_1x2_P1.27mm_Drill.7mm_with_622002115121_plug" H 5500 6000 60  0001 L CNN
+F 3 "http://www.farnell.com/datasheets/2605295.pdf" H 5500 6100 60  0001 L CNN
+F 4 "MC-HVT1-S02-G" H 5500 6200 60  0001 L CNN "MPN"
+F 5 "Multicomp" H 5500 6300 60  0001 L CNN "Manufacturer"
+	1    5300 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L antmicroSlideSwitches:MSS3-V-T_R S1
+U 1 1 5E6D2395
+P 4800 5800
+F 0 "S1" V 5100 5700 50  0000 L CNN
+F 1 "MSS3-V-T_R" V 4500 5650 50  0000 L CNN
+F 2 "antmicro-footprints:Switch_Slide_MSS3" H 5000 6000 50  0001 L CNN
+F 3 "https://pl.mouser.com/datasheet/2/910/605_MSS34-1571494.pdf" H 5000 6100 60  0001 L CNN
+F 4 "MSS3-V-T/R" H 5000 6300 60  0001 L CNN "MPN"
+F 5 "Diptronics" H 5000 6420 60  0001 L CNN "Manufacturer"
+	1    4800 5800
+	0    1    -1   0   
+$EndComp
+$Comp
+L qomu-board:+3V3 #PWR0131
+U 1 1 5E719179
+P 4900 5550
+F 0 "#PWR0131" H 4900 5550 50  0001 C CNN
+F 1 "+3V3" H 5050 5550 50  0000 C CNN
+F 2 "" H 4900 5550 50  0001 C CNN
+F 3 "" H 4900 5550 50  0001 C CNN
+	1    4900 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 6000 5500 6000
+Wire Wire Line
+	5500 6000 5500 5800
+Connection ~ 5500 5800
+Wire Wire Line
+	5500 5800 5450 5800
 $EndSCHEMATC
