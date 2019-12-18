@@ -2946,4 +2946,26 @@ Wire Wire Line
 Connection ~ 5450 5850
 Wire Wire Line
 	5450 5850 5650 5850
+$Comp
+L qomu-board:oshw_logo N1
+U 1 1 5E07AA52
+P 4900 6600
+F 0 "N1" H 5094 6603 50  0000 L CNN
+F 1 "oshw_logo" H 5094 6512 50  0000 L CNN
+F 2 "qomu-board-footprints:OSHW-Logo2_7.3x6mm_Copper_Mask" H 4920 6360 50  0001 C CNN
+F 3 "" H 4900 6600 50  0001 C CNN
+	1    4900 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L qomu-board:antmicro_logo N2
+U 1 1 5E07B16A
+P 5700 6700
+F 0 "N2" H 5914 6793 50  0000 L CNN
+F 1 "antmicro_logo" H 5914 6702 50  0000 L CNN
+F 2 "qomu-board-footprints:antmicro-logo_midlayer" H 5600 6950 50  0001 C CNN
+F 3 "" H 5700 7050 50  0001 C CNN
+	1    5700 6700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
