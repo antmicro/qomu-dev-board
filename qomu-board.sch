@@ -2582,7 +2582,6 @@ Wire Wire Line
 	3550 3050 3950 3050
 NoConn ~ 5950 4900
 NoConn ~ 3550 3950
-NoConn ~ 3550 4050
 $Comp
 L qomu-board:R_10k_0201 R6
 U 1 1 5E151CF7
@@ -2855,4 +2854,25 @@ F 5 "Multicomp" H 5050 6350 60  0001 L CNN "Manufacturer"
 	1    4850 5750
 	0    1    1    0   
 $EndComp
+$Comp
+L qomu-board:TP_SMD_0_75MM TP10
+U 1 1 5E0E4725
+P 4100 3950
+F 0 "TP10" V 4100 3900 50  0000 R CNN
+F 1 "TP_SMD_0_75MM" H 4100 3850 50  0001 C CNN
+F 2 "qomu-board-footprints:Testpoint_smd_0_75_0_6mm" H 4300 4150 60  0001 L CNN
+F 3 "" H 4300 4250 60  0001 L CNN
+	1    4100 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3550 4050 3900 4050
+Wire Wire Line
+	3900 4050 3900 3950
+Wire Wire Line
+	3900 3950 4000 3950
+Text Label 3650 4050 0    50   ~ 0
+F2
+Text Label 3650 3850 0    50   ~ 0
+E1
 $EndSCHEMATC
