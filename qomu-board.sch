@@ -1406,7 +1406,7 @@ Text Label 9950 1850 0    50   ~ 0
 R_USB_P
 Text Label 3650 4550 0    50   ~ 0
 R_USB_N
-Text Label 3650 4650 0    50   ~ 0
+Text Label 3650 4850 0    50   ~ 0
 R_USB_P
 Wire Wire Line
 	3550 4550 4000 4550
@@ -2541,8 +2541,6 @@ Wire Wire Line
 	10500 3300 10500 3600
 Text Label 3650 4750 0    50   ~ 0
 LED_B
-Text Label 3650 4450 0    50   ~ 0
-LED_G
 Text Label 3650 4350 0    50   ~ 0
 LED_R
 Wire Wire Line
@@ -2574,11 +2572,9 @@ Wire Wire Line
 	4300 3250 4300 3350
 Text Label 3650 3050 0    50   ~ 0
 TOUCH_1
-Text Label 3650 3350 0    50   ~ 0
-TOUCH_2
 Text Label 3650 5350 0    50   ~ 0
 TOUCH_3
-Text Label 3650 4850 0    50   ~ 0
+Text Label 3650 4650 0    50   ~ 0
 TOUCH_4
 Wire Wire Line
 	3550 3350 3950 3350
@@ -2855,4 +2851,8 @@ Text Notes 5800 3500 0    50   ~ 0
 16Mbit (2Mx8)
 Text Notes 2750 5800 0    50   ~ 0
 TBD: Consider adding a testpad to FBIO20
+Text Label 3650 3350 0    50   ~ 0
+LED_G
+Text Label 3650 4450 0    50   ~ 0
+TOUCH_2
 $EndSCHEMATC
