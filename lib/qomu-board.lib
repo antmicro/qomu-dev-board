@@ -318,7 +318,7 @@ ENDDEF
 DEF MC-HVT1-S02-G J 0 40 Y Y 1 F N
 F0 "J" -200 100 50 H V L CNN
 F1 "MC-HVT1-S02-G" 100 -100 50 H V C CNN
-F2 "qomu-board-footprints:PinHeader_1x2_P1.27mm_Drill.7mm" 200 300 60 H I L CNN
+F2 "qomu-board-footprints:PinHeader_1x2_P1.27mm_Drill.7mm_with_622002115121_plug" 200 300 60 H I L CNN
 F3 "" 200 400 60 H I L CNN
 F4 "MC-HVT1-S02-G" 200 500 60 H I L CNN "MPN"
 F5 "Multicomp" 200 600 60 H I L CNN "Manufacturer"
@@ -588,7 +588,7 @@ ENDDEF
 DEF SD05C.TCT D 0 40 Y Y 1 F N
 F0 "D" 0 150 60 H V C CNN
 F1 "SD05C.TCT" 0 -150 60 H V C CNN
-F2 "qomu-board-footprints:SOD-323" 200 200 60 H I L CNN
+F2 "qomu-board-footprints:SOD-323-SD05" 200 200 60 H I L CNN
 F3 "" 200 300 60 H I L CNN
 F4 "Semtec" 200 600 60 H I L CNN "Manufacturer"
 F5 "SD05C.TCT" 200 500 60 H I L CNN "MPN"
