@@ -2374,7 +2374,6 @@ Wire Wire Line
 Text Label 3650 5550 0    50   ~ 0
 UART_RX
 NoConn ~ 5550 5000
-NoConn ~ 5950 5000
 Text Label 7000 5850 0    50   ~ 0
 UART_RX
 Text Label 7000 5750 0    50   ~ 0
@@ -2580,30 +2579,29 @@ Wire Wire Line
 	3550 3350 3950 3350
 Wire Wire Line
 	3550 3050 3950 3050
-NoConn ~ 5950 4900
 NoConn ~ 3550 3950
 $Comp
 L qomu-board:R_10k_0201 R6
 U 1 1 5E151CF7
-P 5350 5850
-F 0 "R6" V 5300 6000 50  0000 C CNN
-F 1 "10k" V 5450 6000 50  0000 C CNN
-F 2 "qomu-board-footprints:R_0201_0603Metric" H 5350 5850 50  0001 C CNN
-F 3 "" H 5350 5850 50  0001 C CNN
-F 4 "ERJ1GNF1002C " H -3400 4150 50  0001 C CNN "MPN"
-F 5 "Panasonic" H -1050 1300 50  0001 C CNN "Manufacturer"
-	1    5350 5850
+P 5750 5850
+F 0 "R6" V 5700 6000 50  0000 C CNN
+F 1 "10k" V 5850 6000 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 5750 5850 50  0001 C CNN
+F 3 "" H 5750 5850 50  0001 C CNN
+F 4 "ERJ1GNF1002C " H -3000 4150 50  0001 C CNN "MPN"
+F 5 "Panasonic" H -650 1300 50  0001 C CNN "Manufacturer"
+	1    5750 5850
 	0    1    1    0   
 $EndComp
 $Comp
 L qomu-board:+3V3 #PWR011
 U 1 1 5E1531DB
-P 5050 5650
-F 0 "#PWR011" H 5050 5650 50  0001 C CNN
-F 1 "+3V3" H 5200 5650 50  0000 C CNN
-F 2 "" H 5050 5650 50  0001 C CNN
-F 3 "" H 5050 5650 50  0001 C CNN
-	1    5050 5650
+P 5450 5600
+F 0 "#PWR011" H 5450 5600 50  0001 C CNN
+F 1 "+3V3" H 5600 5650 50  0000 C CNN
+F 2 "" H 5450 5600 50  0001 C CNN
+F 3 "" H 5450 5600 50  0001 C CNN
+	1    5450 5600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2706,20 +2704,18 @@ F 3 "https://www.quicklogic.com/wp-content/uploads/2020/06/QL-EOS-S3-Ultra-Low-P
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 5750 5050 5750
+	5400 5750 5450 5750
 Wire Wire Line
-	5050 5750 5050 5700
+	5450 5750 5450 5650
 Wire Wire Line
-	5450 5850 5850 5850
-Wire Wire Line
-	5250 5850 5000 5850
+	5850 5850 6100 5850
 Wire Wire Line
 	3550 4150 4000 4150
 Wire Wire Line
 	3550 4250 4200 4250
 Text Label 3650 4150 0    50   ~ 0
 C1
-Text Label 5700 5850 0    50   ~ 0
+Text Label 6000 5850 0    50   ~ 0
 C1
 Wire Wire Line
 	3550 3850 4000 3850
@@ -2844,14 +2840,14 @@ TOUCH_2
 $Comp
 L qomu-board:MC-HVT1-S02-G J3
 U 1 1 5DFD1BB7
-P 4850 5750
-F 0 "J3" V 4750 5750 50  0000 C CNN
-F 1 "MC-HVT1-S02-G" V 5050 5850 50  0000 C CNN
-F 2 "qomu-board-footprints:PinHeader_1x2_P1.27mm_Drill.7mm_with_622002115121_plug" H 5050 6050 60  0001 L CNN
-F 3 "" H 5050 6150 60  0001 L CNN
-F 4 "MC-HVT1-S02-G" H 5050 6250 60  0001 L CNN "MPN"
-F 5 "Multicomp" H 5050 6350 60  0001 L CNN "Manufacturer"
-	1    4850 5750
+P 5250 5750
+F 0 "J3" V 5150 5750 50  0000 C CNN
+F 1 "MC-HVT1-S02-G" V 5650 6100 50  0000 C CNN
+F 2 "qomu-board-footprints:PinHeader_1x2_P1.27mm_Drill.7mm_with_622002115121_plug" H 5450 6050 60  0001 L CNN
+F 3 "" H 5450 6150 60  0001 L CNN
+F 4 "MC-HVT1-S02-G" H 5450 6250 60  0001 L CNN "MPN"
+F 5 "Multicomp" H 5450 6350 60  0001 L CNN "Manufacturer"
+	1    5250 5750
 	0    1    1    0   
 $EndComp
 $Comp
@@ -2875,4 +2871,79 @@ Text Label 3650 4050 0    50   ~ 0
 F2
 Text Label 3650 3850 0    50   ~ 0
 E1
+$Comp
+L qomu-board:MSS3-V-T_R S1
+U 1 1 5E181EDA
+P 4850 5850
+F 0 "S1" V 5150 5800 50  0000 R CNN
+F 1 "MSS3-V-T_R" V 4550 6050 50  0000 R CNN
+F 2 "qomu-board-footprints:Switch_Slide_MSS3" H 5050 6050 50  0001 L CNN
+F 3 "https://pl.mouser.com/datasheet/2/910/605_MSS34-1571494.pdf" H 5050 6150 60  0001 L CNN
+F 4 "MSS3-V-T/R" H 5050 6350 60  0001 L CNN "MPN"
+F 5 "Diptronics" H 5050 6470 60  0001 L CNN "Manufacturer"
+	1    4850 5850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L qomu-board:R_0R_0201 R7
+U 1 1 5E182D81
+P 6550 4900
+F 0 "R7" V 6500 4650 50  0000 C CNN
+F 1 "0R" V 6500 5050 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 6550 4900 50  0001 C CNN
+F 3 "" H 6550 4900 50  0001 C CNN
+F 4 "Multicomp" H 6550 4900 50  0001 C CNN "Manufacturer"
+F 5 "MCRE000086" H 6550 4900 50  0001 C CNN "MPN"
+	1    6550 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L qomu-board:R_0R_0201 R10
+U 1 1 5E19188E
+P 6550 5000
+F 0 "R10" V 6500 4750 50  0000 C CNN
+F 1 "0R" V 6500 5150 50  0000 C CNN
+F 2 "qomu-board-footprints:R_0201_0603Metric" H 6550 5000 50  0001 C CNN
+F 3 "" H 6550 5000 50  0001 C CNN
+F 4 "Multicomp" H 6550 5000 50  0001 C CNN "Manufacturer"
+F 5 "MCRE000086" H 6550 5000 50  0001 C CNN "MPN"
+	1    6550 5000
+	0    1    1    0   
+$EndComp
+Text Label 7000 4900 0    50   ~ 0
+UART_TX
+Text Label 7000 5000 0    50   ~ 0
+UART_RX
+Wire Wire Line
+	5950 4900 6450 4900
+Wire Wire Line
+	5950 5000 6450 5000
+Wire Wire Line
+	6650 4900 7400 4900
+Wire Wire Line
+	6650 5000 7400 5000
+Text Notes 6050 4900 0    50   ~ 0
+DNP
+Text Notes 6050 5000 0    50   ~ 0
+DNP
+$Comp
+L qomu-board:+3V3 #PWR0131
+U 1 1 5E2379B0
+P 4750 5600
+F 0 "#PWR0131" H 4750 5600 50  0001 C CNN
+F 1 "+3V3" H 4750 5700 50  0000 C CNN
+F 2 "" H 4750 5600 50  0001 C CNN
+F 3 "" H 4750 5600 50  0001 C CNN
+	1    4750 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 6050 5450 6050
+Wire Wire Line
+	5450 6050 5450 5850
+Wire Wire Line
+	5400 5850 5450 5850
+Connection ~ 5450 5850
+Wire Wire Line
+	5450 5850 5650 5850
 $EndSCHEMATC
