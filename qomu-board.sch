@@ -2131,7 +2131,7 @@ U 1 1 5DED4186
 P 5200 4950
 F 0 "D8" V 5350 4900 60  0000 R CNN
 F 1 "SD05C.TCT" H 5400 5100 60  0000 R CNN
-F 2 "qomu-board-footprints:SOD-323" H 5400 5150 60  0001 L CNN
+F 2 "qomu-board-footprints:SOD-323-SD05" H 5400 5150 60  0001 L CNN
 F 3 "https://www.mouser.com/datasheet/2/761/sdxxc-1277747.pdf" H 5400 5250 60  0001 L CNN
 F 4 "Semtec" H 5400 5550 60  0001 L CNN "Manufacturer"
 F 5 "SD05C.TCT" H 5400 5450 60  0001 L CNN "MPN"
@@ -2584,24 +2584,11 @@ NoConn ~ 5950 4900
 NoConn ~ 3550 3950
 NoConn ~ 3550 4050
 $Comp
-L antmicroRectangularConnectorsHeadersMalePins:22-23-2021 J3
-U 1 1 5E147536
-P 4900 5750
-F 0 "J3" V 4750 5750 50  0000 R CNN
-F 1 "22-23-2021" V 5100 6050 50  0000 R CNN
-F 2 "qomu-board-footprints:PinHeader_1x2_P2.54mm_Drill1.02mm" H 5100 5950 60  0001 L CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf" H 5100 6050 60  0001 L CNN
-F 4 "22-23-2021" H 5100 6250 60  0001 L CNN "MPN"
-F 5 "Molex" H 5100 6850 60  0001 L CNN "Manufacturer"
-	1    4900 5750
-	0    1    1    0   
-$EndComp
-$Comp
 L qomu-board:R_10k_0201 R6
 U 1 1 5E151CF7
 P 5350 5850
-F 0 "R6" V 5250 5850 50  0000 C CNN
-F 1 "10k" V 5450 5850 50  0000 C CNN
+F 0 "R6" V 5300 6000 50  0000 C CNN
+F 1 "10k" V 5450 6000 50  0000 C CNN
 F 2 "qomu-board-footprints:R_0201_0603Metric" H 5350 5850 50  0001 C CNN
 F 3 "" H 5350 5850 50  0001 C CNN
 F 4 "ERJ1GNF1002C " H -3400 4150 50  0001 C CNN "MPN"
@@ -2855,4 +2842,17 @@ Text Label 3650 3350 0    50   ~ 0
 LED_G
 Text Label 3650 4450 0    50   ~ 0
 TOUCH_2
+$Comp
+L qomu-board:MC-HVT1-S02-G J3
+U 1 1 5DFD1BB7
+P 4850 5750
+F 0 "J3" V 4750 5750 50  0000 C CNN
+F 1 "MC-HVT1-S02-G" V 5050 5850 50  0000 C CNN
+F 2 "qomu-board-footprints:PinHeader_1x2_P1.27mm_Drill.7mm_with_622002115121_plug" H 5050 6050 60  0001 L CNN
+F 3 "" H 5050 6150 60  0001 L CNN
+F 4 "MC-HVT1-S02-G" H 5050 6250 60  0001 L CNN "MPN"
+F 5 "Multicomp" H 5050 6350 60  0001 L CNN "Manufacturer"
+	1    4850 5750
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
