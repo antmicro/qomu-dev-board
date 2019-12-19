@@ -1,7 +1,7 @@
 Qomu Development Board
 ======================
 
-.. figure:: Images/qomu-board.png
+.. figure:: img/qomu-board.png
 
 This repository contains PCB design files for a development board based on a Quicklogic EOS S3 Sensor Processing Platform
 
