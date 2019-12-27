@@ -173,7 +173,7 @@ DEF EOS-S3 IC 0 40 Y Y 1 F N
 F0 "IC" 1750 -3000 50 H V C CNN
 F1 "EOS-S3" 1650 50 50 H V C CNN
 F2 "qomu-board:42-WLCSP" 1650 -3100 50 H I C CNN
-F3 "" 1550 -3450 50 H I C CNN
+F3 "https://www.quicklogic.com/wp-content/uploads/2019/05/QL_EOS_S3_Sensor_Processing_Platform_Datasheet_V1.0_No_NDA_Required.pdf" 1550 -3450 50 H I C CNN
 DRAW
 T 900 650 -800 50 0 0 0 "BANK A" Normal 0 C C
 T 900 650 -2700 50 0 1 0 "BANK B" Normal 0 C C
