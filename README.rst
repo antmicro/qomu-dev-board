@@ -11,6 +11,7 @@ This repository contains open hardware design files for a development board base
 The design files were created by `Antmicro <https://www.antmicro.com>`_ in cooperation with `Quicklogic <https://www.quicklogic.com/>`_.
 The board has a tiny outline which makes it fit into a USB socket.
 This allows the user to explore functionalities of the EOS S3 platform on the go without cables or taking up space on your desk.
+The board has an additional break-away part with debug connectors that speed up initial bringup and software development.
 
 Key features
 ============
