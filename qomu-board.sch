@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:qomu-board-cache
-EELAYER 30 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -2699,7 +2698,7 @@ P 1600 2700
 F 0 "IC1" H 1650 2850 50  0000 C CNN
 F 1 "EOS-S3" H 1750 2750 50  0000 C CNN
 F 2 "qomu-board:42-WLCSP" H 3250 -400 50  0001 C CNN
-F 3 "https://dev.antmicro.com/attachments/download/9063/ql-eos-s3-datasheet.pdf" H 3350 -300 50  0001 C CNN
+F 3 "https://www.quicklogic.com/wp-content/uploads/2019/05/QL_EOS_S3_Sensor_Processing_Platform_Datasheet_V1.0_No_NDA_Required.pdf" H 3350 -300 50  0001 C CNN
 	1    1600 2700
 	1    0    0    -1  
 $EndComp
