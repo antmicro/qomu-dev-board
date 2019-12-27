@@ -173,7 +173,7 @@ DEF EOS-S3 IC 0 40 Y Y 1 F N
 F0 "IC" 1750 -3000 50 H V C CNN
 F1 "EOS-S3" 1650 50 50 H V C CNN
 F2 "qomu-board:42-WLCSP" 1650 -3100 50 H I C CNN
-F3 "https://dev.antmicro.com/attachments/download/9063/ql-eos-s3-datasheet.pdf" 1750 -3000 50 H I C CNN
+F3 "" 1550 -3450 50 H I C CNN
 DRAW
 T 900 650 -800 50 0 0 0 "BANK A" Normal 0 C C
 T 900 650 -2700 50 0 1 0 "BANK B" Normal 0 C C
@@ -602,7 +602,7 @@ ENDDEF
 #
 # TP_SMD_0_75MM
 #
-DEF TP_SMD_0_75MM TP 0 0 N Y 1 F N
+DEF ~TP_SMD_0_75MM TP 0 0 N Y 1 F N
 F0 "TP" -100 50 50 H V R CNN
 F1 "TP_SMD_0_75MM" 0 -100 50 H I C CNN
 F2 "qomu-board-footprints:Testpoint_smd_0_75mm" 200 200 60 H I L CNN
