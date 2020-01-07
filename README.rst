@@ -23,3 +23,9 @@ Key features
 * Capacitive touch pads
 * Supplied with 5.0VDC from USB port
 * USB data signals tied to programmable logic
+
+
+Layout and dimensions
+=====================
+
+.. figure:: img/qomu-layout.png
