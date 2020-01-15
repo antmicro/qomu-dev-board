@@ -2700,6 +2700,8 @@ F 0 "IC1" H 1650 2850 50  0000 C CNN
 F 1 "EOS-S3" H 1750 2750 50  0000 C CNN
 F 2 "qomu-board:42-WLCSP" H 3250 -400 50  0001 C CNN
 F 3 "https://dev.antmicro.com/attachments/download/9063/ql-eos-s3-datasheet.pdf" H 3350 -300 50  0001 C CNN
+F 4 "Quicklogic" H 1600 2700 50  0001 C CNN "Manufacturer"
+F 5 "EOS-S3-42-WLCSP" H 1600 2700 50  0001 C CNN "MPN"
 	1    1600 2700
 	1    0    0    -1  
 $EndComp
