@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:qomu-board-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -7,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Qomu Board"
 Date ""
-Rev ""
+Rev "1.1"
 Comp "Antmicro Ltd. (www.antmicro.com)"
 Comment1 ""
 Comment2 ""
