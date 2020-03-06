@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Qomu Board"
 Date "2020-03-04"
-Rev "1.2"
+Rev "1.1"
 Comp ""
 Comment1 "www.antmicro.com"
 Comment2 "Antmicro Ltd."
