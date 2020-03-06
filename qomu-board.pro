@@ -1,4 +1,4 @@
-update=Thu Feb 13 13:18:02 2020
+update=śro, 4 mar 2020, 14:43:49
 version=1
 last_client=kicad
 [general]
@@ -252,7 +252,7 @@ dPairViaGap=0.25
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=.
+PlotDirectoryName=/home/user/anthw/quicklogic-qomu-board-hw/doc
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
