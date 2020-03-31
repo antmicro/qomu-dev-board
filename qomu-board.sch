@@ -963,7 +963,7 @@ L qomu-board:R_10k_0201 R5
 U 1 1 5DDE81B7
 P 4200 3250
 F 0 "R5" V 4150 3100 50  0000 C CNN
-F 1 "10k" V 4300 3250 50  0000 C CNN
+F 1 "10k" V 4400 3250 50  0000 C CNN
 F 2 "qomu-board-footprints:R_0201_0603Metric" H 4200 3250 50  0001 C CNN
 F 3 "" H 4200 3250 50  0001 C CNN
 F 4 "ERJ1GNF1002C " H -4550 1550 50  0001 C CNN "MPN"
@@ -1707,8 +1707,6 @@ TOUCH_3
 Text Label 3650 4650 0    50   ~ 0
 TOUCH_4
 Wire Wire Line
-	3550 3350 3950 3350
-Wire Wire Line
 	3550 3050 3950 3050
 NoConn ~ 3550 3950
 $Comp
@@ -1937,7 +1935,7 @@ Wire Wire Line
 	1100 4700 1300 4700
 Text Notes 5800 3500 0    50   ~ 0
 16Mbit (2Mx8)
-Text Label 3650 3350 0    50   ~ 0
+Text Label 3650 3150 0    50   ~ 0
 LED_G
 Text Label 3650 4450 0    50   ~ 0
 TOUCH_2
@@ -3443,4 +3441,7 @@ F 5 "EOS-S3-42-WLCSP" H 1600 2700 50  0001 C CNN "MPN"
 $EndComp
 Wire Wire Line
 	3950 7025 3950 7175
+Text Notes 2200 2700 0    50   ~ 0
+FBIO_9 shares function with LED_G. \nExperimental verificatoin required.
+NoConn ~ 3550 3350
 $EndSCHEMATC
