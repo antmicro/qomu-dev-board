@@ -2,7 +2,7 @@ G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,5.1.5+dfsg1-2~bpo10+1*
 G04 #@! TF.CreationDate,2020-04-01T17:55:08+02:00*
 G04 #@! TF.ProjectId,qomu-board,716f6d75-2d62-46f6-9172-642e6b696361,rev?*
 G04 #@! TF.SameCoordinates,Original*
-G04 #@! TF.FileFunction,Paste,Top*
+G04 #@! TF.FileFunction,Glue,Top*
 G04 #@! TF.FilePolarity,Positive*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
